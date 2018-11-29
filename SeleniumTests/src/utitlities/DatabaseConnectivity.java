@@ -22,6 +22,10 @@ public class DatabaseConnectivity {
 		ResultSet rs=stmt.executeQuery("select * from ASSETS where ASSETTAG ='HWRF0001'");  
 		while(rs.next())  
 		System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+		
+		String ROnumber =  rs.getString("ASSETTAG");
+		
+		System.out.println(ROnumber);
 
 		//step5 close the connection object  
 		con.close();  
