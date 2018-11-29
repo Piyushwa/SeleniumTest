@@ -1,9 +1,11 @@
 package utitlities;
 
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+
 
 public class DatabaseConnectivity {
 	
@@ -25,7 +27,7 @@ public class DatabaseConnectivity {
 		
 		String ROnumber =  rs.getString("ASSETTAG");
 		
-		System.out.println(ROnumber);
+		System.out.println("Rnumber is: " +ROnumber);
 
 		//step5 close the connection object  
 		con.close();  

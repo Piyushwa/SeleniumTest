@@ -55,11 +55,8 @@ WebDriver driver;
 				WebElement CompleteQCButton = 	driver.findElement(By.xpath(loc_QualityCompleteQC));
 				
 				DriverHelper.scrolltoElement(CompleteQCButton);
-					Actions actions3 = new Actions(driver);
-			  		actions3.moveToElement(CompleteQCButton);
-			  		actions3.click();
 					
-					//driver.findElement(By.xpath(loc_QualityCompleteQC)).click();
+					driver.findElement(By.xpath(loc_QualityCompleteQC)).click();
 
 					driver.findElement(By.xpath(loc_Qualityloc2)).sendKeys(Qualityloc);
 					Thread.sleep(3000);

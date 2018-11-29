@@ -142,14 +142,18 @@ String loc_ShipAddconfirm = "//*[@id='print-section']/p-sidebar[2]/div/div/div[3
 String loc_ShipInfoContact = "//input[@name ='shipToContact']";
 String loc_ShipInfoPhone = "//input[@name ='shipToPhone']";
 String loc_ShipInfoAdress1 = "//input[@name ='shipToAddr1']";
-String loc_ShipInfoCity = "//input[@name ='shipToContact']";
-String loc_ShipInfoState = "//input[@name ='shipToContact']";
-String loc_ShipInfoCountry = "//input[@name ='shipToContact']";
+String loc_ShipInfoCity = "//input[@name ='shipToCity']";
+String loc_ShipInfoState = "//input[@name ='stateshipToStateProvinceCode']";
+String loc_ShipInfoCountry = "//input[@name ='shipToCountry']";
 String loc_ShipInfoWeight = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[2]/div/div/div[2]/div[1]/div[1]/div/p-spinner/span/input";
+
 String loc_Shipinfounit = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[2]/div/div/div[2]/div[1]/div[2]/div/p-dropdown/div/label";
 String loc_Shipinfolength = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[2]/div/div/div[2]/div[2]/div[1]/div/p-spinner/span/input";
 String loc_Shipinfowidth = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[2]/div/div/div[2]/div[2]/div[2]/div/p-spinner/span/input";
 String loc_ShipinfoHeight  = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[2]/div/div/div[2]/div[3]/div[1]/div/p-spinner/span/input";
 String loc_ShipinfoMeasureunit  = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[2]/div/div/div[2]/div[3]/div[2]/div/p-dropdown/div/label";
 String loc_Shiptype = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[3]/div/div/div[2]/div/div/div/p-dropdown/div/label";
+String CarrierUPS ="//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[1]/div[1]/div/p-dropdown/div/div[4]/div/ul/li[2]";
+String loc_Shiptypevalue ="//span[contains(text(),'First Class Mail')]";
+String loc_SubmittoUPS = "//button[contains(text(),'Submit to UPS')]";
 }

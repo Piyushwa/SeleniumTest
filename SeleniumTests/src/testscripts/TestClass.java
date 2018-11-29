@@ -37,14 +37,14 @@ public class TestClass extends DriverHelper{
 	       //Repair rp =new Repair(driver);
 	      //rp.Repairorder();
 	       
-	     QualityCheck qc = new QualityCheck(driver);
-	      qc.QCOrd();
+	     //QualityCheck qc = new QualityCheck(driver);
+	     // qc.QCOrd();
 	       
 	      // PackageOrder po = new PackageOrder(driver);
 	     // po.Packorder();
 	       
-	     //  Shipping sp = new Shipping(driver);
-	      // sp.Shippingorder();
+	     Shipping sp = new Shipping(driver);
+	      sp.Shippingorder();
 }
 	
 }
