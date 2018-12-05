@@ -35,7 +35,7 @@ WebDriver driver;
 		
 		
 		
-		utitlities.DatabaseConnectivity.Dbconn("BBADMIN", "BBADMIN");
+		utitlities.DatabaseConnectivity.Dbconn(	"select * from ASSETS where ASSETTAG ='HWRF0001'","BBADMIN", "BBADMIN");
 		WebElement username = driver.findElement(By.id(loc_Username));
 		
 		DriverHelper.sendKeys(username, usernamevalue);

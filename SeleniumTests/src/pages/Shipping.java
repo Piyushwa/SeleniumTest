@@ -12,6 +12,8 @@ import utitlities.ReadExcelFile;
 
 public class Shipping implements CommonLoctors {
 	
+	
+	
 	WebDriver driver;
 
 		public Shipping(WebDriver driver) throws InterruptedException{
@@ -21,11 +23,15 @@ public class Shipping implements CommonLoctors {
 			 }
 				
 		public void Shippingorder() throws InterruptedException,Exception{
+	
 			ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
 			String ShipPackListnu = ReadExcelFile.getCellData(15,1);
 			String ShipSerialnu = ReadExcelFile.getCellData(15,2);
 			String Carrievalue = ReadExcelFile.getCellData(15,3);
 			String ShippingTrackingNu = ReadExcelFile.getCellData(15,4);
+
+		   String Shiptype  =ReadExcelFile.getCellData(15,5);
+		   String loc_Shiptypevalue ="//span[contains(text(),'"+Shiptype+"')]";
 			
 			WebElement Ship = driver.findElement(By.xpath(loc_Shipoption));
 			DriverHelper.clickusingjavaexceutor(Ship);
@@ -58,6 +64,10 @@ public class Shipping implements CommonLoctors {
 		
 			driver.findElement(By.xpath(CarrierUPS)).click();
 			
+			WebElement submitshipinfo = 	driver.findElement(By.xpath(loc_SubmittoUPS));
+			
+			DriverHelper.waitTillElementFound(submitshipinfo, 15);
+			
 		
 			driver.findElement(By.xpath(loc_ShipInfoContact)).clear();
 			driver.findElement(By.xpath(loc_ShipInfoContact)).sendKeys("Piyush");
@@ -67,7 +77,7 @@ public class Shipping implements CommonLoctors {
 			driver.findElement(By.xpath(loc_ShipInfoState)).sendKeys("HRY");
 			driver.findElement(By.xpath(loc_ShipInfoCountry)).sendKeys("IND");	
 			
-		WebElement submitshipinfo = 	driver.findElement(By.xpath(loc_SubmittoUPS));
+		//WebElement submitshipinfo = 	driver.findElement(By.xpath(loc_SubmittoUPS));
 		
 		DriverHelper.scrolltoElement(submitshipinfo);
 			driver.findElement(By.xpath(loc_ShipInfoWeight)).sendKeys("72");
@@ -81,12 +91,16 @@ public class Shipping implements CommonLoctors {
 			WebElement ShippingType = driver.findElement(By.xpath(loc_Shiptype));
 			DriverHelper.clickusingjavaexceutor(ShippingType);
 			Thread.sleep(3000);
+		
 			driver.findElement(By.xpath(loc_Shiptypevalue)).click();
 			//DriverHelper.pressKeyDown(ShippingType);
 			//DriverHelper.pressKeyEnter(ShippingType);
 			Thread.sleep(3000);
 			driver.findElement(By.xpath(loc_SubmittoUPS)).click();
 			
+			String Message  = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
+			
+			System.out.println(Message);
 			
 		}
 			else {

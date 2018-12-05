@@ -1,6 +1,11 @@
 package locators;
 
+import utitlities.ReadExcelFile;
+
 public interface CommonLoctors {
+	
+
+	
 	
 	String loc_Username  = "userNameInput";
 	String loc_PassWord  = "passwordInput";
@@ -154,6 +159,8 @@ String loc_ShipinfoHeight  = "//*[@id='print-section']/p-sidebar[1]/div/componen
 String loc_ShipinfoMeasureunit  = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[2]/div/div/div[2]/div[3]/div[2]/div/p-dropdown/div/label";
 String loc_Shiptype = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[3]/div/div/div[2]/div/div/div/p-dropdown/div/label";
 String CarrierUPS ="//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[1]/div[1]/div/p-dropdown/div/div[4]/div/ul/li[2]";
-String loc_Shiptypevalue ="//span[contains(text(),'First Class Mail')]";
+
+
+
 String loc_SubmittoUPS = "//button[contains(text(),'Submit to UPS')]";
 }

@@ -232,14 +232,14 @@ public static void switchToParentWindow() {
 driver.switchTo().defaultContent();
 }
 
-/*public static void switchToNewWindow() {
+public static void switchToNewWindow() {
 
-	List<WebElement> windows = driver.getWindowHandles();
+	Set<String> windows = driver.getWindowHandles();
 
 for(String winHandle : windows){
 	 driver.switchTo().window(winHandle);
-}*/
-
+}
+}
 public static void scrolltoElement(WebElement ScrolltoThisElement) {
 	
 	

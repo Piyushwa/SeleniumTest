@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 public class DatabaseConnectivity {
 	
-	public static void Dbconn (String username, String password)
+	public static void Dbconn (String Query, String username, String password)
 	{
 		try{  
 		Class.forName("oracle.jdbc.driver.OracleDriver");  
@@ -21,13 +21,11 @@ public class DatabaseConnectivity {
 		Statement stmt=con.createStatement();  
 
 		//step4 execute query  
-		ResultSet rs=stmt.executeQuery("select * from ASSETS where ASSETTAG ='HWRF0001'");  
+		ResultSet rs=stmt.executeQuery(Query);  
+	
 		while(rs.next())  
 		System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
-		
-		String ROnumber =  rs.getString("ASSETTAG");
-		
-		System.out.println("Rnumber is: " +ROnumber);
+
 
 		//step5 close the connection object  
 		con.close();  

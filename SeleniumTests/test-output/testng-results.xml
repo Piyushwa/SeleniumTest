@@ -26,19 +26,19 @@
       <![CDATA[Test Status: Pass]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="44193" started-at="2018-11-29T12:15:53Z" finished-at="2018-11-29T12:16:37Z">
+  <suite name="Suite" duration-ms="52348" started-at="2018-12-05T14:54:45Z" finished-at="2018-12-05T14:55:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="44193" started-at="2018-11-29T12:15:53Z" finished-at="2018-11-29T12:16:37Z">
+    <test name="Test" duration-ms="52348" started-at="2018-12-05T14:54:45Z" finished-at="2018-12-05T14:55:37Z">
       <class name="testscripts.TestClass">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@464bee09]" name="getBrowser" is-config="true" duration-ms="45277" started-at="2018-11-29T12:15:07Z" finished-at="2018-11-29T12:15:53Z">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@754ba872]" name="getBrowser" is-config="true" duration-ms="62555" started-at="2018-12-05T14:53:42Z" finished-at="2018-12-05T14:54:45Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.getBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="test_Sce2()[pri:0, instance:testscripts.TestClass@464bee09]" name="test_Sce2" duration-ms="44157" started-at="2018-11-29T12:15:53Z" finished-at="2018-11-29T12:16:37Z">
+        <test-method status="PASS" signature="test_Sce2()[pri:0, instance:testscripts.TestClass@754ba872]" name="test_Sce2" duration-ms="52255" started-at="2018-12-05T14:54:45Z" finished-at="2018-12-05T14:55:37Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.test_Sce2]]>
