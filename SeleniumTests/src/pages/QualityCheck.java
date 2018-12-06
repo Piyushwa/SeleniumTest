@@ -12,14 +12,14 @@ import baseClass.DriverHelper;
 
 public class QualityCheck implements CommonLoctors {
 	
-WebDriver driver;
-
+	WebDriver driver;
 	
-	public QualityCheck(WebDriver driver) throws InterruptedException{
 		
-		 this.driver = driver;
-		 
-		 }
+		public QualityCheck(WebDriver driver) throws InterruptedException{
+			
+			 this.driver = driver;
+			 
+			 }
 	
 	public void QCOrd() throws InterruptedException,Exception{
 		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");

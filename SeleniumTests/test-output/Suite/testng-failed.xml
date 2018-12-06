@@ -8,7 +8,8 @@
     <classes>
       <class name="testscripts.TestClass">
         <methods>
-          <include name="test_Sce2"/>
+          <include name="login"/>
+          <include name="ShipOrder"/>
           <include name="getBrowser"/>
         </methods>
       </class> <!-- testscripts.TestClass -->

@@ -119,19 +119,19 @@
       <![CDATA[Completed executing following method : DriverHelper.browser_close]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="47116" started-at="2018-12-06T08:42:18Z" finished-at="2018-12-06T08:43:05Z">
+  <suite name="Suite" duration-ms="62548" started-at="2018-12-06T16:32:44Z" finished-at="2018-12-06T16:33:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="47116" started-at="2018-12-06T08:42:18Z" finished-at="2018-12-06T08:43:05Z">
+    <test name="Test" duration-ms="62548" started-at="2018-12-06T16:32:44Z" finished-at="2018-12-06T16:33:46Z">
       <class name="testscripts.TestClass">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@59ec2012]" name="getBrowser" is-config="true" duration-ms="28118" started-at="2018-12-06T08:41:50Z" finished-at="2018-12-06T08:42:18Z">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@59ec2012]" name="getBrowser" is-config="true" duration-ms="51553" started-at="2018-12-06T16:31:52Z" finished-at="2018-12-06T16:32:44Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.getBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@59ec2012]" name="login" duration-ms="16234" started-at="2018-12-06T08:42:18Z" finished-at="2018-12-06T08:42:34Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@59ec2012]" name="login" duration-ms="27098" started-at="2018-12-06T16:32:44Z" finished-at="2018-12-06T16:33:11Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.login]]>
@@ -147,7 +147,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="CreateOrder()[pri:2, instance:testscripts.TestClass@59ec2012]" name="CreateOrder" duration-ms="4" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+        <test-method status="PASS" signature="CreateOrder()[pri:2, instance:testscripts.TestClass@59ec2012]" name="CreateOrder" duration-ms="3" started-at="2018-12-06T16:33:11Z" finished-at="2018-12-06T16:33:11Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.CreateOrder]]>
@@ -163,7 +163,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- CreateOrder -->
-        <test-method status="PASS" signature="ReceiveOrder()[pri:3, instance:testscripts.TestClass@59ec2012]" name="ReceiveOrder" duration-ms="4" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+        <test-method status="PASS" signature="ReceiveOrder()[pri:3, instance:testscripts.TestClass@59ec2012]" name="ReceiveOrder" duration-ms="2" started-at="2018-12-06T16:33:11Z" finished-at="2018-12-06T16:33:11Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.ReceiveOrder]]>
@@ -179,7 +179,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ReceiveOrder -->
-        <test-method status="PASS" signature="TestOrder()[pri:4, instance:testscripts.TestClass@59ec2012]" name="TestOrder" duration-ms="2" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+        <test-method status="PASS" signature="TestOrder()[pri:4, instance:testscripts.TestClass@59ec2012]" name="TestOrder" duration-ms="4" started-at="2018-12-06T16:33:11Z" finished-at="2018-12-06T16:33:11Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.TestOrder]]>
@@ -195,7 +195,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- TestOrder -->
-        <test-method status="PASS" signature="RepairOrder()[pri:5, instance:testscripts.TestClass@59ec2012]" name="RepairOrder" duration-ms="2" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+        <test-method status="PASS" signature="RepairOrder()[pri:5, instance:testscripts.TestClass@59ec2012]" name="RepairOrder" duration-ms="8" started-at="2018-12-06T16:33:11Z" finished-at="2018-12-06T16:33:11Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.RepairOrder]]>
@@ -211,7 +211,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- RepairOrder -->
-        <test-method status="PASS" signature="QCOrder()[pri:6, instance:testscripts.TestClass@59ec2012]" name="QCOrder" duration-ms="1" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+        <test-method status="PASS" signature="QCOrder()[pri:6, instance:testscripts.TestClass@59ec2012]" name="QCOrder" duration-ms="4" started-at="2018-12-06T16:33:11Z" finished-at="2018-12-06T16:33:11Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.QCOrder]]>
@@ -227,7 +227,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- QCOrder -->
-        <test-method status="PASS" signature="PackOrder()[pri:7, instance:testscripts.TestClass@59ec2012]" name="PackOrder" duration-ms="2" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+        <test-method status="PASS" signature="PackOrder()[pri:7, instance:testscripts.TestClass@59ec2012]" name="PackOrder" duration-ms="2" started-at="2018-12-06T16:33:11Z" finished-at="2018-12-06T16:33:11Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.PackOrder]]>
@@ -243,7 +243,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- PackOrder -->
-        <test-method status="PASS" signature="ShipOrder()[pri:8, instance:testscripts.TestClass@59ec2012]" name="ShipOrder" duration-ms="30778" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:43:05Z">
+        <test-method status="PASS" signature="ShipOrder()[pri:8, instance:testscripts.TestClass@59ec2012]" name="ShipOrder" duration-ms="35282" started-at="2018-12-06T16:33:11Z" finished-at="2018-12-06T16:33:46Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.ShipOrder]]>
@@ -259,7 +259,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ShipOrder -->
-        <test-method status="PASS" signature="browser_close()[pri:0, instance:testscripts.TestClass@59ec2012]" name="browser_close" is-config="true" duration-ms="8977" started-at="2018-12-06T08:43:05Z" finished-at="2018-12-06T08:43:14Z">
+        <test-method status="PASS" signature="browser_close()[pri:0, instance:testscripts.TestClass@59ec2012]" name="browser_close" is-config="true" duration-ms="16882" started-at="2018-12-06T16:33:46Z" finished-at="2018-12-06T16:34:03Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.browser_close]]>

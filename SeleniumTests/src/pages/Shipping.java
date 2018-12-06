@@ -102,6 +102,11 @@ public class Shipping implements CommonLoctors {
 			
 			System.out.println(Message);
 			
+			if(Message.contains("eError")){
+				
+				
+			}
+			
 		}
 			else {
 				

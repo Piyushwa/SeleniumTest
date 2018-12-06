@@ -159,8 +159,56 @@ String loc_ShipinfoHeight  = "//*[@id='print-section']/p-sidebar[1]/div/componen
 String loc_ShipinfoMeasureunit  = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[2]/div/div/div[2]/div[3]/div[2]/div/p-dropdown/div/label";
 String loc_Shiptype = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[3]/div/div/div[2]/div/div/div/p-dropdown/div/label";
 String CarrierUPS ="//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[1]/div[1]/div/p-dropdown/div/div[4]/div/ul/li[2]";
-
-
-
 String loc_SubmittoUPS = "//button[contains(text(),'Submit to UPS')]";
+
+
+// Settings-CreateParts
+
+String loc_Settings = "//a[@href ='#/settings']";
+String loc_CreateParts = "//a[@href ='#/parts' ]";
+String loc_CreatePartsButton ="//button[contains(text(),'Create Part')]";
+String loc_Partsname = "//input[@name ='partNumber']";
+String loc_PartsDescription = "//div/textarea[@name ='description']";
+String loc_Partfamily = "/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[3]/div/p-autocomplete/span/input";
+String loc_PartType = "/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[4]/div/p-autocomplete/span/input";
+String loc_PartOrigin ="/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[5]/div/p-autocomplete/span/input";
+String loc_CreatePartSubmit = "//button[contains(text(),'Submit')] ";
+
+//Setting - CreateBranches
+String loc_CreateBranch = "//a[@href='#/branches']";
+String loc_CreateBranchButton = "//button[contains(text(),'Create Branch')]";
+String loc_BranchRegion = "//*[@id='locationRegion']/div/label";
+String loc_BranchName = "//*[@id='locationName']";
+String loc_BranchAddress = "//*[@id='addr1']";
+String loc_BranchCity = "//*[@id='city']";
+
+String loc_BranchState = "//*[@id='state']";
+String loc_BranchTimeZone = "/html/body/app-root/div/div/app-locations/section[2]/p-sidebar[1]/div/app-location-editor/div/form/div[1]/div/div[2]/div[2]/p-autocomplete/span/input";
+String loc_BranchContact  ="//*[@id='contactName'] ";
+String loc_BranchCEmail = "//*[@id= 'contactEmail']";
+String loc_BranchCTDIlocChkbox = "/html/body/app-root/div/div/app-locations/section[2]/p-sidebar[1]/div/app-location-editor/div/form/div[1]/div/div[2]/div[6]/p-checkbox/div/div[2]";
+String loc_Createloc = "//button[contains(text(),'Create Location')]";
+
+//PickParts
+
+String loc_Pickpartsoptions = "//a/span[contains(text(),'Pick Parts')]";
+
+String loc_pickorders = "/html/body/app-root/div/div/component-picking-component/section[2]/div/div/div/div[1]/div/div/div/div/p-dropdown/div/label";
+
+
+//Deliver parts
+
+String DeliverPartsOptions = "//a/span[contains(text(),'Deliver Parts')]";
+
+
+//Component Receiving
+
+
+//component putaway
+
+//logsviewer
+
+String loc_logviewer = "";
+
+
 }
