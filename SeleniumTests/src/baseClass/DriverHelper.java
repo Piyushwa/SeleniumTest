@@ -39,7 +39,7 @@ import utitlities.*;
 public class DriverHelper implements CommonLoctors {
 	
 	public static WebDriver driver;
-	public static ExtentReports extent;
+	
 	public static String chromedriverPath = "C:\\Users\\IT\\workspace\\Zebra\\chromedriver.exe";
 	public static String IEdriverPath = "C:\\Users\\IT\\workspace\\Zebra\\IEDriverServer.exe";
 	public static String firefoxdriverPath = "C:\\Users\\IT\\workspace\\Zebra\\geckodriver.exe";
@@ -55,7 +55,7 @@ public class DriverHelper implements CommonLoctors {
 		report = new ExtentReports("C:\\Users\\IT\\workspace\\SeleniumTests\\ExtentReports\\ExtentReportResults.html", true);
 		test = report.startTest("DriverClass");
 		
-		test.assignAuthor("Piyush Wadhwa");
+		
 		test.log(LogStatus.PASS,"Browser Launched");
 	}
 			
@@ -292,10 +292,12 @@ public static void mouseClickByLocator( WebElement MouseClickElem ) {
     builder.build().perform();
 }
 
-//@AfterSuite
+@AfterSuite
 public void browser_close()
 {
 	driver.close();
+	
+	utitlities.SendMailSSLWithAttachment.sendmail();
 	//test.log(LogStatus.PASS, "Browser Closed Successfully");
 	//extent.endTest(test);
 }

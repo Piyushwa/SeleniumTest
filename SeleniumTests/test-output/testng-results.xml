@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
     <line>
       <![CDATA[About to begin executing Suite Suite]]>
@@ -14,10 +14,10 @@
       <![CDATA[About to begin executing Test Test]]>
     </line>
     <line>
-      <![CDATA[About to begin executing following method : TestClass.test_Sce2]]>
+      <![CDATA[About to begin executing following method : TestClass.login]]>
     </line>
     <line>
-      <![CDATA[Completed executing following method : TestClass.test_Sce2]]>
+      <![CDATA[Completed executing following method : TestClass.login]]>
     </line>
     <line>
       <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -25,26 +25,119 @@
     <line>
       <![CDATA[Test Status: Pass]]>
     </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.CreateOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.CreateOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.ReceiveOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.ReceiveOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.TestOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.TestOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.RepairOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.RepairOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.QCOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.QCOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.PackOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.PackOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.ShipOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.ShipOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing test Test]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.browser_close]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.browser_close]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="52348" started-at="2018-12-05T14:54:45Z" finished-at="2018-12-05T14:55:37Z">
+  <suite name="Suite" duration-ms="47116" started-at="2018-12-06T08:42:18Z" finished-at="2018-12-06T08:43:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="52348" started-at="2018-12-05T14:54:45Z" finished-at="2018-12-05T14:55:37Z">
+    <test name="Test" duration-ms="47116" started-at="2018-12-06T08:42:18Z" finished-at="2018-12-06T08:43:05Z">
       <class name="testscripts.TestClass">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@754ba872]" name="getBrowser" is-config="true" duration-ms="62555" started-at="2018-12-05T14:53:42Z" finished-at="2018-12-05T14:54:45Z">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@59ec2012]" name="getBrowser" is-config="true" duration-ms="28118" started-at="2018-12-06T08:41:50Z" finished-at="2018-12-06T08:42:18Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.getBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="test_Sce2()[pri:0, instance:testscripts.TestClass@754ba872]" name="test_Sce2" duration-ms="52255" started-at="2018-12-05T14:54:45Z" finished-at="2018-12-05T14:55:37Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@59ec2012]" name="login" duration-ms="16234" started-at="2018-12-06T08:42:18Z" finished-at="2018-12-06T08:42:34Z">
           <reporter-output>
             <line>
-              <![CDATA[About to begin executing following method : TestClass.test_Sce2]]>
+              <![CDATA[About to begin executing following method : TestClass.login]]>
             </line>
             <line>
-              <![CDATA[Completed executing following method : TestClass.test_Sce2]]>
+              <![CDATA[Completed executing following method : TestClass.login]]>
             </line>
             <line>
               <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -53,7 +146,126 @@
               <![CDATA[Test Status: Pass]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test_Sce2 -->
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="CreateOrder()[pri:2, instance:testscripts.TestClass@59ec2012]" name="CreateOrder" duration-ms="4" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.CreateOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.CreateOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateOrder -->
+        <test-method status="PASS" signature="ReceiveOrder()[pri:3, instance:testscripts.TestClass@59ec2012]" name="ReceiveOrder" duration-ms="4" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.ReceiveOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.ReceiveOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ReceiveOrder -->
+        <test-method status="PASS" signature="TestOrder()[pri:4, instance:testscripts.TestClass@59ec2012]" name="TestOrder" duration-ms="2" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.TestOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.TestOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestOrder -->
+        <test-method status="PASS" signature="RepairOrder()[pri:5, instance:testscripts.TestClass@59ec2012]" name="RepairOrder" duration-ms="2" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.RepairOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.RepairOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RepairOrder -->
+        <test-method status="PASS" signature="QCOrder()[pri:6, instance:testscripts.TestClass@59ec2012]" name="QCOrder" duration-ms="1" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.QCOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.QCOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- QCOrder -->
+        <test-method status="PASS" signature="PackOrder()[pri:7, instance:testscripts.TestClass@59ec2012]" name="PackOrder" duration-ms="2" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:42:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.PackOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.PackOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PackOrder -->
+        <test-method status="PASS" signature="ShipOrder()[pri:8, instance:testscripts.TestClass@59ec2012]" name="ShipOrder" duration-ms="30778" started-at="2018-12-06T08:42:34Z" finished-at="2018-12-06T08:43:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.ShipOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.ShipOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ShipOrder -->
+        <test-method status="PASS" signature="browser_close()[pri:0, instance:testscripts.TestClass@59ec2012]" name="browser_close" is-config="true" duration-ms="8977" started-at="2018-12-06T08:43:05Z" finished-at="2018-12-06T08:43:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.browser_close]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- browser_close -->
       </class> <!-- testscripts.TestClass -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
