@@ -72,7 +72,7 @@ public class SendMailSSLWithAttachment {
 			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("vishnu@ctdi.com"));
             
                         // Add the subject link
-			message.setSubject("Testing Subject");
+			message.setSubject("Testing Status");
 
 			// Create object to add multimedia type content
 			BodyPart messageBodyPart1 = new MimeBodyPart();

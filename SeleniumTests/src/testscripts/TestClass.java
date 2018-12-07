@@ -2,7 +2,7 @@ package testscripts;
 
 import java.io.IOException;
 
-
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import baseClass.DriverHelper;
@@ -11,6 +11,14 @@ import utitlities.Logs;
 
 public class TestClass extends DriverHelper{
 	
+	
+	@AfterMethod
+	
+	public void aftermethod(){
+		
+	DriverHelper.switchToParentWindow();
+		
+	}
 
 	@Test(priority=1)
 	public static void login() throws InterruptedException, IOException,Exception{
@@ -30,39 +38,39 @@ public class TestClass extends DriverHelper{
 	   	@Test(priority=2)
 		public static void CreateOrder() throws InterruptedException, IOException,Exception{
 	       
-	 //CreateOrder co = new CreateOrder(driver);
-	 //co.Createorderform();
+	 CreateOrder co = new CreateOrder(driver);
+	 co.Createorderform();
 	   		
 	   	}
 	   		@Test(priority=3)
 			public static void ReceiveOrder() throws InterruptedException, IOException,Exception{
-			//ReceiveOrder ro = new ReceiveOrder(driver);
-			//ro.Receiveorderform();	
+			ReceiveOrder ro = new ReceiveOrder(driver);
+			ro.Receiveorderform();	
 	   		
 	   		}
 	   		
 	   		@Test(priority=4)
 			public static void TestOrder() throws InterruptedException, IOException,Exception{
-	      //pages.Test ts = new pages.Test(driver);
-	   // ts.testorder();
+	      pages.Test ts = new pages.Test(driver);
+	    ts.testorder();
 	   		}
 	   		
 	   		@Test(priority=5)
 			public static void RepairOrder() throws InterruptedException, IOException,Exception{
-	       //Repair rp =new Repair(driver);
-	      //rp.Repairorder();
+	       Repair rp =new Repair(driver);
+	      rp.Repairorder();
 	   		}
 	   		
 	   		@Test(priority=6)
 			public static void QCOrder() throws InterruptedException, IOException,Exception{
-	     //QualityCheck qc = new QualityCheck(driver);
-	     // qc.QCOrd();
+	     QualityCheck qc = new QualityCheck(driver);
+	      qc.QCOrd();
 	   		}
 	   			@Test(priority=7)
 				public static void PackOrder() throws InterruptedException, IOException,Exception{
 	       
-	      // PackageOrder po = new PackageOrder(driver);
-	     // po.Packorder();
+	       PackageOrder po = new PackageOrder(driver);
+	      po.Packorder();
 	   			}
 	   				@Test(priority=8)
 	   				public static void ShipOrder() throws InterruptedException, IOException,Exception{
