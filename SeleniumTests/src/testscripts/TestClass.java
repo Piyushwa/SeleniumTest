@@ -42,7 +42,7 @@ public class TestClass extends DriverHelper{
 	 co.Createorderform();
 	   		
 	   	}
-	   		@Test(priority=3)
+	   /*		@Test(priority=3)
 			public static void ReceiveOrder() throws InterruptedException, IOException,Exception{
 			ReceiveOrder ro = new ReceiveOrder(driver);
 			ro.Receiveorderform();	
@@ -75,7 +75,7 @@ public class TestClass extends DriverHelper{
 	   				@Test(priority=8)
 	   				public static void ShipOrder() throws InterruptedException, IOException,Exception{
 	     Shipping sp = new Shipping(driver);
-	      sp.Shippingorder();
+	      sp.Shippingorder();  
 }
-	
+	*/
 }

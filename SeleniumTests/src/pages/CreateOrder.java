@@ -82,8 +82,11 @@ Thread.sleep(2000);
 		WebElement Ordertyp = driver.findElement(By.xpath(loc_Ordertype));
 		
 		Ordertyp.sendKeys("AdvanceReplacement");
-		Ordertyp.sendKeys(Keys.ARROW_DOWN);
-		Ordertyp.sendKeys(Keys.ENTER);
+		
+		Thread.sleep(3000);
+	DriverHelper.pressKeyDown(Ordertyp);
+	Thread.sleep(1000);
+	DriverHelper.pressKeyEnter(Ordertyp);
 		WebElement Date1 = driver.findElement(By.xpath(loc_Orderdate));
 				Date1.sendKeys(Todaydate);
 				Date1.sendKeys(Keys.TAB);
@@ -95,6 +98,9 @@ Thread.sleep(2000);
 		
 		driver.findElement(By.xpath(loc_POno)).sendKeys(Pono);
 		driver.findElement(By.xpath(loc_contactno)).sendKeys(contactno);
+		
+		WebElement continuebutton = driver.findElement(By.xpath(loc_orderContinue));
+		DriverHelper.scrolltoElement(continuebutton);
 		WebElement Ordernotesnew =  driver.findElement(By.xpath(loc_ordernotes));
 		Ordernotesnew.sendKeys(ordernotes);
 		DriverHelper.pressKeyEnter(Ordernotesnew);
