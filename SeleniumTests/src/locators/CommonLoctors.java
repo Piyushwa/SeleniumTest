@@ -25,6 +25,7 @@ public interface CommonLoctors {
     String loc_OrderApply = "//button[contains(text(),'Apply')]";
 	String loc_CreateOrderbutton = "//*[@id='btnCreateOrder']";
 	String loc_Orderno = "/html/body/app-root/div/div/app-orders/section[2]/div/p-sidebar/div/component-order-editor/section[2]/div[1]/div[1]/form/div/div[2]/div[1]/input";
+	String loc_Ordertype = "/html/body/app-root/div/div/app-orders/section[2]/div/p-sidebar/div/component-order-editor/section[2]/div[1]/div[1]/form/div/div[2]/div[2]/div/p-autocomplete/span/input";
 	String loc_Orderdate = "//input[@name ='orderDate']";
 	String loc_duedate = "//input[@name ='dueDate']";
 	String loc_POno ="//input[@name ='poNumber']";

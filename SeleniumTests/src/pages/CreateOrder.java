@@ -79,6 +79,11 @@ Thread.sleep(2000);
 
 		driver.findElement(By.xpath(loc_Orderno)).sendKeys(Orderno);
 		
+		WebElement Ordertyp = driver.findElement(By.xpath(loc_Ordertype));
+		
+		Ordertyp.sendKeys("AdvanceReplacement");
+		Ordertyp.sendKeys(Keys.ARROW_DOWN);
+		Ordertyp.sendKeys(Keys.ENTER);
 		WebElement Date1 = driver.findElement(By.xpath(loc_Orderdate));
 				Date1.sendKeys(Todaydate);
 				Date1.sendKeys(Keys.TAB);

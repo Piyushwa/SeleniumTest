@@ -556,3 +556,8 @@
 2018-12-07 13:59:56  [TestCase1] (main:) Login on OLP URL
 2018-12-07 14:00:06  [Login] (main:) Login Successfully
 2018-12-07 14:00:07  [TestCase1] (main:) Logged In OLP URL
+2018-12-07 17:51:53  [TestCase1] (main:) Login on OLP URL
+2018-12-07 17:51:59  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (06f72f9b8806a1156828d836371eede6)] -> id: userNameInput]data is entered
+2018-12-07 17:52:09  [Login] (main:) Login Successfully
+2018-12-07 17:52:10  [TestCase1] (main:) Logged In OLP URL
+2018-12-07 17:52:18  [Create Order] (main:) Start Order Creation
