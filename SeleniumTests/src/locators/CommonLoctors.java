@@ -15,6 +15,14 @@ public interface CommonLoctors {
 	//create order locators
 	String loc_Order = "//a/span[contains(text(),'Orders')]";
 	String loc_components = "//a/span[contains(text(),'Components')]";
+	String loc_Ordernumfilter = "//input[@name ='orderNumber']";
+	
+     String loc_OrderStatusfilter = "/html/body/app-root/div/div/app-orders/section[2]/div/div[1]/div[2]/form/div/div[2]/div/p-multiselect/div/div[2]/label";
+    String loc_OrderStatusValue = "/html/body/app-root/div/div/app-orders/section[2]/div/div[1]/div[2]/form/div/div[2]/div/p-multiselect/div/div[4]/div[1]/div[2]/input";
+    String loc_Orderstatuscheck = "/html/body/app-root/div/div/app-orders/section[2]/div/div[1]/div[2]/form/div/div[2]/div/p-multiselect/div/div[4]/div[2]/ul/li[2] ";
+    String loc_OrderStartdatefilter = "//input[@name ='startDueDate']";
+    String loc_OrderEnddatefilter = "//input[@name ='endDueDate']";
+    String loc_OrderApply = "//button[contains(text(),'Apply')]";
 	String loc_CreateOrderbutton = "//*[@id='btnCreateOrder']";
 	String loc_Orderno = "/html/body/app-root/div/div/app-orders/section[2]/div/p-sidebar/div/component-order-editor/section[2]/div[1]/div[1]/form/div/div[2]/div[1]/input";
 	String loc_Orderdate = "//input[@name ='orderDate']";
