@@ -53,14 +53,11 @@ WebDriver driver;
 		String Symptoms = ReadExcelFile.getCellData(2,17);
 
 
-
-
-
 		WebElement Reports = driver.findElement(By.xpath(loc_Reports));
 		Reports.click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
-	WebElement Scrollelem1 = driver.findElement(By.xpath(loc_components));
+	WebElement Scrollelem1 = driver.findElement(By.xpath(loc_Order));
         Actions actions = new Actions(driver);
         actions.moveToElement(Scrollelem1);
         actions.build().perform();

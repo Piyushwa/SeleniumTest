@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,6 +23,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -144,6 +146,7 @@ public  static void sendKeys(WebElement element, String TestData){
 			
 			element.clear();
 			element.sendKeys(TestData);
+			utitlities.Logs.take_logs("DriverHelper", element + "data is entered");
 		} catch (Exception e) {
 			
 			e.printStackTrace();
@@ -292,6 +295,18 @@ public static void mouseClickByLocator( WebElement MouseClickElem ) {
     builder.build().perform();
 }
 
+
+	public static void selectDropdownValue(WebElement elem, String DropDownValue, String loctor ) throws Exception{
+		
+			try {
+				Select select = new Select(driver.findElement(By.xpath(loctor)));
+				select.selectByVisibleText(DropDownValue);
+			
+			} catch (NoSuchElementException e) {
+				e.printStackTrace();
+			} 
+		}
+	
 @AfterSuite
 public void browser_close()
 {
