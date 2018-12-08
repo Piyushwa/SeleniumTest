@@ -69,7 +69,7 @@ public class SendMailSSLWithAttachment {
 			message.setFrom(new InternetAddress("Piyushwadhwa23@gmail.com"));
 
 			// Set the recipient address
-			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("vishnu@ctdi.com"));
+			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("Piyushwadhwa23@gmail.com"));
             
                         // Add the subject link
 			message.setSubject("Testing Status");

@@ -307,7 +307,7 @@ public static void mouseClickByLocator( WebElement MouseClickElem ) {
 			} 
 		}
 	
-@AfterSuite
+/*@AfterSuite
 public void browser_close()
 {
 	driver.close();
@@ -315,7 +315,7 @@ public void browser_close()
 	utitlities.SendMailSSLWithAttachment.sendmail();
 	//test.log(LogStatus.PASS, "Browser Closed Successfully");
 	//extent.endTest(test);
-}
+}*/
 
 
 	

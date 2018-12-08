@@ -35,27 +35,27 @@ public class TestClass extends DriverHelper{
 		Logs.take_logs("TestCase1","Logged In OLP URL");
 	       Thread.sleep(2000);
 	}
-	   	@Test(priority=2)
-		public static void CreateOrder() throws InterruptedException, IOException,Exception{
+	/*	@Test(priority=2)
+		//public static void CreateOrder() throws InterruptedException, IOException,Exception{
 	       
-	 CreateOrder co = new CreateOrder(driver);
-	 co.Createorderform();
+	 //CreateOrder co = new CreateOrder(driver);
+	// co.Createorderform();
 	   		
-	   	}
-	   /*		@Test(priority=3)
+	   	//}
+	   		@Test(priority=2)
 			public static void ReceiveOrder() throws InterruptedException, IOException,Exception{
 			ReceiveOrder ro = new ReceiveOrder(driver);
 			ro.Receiveorderform();	
 	   		
-	   		}
+	   		}*/
 	   		
-	   		@Test(priority=4)
+	   			@Test(priority=4)
 			public static void TestOrder() throws InterruptedException, IOException,Exception{
 	      pages.Test ts = new pages.Test(driver);
 	    ts.testorder();
 	   		}
 	   		
-	   		@Test(priority=5)
+	   			/*	@Test(priority=5)
 			public static void RepairOrder() throws InterruptedException, IOException,Exception{
 	       Repair rp =new Repair(driver);
 	      rp.Repairorder();

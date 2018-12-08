@@ -8,9 +8,8 @@
     <classes>
       <class name="testscripts.TestClass">
         <methods>
+          <include name="ReceiveOrder"/>
           <include name="getBrowser"/>
-          <include name="CreateOrder"/>
-          <include name="browser_close"/>
           <include name="aftermethod"/>
         </methods>
       </class> <!-- testscripts.TestClass -->

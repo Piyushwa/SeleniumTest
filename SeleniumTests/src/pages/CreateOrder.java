@@ -2,16 +2,20 @@ package pages;
 
 import java.util.List;
 
+
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.hssf.record.PageBreakRecord.Break;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 import baseClass.DriverHelper;
+
 import locators.CommonLoctors;
 import utitlities.Logs;
 import utitlities.ReadExcelFile;
@@ -51,6 +55,7 @@ WebDriver driver;
 		String Serialno = ReadExcelFile.getCellData(2,15);
 		String Partno = ReadExcelFile.getCellData(2,16);
 		String Symptoms = ReadExcelFile.getCellData(2,17);
+		String typevalue = ReadExcelFile.getCellData(2,18);
 
 
 		WebElement Reports = driver.findElement(By.xpath(loc_Reports));
@@ -66,7 +71,7 @@ Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.findElement(By.xpath(loc_Order)).click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
+	driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 		//DriverHelper.switchToNewWindow();
 		//for(String winHandle : driver.getWindowHandles()){
 			// driver.switchTo().window(winHandle);
@@ -81,12 +86,16 @@ Thread.sleep(2000);
 		
 		WebElement Ordertyp = driver.findElement(By.xpath(loc_Ordertype));
 		
-		Ordertyp.sendKeys("AdvanceReplacement");
+		Ordertyp.click();
+		
+		String Ordertypeopt = "//span[contains(text(),'"+typevalue+"')]";
 		
 		Thread.sleep(3000);
-	DriverHelper.pressKeyDown(Ordertyp);
-	Thread.sleep(1000);
-	DriverHelper.pressKeyEnter(Ordertyp);
+		
+		driver.findElement(By.xpath(Ordertypeopt)).click();
+	//DriverHelper.pressKeyDown(Ordertyp);
+	////Thread.sleep(1000);
+	//DriverHelper.pressKeyEnter(Ordertyp);
 		WebElement Date1 = driver.findElement(By.xpath(loc_Orderdate));
 				Date1.sendKeys(Todaydate);
 				Date1.sendKeys(Keys.TAB);
@@ -101,10 +110,12 @@ Thread.sleep(2000);
 		
 		WebElement continuebutton = driver.findElement(By.xpath(loc_orderContinue));
 		DriverHelper.scrolltoElement(continuebutton);
-		WebElement Ordernotesnew =  driver.findElement(By.xpath(loc_ordernotes));
-		Ordernotesnew.sendKeys(ordernotes);
-		DriverHelper.pressKeyEnter(Ordernotesnew);
-		driver.findElement(By.xpath(loc_orderContinue)).click();
+		//WebElement Ordernotesnew =  driver.findElement(By.xpath(loc_ordernotes));
+		//Ordernotesnew.sendKeys(ordernotes)
+		//DriverHelper.pressKeyEnter(Ordernotesnew);
+		
+		continuebutton.click();
+		//driver.findElement(By.xpath(loc_orderContinue)).click();
 		driver.findElement(By.xpath(loc_contact)).sendKeys(contact);
 		driver.findElement(By.xpath(loc_Address)).sendKeys(Address);
 		driver.findElement(By.xpath(loc_city)).sendKeys(city);
@@ -145,14 +156,48 @@ Thread.sleep(2000);
 
   		WebElement Scrollelem3 = driver.findElement(By.xpath(loc_SaveOrder));
   		
+  	
+  		
 		DriverHelper.scrolltoElement(Scrollelem3);
 		Thread.sleep(1000);
 		Scrollelem3.click();
 		
-		WebElement Orderfilter =  driver.findElement(By.xpath(loc_Ordernumfilter));
-		Orderfilter.sendKeys(Orderno);
-		driver.findElement(By.xpath(loc_OrderApply)).click();
+		String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 		
+		System.out.println(Message);
+		
+		if(Message.contains("unexpected")){
+			
+			System.out.println("Order is not created: Duplicate Order is created");
+			
+		}
+		
+		else {
+		
+	
+		WebElement Orderfilter =  driver.findElement(By.xpath(loc_Ordernumfilter));
+		
+		DriverHelper.waitTillElementFound(Orderfilter, 10);
+		Thread.sleep(3000);
+		Orderfilter.sendKeys(Orderno);
+		Thread.sleep(1000);
 
+		driver.findElement(By.xpath(loc_OrderApply)).click();
+		Thread.sleep(3000);
+		List<WebElement> Ordernamecol = driver.findElements(By.xpath("//div/div/table/tbody/tr/td[1]"));
+
+		
+		 for(int i=0;i<Ordernamecol.size();i++){
+		        // match the content here in the if loop
+		
+			
+			String Ordernumber = Ordernamecol.get(i).getText();
+			System.out.println("Nu  is  " +Ordernumber);
+			System.out.println("Order is Created");
+	
+	Assert.assertEquals(Ordernumber, Orderno);
+		 break;
+		 }
+		}
 	}
 }

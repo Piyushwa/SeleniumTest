@@ -81,9 +81,21 @@ WebElement Submiit = driver.findElement(By.xpath(loc_ReceiveSubmit));
 
 driver.findElement(By.xpath(loc_receivingnotes)).click();
 driver.findElement(By.xpath(loc_receivingnotes)).sendKeys(Receivenotes);
-DriverHelper.clickWebelement(Submiit);
+Thread.sleep(6000);
+Submiit.click();
 
 
+String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
+
+System.out.println(Message);
+
+if(Message.contains("already exists")){
+	
+	System.out.println("RO Number is already avaliable: " +Message);
+	
+}
+
+else {
 Thread.sleep(6000);
 
 WebElement RecvPrinter = driver.findElement(By.xpath(loc_RecvPrinter));
@@ -100,7 +112,7 @@ RecvLocations.sendKeys(Keys.ENTER);
 
 driver.findElement(By.xpath(loc_RecvFinalSubmit)).click();
 
-
+}
 
 	}
 

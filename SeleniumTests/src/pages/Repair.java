@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -30,6 +31,10 @@ WebDriver driver;
 		String RepairSerialNu = ReadExcelFile.getCellData(9,1);
 		String Repairloc = ReadExcelFile.getCellData(9,2);
 		String RepairStatus = ReadExcelFile.getCellData(9,3);
+		String Componentnu = ReadExcelFile.getCellData(9,4);
+		String SymptomOpt = ReadExcelFile.getCellData(9,5);
+		String Defectopt = ReadExcelFile.getCellData(9,6);
+		
 		
 		
 		driver.findElement(By.xpath(loc_RepairOption)).click();
@@ -56,12 +61,24 @@ WebDriver driver;
 	     if(RepairStatus.equalsIgnoreCase("Repairable")){
 	    	 driver.findElement(By.xpath(loc_Repairablechckbox)).click();
 	    	 driver.findElement(By.xpath(loc_RepairPartsbutton)).click();
-	    	 driver.findElement(By.xpath(loc_RepairComponent)).sendKeys("1802401773");
+	    	WebElement Component =  driver.findElement(By.xpath(loc_RepairComponent));
+   		Component .sendKeys(Componentnu);
+   		Thread.sleep(6000);
+   		Component.sendKeys(Keys.DOWN);
+   		Component.sendKeys(Keys.ENTER);
 	    	 Thread.sleep(2000);
-	    	 driver.findElement(By.xpath(loc_RepairSymptom)).sendKeys("Intermittent Power");
-	    	 Thread.sleep(2000);
+	    	WebElement  Symptom =  driver.findElement(By.xpath(loc_RepairSymptom));
+	    	Symptom.sendKeys(SymptomOpt);
+	    	 Thread.sleep(3000);
+	    	 Symptom.sendKeys(Keys.DOWN);
+	    	 Symptom.sendKeys(Keys.ENTER);
 
-	    	 driver.findElement(By.xpath(loc_RepairDefect)).sendKeys("Damaged Component");
+	    	WebElement Defect =  driver.findElement(By.xpath(loc_RepairDefect));
+	    	Defect.sendKeys(Defectopt);
+	    	 Thread.sleep(3000);
+	    	 
+	    	 Defect.sendKeys(Keys.DOWN);
+	    	 Defect.sendKeys(Keys.ENTER);
 	    	 Thread.sleep(2000);
 	    	 driver.findElement(By.xpath(loc_RepairAddinfo)).click();
 	    	 driver.findElement(By.xpath(loc_RepairSubmitPart)).click();
