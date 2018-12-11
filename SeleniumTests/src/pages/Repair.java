@@ -90,8 +90,6 @@ WebDriver driver;
 	    	 driver.findElement(By.xpath(loc_Repairnotes)).sendKeys("Test Repairable");
 	    	 
 	    	 CompleteRep.click();
-
-
 	    	 
 	     }
 	     if(RepairStatus.equalsIgnoreCase("NTF")){
@@ -123,8 +121,7 @@ WebDriver driver;
 	  		Actions actions2 = new Actions(driver);
 	  		actions2.moveToElement(RepairlocSub3);
 	  		actions2.click();
-	  		actions2.build().perform();
-	    	 
+	  		actions2.build().perform(); 	 
 	    	 
 	}
 	     

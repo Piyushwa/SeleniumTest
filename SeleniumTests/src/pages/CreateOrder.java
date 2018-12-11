@@ -5,6 +5,7 @@ import java.util.List;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.http.util.Asserts;
 import org.apache.poi.hssf.record.PageBreakRecord.Break;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -56,9 +57,14 @@ WebDriver driver;
 		String Partno = ReadExcelFile.getCellData(2,16);
 		String Symptoms = ReadExcelFile.getCellData(2,17);
 		String typevalue = ReadExcelFile.getCellData(2,18);
+		String StatusCheck = ReadExcelFile.getCellData(2,19);
 
 
 		WebElement Reports = driver.findElement(By.xpath(loc_Reports));
+		
+		DriverHelper.scrolltoElement(Reports);
+		Thread.sleep(2000);
+
 		Reports.click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
@@ -71,7 +77,7 @@ Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.findElement(By.xpath(loc_Order)).click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
+/*	driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 		//DriverHelper.switchToNewWindow();
 		//for(String winHandle : driver.getWindowHandles()){
 			// driver.switchTo().window(winHandle);
@@ -172,14 +178,14 @@ Thread.sleep(2000);
 			
 		}
 		
-		else {
+		else {*/
 		
 	
 		WebElement Orderfilter =  driver.findElement(By.xpath(loc_Ordernumfilter));
 		
 		DriverHelper.waitTillElementFound(Orderfilter, 10);
 		Thread.sleep(3000);
-		Orderfilter.sendKeys(Orderno);
+		Orderfilter.sendKeys("Ord");
 		Thread.sleep(1000);
 
 		driver.findElement(By.xpath(loc_OrderApply)).click();
@@ -189,15 +195,53 @@ Thread.sleep(2000);
 		
 		 for(int i=0;i<Ordernamecol.size();i++){
 		        // match the content here in the if loop
+			 
+			 System.out.println("Size of Order" +Ordernamecol.size());
 		
 			
 			String Ordernumber = Ordernamecol.get(i).getText();
 			System.out.println("Nu  is  " +Ordernumber);
 			System.out.println("Order is Created");
+			
+			Thread.sleep(6000);
 	
 	Assert.assertEquals(Ordernumber, Orderno);
-		 break;
+		
 		 }
-		}
+		 
+	Thread.sleep(1000);
+		 Orderfilter.clear();
+		 
+			driver.findElement(By.xpath(loc_OrderApply)).click();
+		
+		 driver.findElement(By.xpath(loc_OrderStatusfilter)).click();
+		 
+		 driver.findElement(By.xpath(loc_OrderStatusValue)).sendKeys(StatusCheck);
+			Thread.sleep(1000);
+			driver.findElement(By.xpath(loc_Orderstatuscheck)).click();
+			
+	List<WebElement> Statuscol = driver.findElements(By.xpath("//div/div/table/tbody/tr/td[2]"));
+		 
+			 for(int i=0;i<Statuscol.size();i++){
+				 
+	if( Statuscol.get(i).getText().equalsIgnoreCase(StatusCheck)){
+		
 	}
-}
+		
+	else {
+		
+		System.out.println("Filter is not working");
+		
+		Assert.fail("filter is not working");
+	}
+		
+				 
+			 }
+			 
+				 
+				 
+		}
+		
+		
+	}
+//}

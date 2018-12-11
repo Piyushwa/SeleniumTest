@@ -178,10 +178,17 @@ String loc_CreateParts = "//a[@href ='#/parts' ]";
 String loc_CreatePartsButton ="//button[contains(text(),'Create Part')]";
 String loc_Partsname = "//input[@name ='partNumber']";
 String loc_PartsDescription = "//div/textarea[@name ='description']";
-String loc_Partfamily = "/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[3]/div/p-autocomplete/span/input";
-String loc_PartType = "/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[4]/div/p-autocomplete/span/input";
-String loc_PartOrigin ="/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[5]/div/p-autocomplete/span/input";
+String loc_Partfamily = "/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[1]/div[2]/div[1]/div/p-autocomplete/span/input";
+String loc_PartType = "/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[1]/div[2]/div[2]/div/p-autocomplete/span/input";
+String loc_PartOrigin ="/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[1]/div[2]/div[3]/div/p-autocomplete/span/input";
+
+String loc_AvailableMapvalue = "/html/body/app-root/div/div/app-parts/section[2]/div/p-sidebar[1]/div/part-editor-component/div/form/div[1]/div[2]/div/div[1]/p-listbox/div/div[3]/div[2]/input";
+
+String loc_throwtoMapped = "//button[@class ='btn btn-default wd-xxs']";
 String loc_CreatePartSubmit = "//button[contains(text(),'Submit')] ";
+
+String loc_Partfilter =  "//input[@name ='orderNumber']";
+String loc_filterApply = "//button[contains(text(),'Apply')]";
 
 //Setting - CreateBranches
 String loc_CreateBranch = "//a[@href='#/branches']";

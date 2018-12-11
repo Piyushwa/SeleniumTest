@@ -111,7 +111,7 @@ RecvLocations.sendKeys(Keys.DOWN);
 RecvLocations.sendKeys(Keys.ENTER);
 
 driver.findElement(By.xpath(loc_RecvFinalSubmit)).click();
-
+Thread.sleep(6000);
 }
 
 	}
