@@ -34,7 +34,7 @@ public class ReceiveOrder implements CommonLoctors{
 		
 		driver.findElement(By.xpath(loc_Receiveoption)).click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath(loc_Receiveserialnoinput)).sendKeys(ReceiveSrl +"\n");
 		
 		driver.findElement(By.xpath(loc_ReceiveROnumber)).sendKeys(Rono);

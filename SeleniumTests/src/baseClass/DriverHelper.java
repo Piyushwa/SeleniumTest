@@ -114,6 +114,13 @@ public class DriverHelper implements CommonLoctors {
 		
 	}
 
+@BeforeMethod
+
+public void BeforeMethod() throws InterruptedException{
+	
+	Thread.sleep(3000);
+	
+}
 	
 
 public static String getDateStamp() {
@@ -317,6 +324,13 @@ public void browser_close()
 	//extent.endTest(test);
 }*/
 
+@AfterMethod
+	
+	public void aftermethod() throws InterruptedException{
+		
+DriverHelper.navigate_back();
 
+Thread.sleep(2000);
+}
 	
 }

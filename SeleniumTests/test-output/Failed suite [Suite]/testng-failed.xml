@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
   <listeners>
     <listener class-name="utitlities.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)(failed)">
     <classes>
       <class name="testscripts.TestClass">
         <methods>
-          <include name="PackOrder"/>
-          <include name="QCOrder"/>
-          <include name="ShipOrder"/>
           <include name="getBrowser"/>
-          <include name="BeforeMethod"/>
           <include name="aftermethod"/>
+          <include name="RepairOrder"/>
         </methods>
       </class> <!-- testscripts.TestClass -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

@@ -22,7 +22,7 @@ public interface CommonLoctors {
     String loc_Orderstatuscheck = "/html/body/app-root/div/div/app-orders/section[2]/div/div[1]/div[2]/form/div/div[2]/div/p-multiselect/div/div[4]/div[2]/ul/li[2] ";
     String loc_OrderStartdatefilter = "//input[@name ='startDueDate']";
     String loc_OrderEnddatefilter = "//input[@name ='endDueDate']";
-    String loc_OrderApply = "//button[contains(text(),'Apply')]";
+    String loc_OrderApply = "/html/body/app-root/div/div/app-orders/section[2]/div/div[1]/div[2]/form/div/div[5]/div/button";
 	String loc_CreateOrderbutton = "//*[@id='btnCreateOrder']";
 	String loc_Orderno = "/html/body/app-root/div/div/app-orders/section[2]/div/p-sidebar/div/component-order-editor/section[2]/div[1]/div[1]/form/div/div[2]/div[1]/input";
 	String loc_Ordertype = "/html/body/app-root/div/div/app-orders/section[2]/div/p-sidebar/div/component-order-editor/section[2]/div[1]/div[1]/form/div/div[2]/div[2]/div/p-autocomplete/span/button";
@@ -219,12 +219,30 @@ String DeliverPartsOptions = "//a/span[contains(text(),'Deliver Parts')]";
 
 //Component Receiving
 
+String loc_CmRecLocation = "//input[@placeholder ='Enter Location # ...']";
+
+String loc_CmRecModel = "//input[@placeholder ='Enter Model # ...']";
+
+String loc_CmRecSerial =  "//input[@name ='serialNumber']";
+
+String loc_compAddlistbutton = "//button[contains(text(),'Add to list')]";
+
+String loc_CompRecvSubmit = "//button[contains(text(),'Submit')]";
+
 
 //component putaway
 
+
+String loc_CmputModal = "/html/body/app-root/div/div/app-repair-component-putaway/section[2]/form/div/div/div/div/div/div/p-autocomplete/span/input";
+String loc_CmputSerial = "//input[@name ='serialNumber']";
+String loc_Cmputin = "//input[@name ='toBin']";
+String loc_cmputSubmit = "//button[contains(text(),'Submit')]";
+
+
+
 //logsviewer
 
-String loc_logviewer = "";
+
 
 
 }

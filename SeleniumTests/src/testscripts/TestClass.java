@@ -12,13 +12,9 @@ import utitlities.Logs;
 public class TestClass extends DriverHelper{
 	
 	
-	@AfterMethod
 	
-	public void aftermethod(){
 		
-DriverHelper.navigate_back();
-		
-	}
+
 
 	@Test(priority=1)
 	public static void login() throws InterruptedException, IOException,Exception{
@@ -37,41 +33,44 @@ DriverHelper.navigate_back();
 	}
 	
 	
-	@Test(priority=2)
+	/*@Test(priority=2)
+public static void CreatePart() throws InterruptedException, IOException,Exception{
+   
+CreatePart cp = new CreatePart(driver);
+cp.CreatePartMaster();;
+		
+	}
+	
+	
+		@Test(priority=2)
 	public static void CreateOrder() throws InterruptedException, IOException,Exception{
        
  CreateOrder co = new CreateOrder(driver);
 co.Createorderform();
    		
-   	}
+   	}*/
 
-	/*@Test(priority=2)
-	public static void CreatePartMast() throws InterruptedException, IOException,Exception{
-	    CreatePart cp = new CreatePart(driver);
-	    cp.CreatePartMaster();
-	   		}
-	   		
+	
+	@Test(priority=3)
+	public static void ReceiveOrder() throws InterruptedException, IOException,Exception{
+	ReceiveOrder ro = new ReceiveOrder(driver);
+	ro.Receiveorderform();	
+		
+		}
+	
+	@Test(priority=4)
+	public static void TestOrder() throws InterruptedException, IOException,Exception{
+  pages.Test ts = new pages.Test(driver);
+ts.testorder();
+		}
+	
+@Test(priority=5)
+	public static void RepairOrder() throws InterruptedException, IOException,Exception{
+   Repair rp =new Repair(driver);
+  rp.Repairorder();
+		}
 		
 	
-	   		@Test(priority=2)
-			public static void ReceiveOrder() throws InterruptedException, IOException,Exception{
-			ReceiveOrder ro = new ReceiveOrder(driver);
-			ro.Receiveorderform();	
-	   		
-	   		}
-	   		
-	   			@Test(priority=2)
-			public static void TestOrder() throws InterruptedException, IOException,Exception{
-	      pages.Test ts = new pages.Test(driver);
-	    ts.testorder();
-	   		}*/
-	   		
-	   			/*	@Test(priority=5)
-			public static void RepairOrder() throws InterruptedException, IOException,Exception{
-	       Repair rp =new Repair(driver);
-	      rp.Repairorder();
-	   		}
-	   		
 	   		@Test(priority=6)
 			public static void QCOrder() throws InterruptedException, IOException,Exception{
 	     QualityCheck qc = new QualityCheck(driver);
@@ -88,5 +87,5 @@ co.Createorderform();
 	     Shipping sp = new Shipping(driver);
 	      sp.Shippingorder();  
 }
-	*/
+	
 }

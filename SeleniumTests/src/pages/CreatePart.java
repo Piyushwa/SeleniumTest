@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import locators.CommonLoctors;
+import utitlities.ReadExcelFile;
 
 public class CreatePart implements CommonLoctors {
 	
@@ -21,7 +22,16 @@ WebDriver driver;
 	
 	public void CreatePartMaster() throws InterruptedException,Exception{
 		
-		String Avlbmapvalue = "Test1234";
+		
+		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		
+		String Partnu = ReadExcelFile.getCellData(17,1);
+		String PartDesc = ReadExcelFile.getCellData(17,2);
+
+		String FamilyTyp = ReadExcelFile.getCellData(17,3);
+		String PartTyp = ReadExcelFile.getCellData(17,4);
+		String OriginTyp = ReadExcelFile.getCellData(17,5);
+		String Avlbmapvalue = ReadExcelFile.getCellData(17,6);
 		driver.findElement(By.xpath(loc_Settings)).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath(loc_CreateParts)).click();
@@ -30,17 +40,17 @@ WebDriver driver;
 		driver.findElement(By.xpath(loc_CreatePartsButton)).click();
 		
 		Thread.sleep(2000);
-		driver.findElement(By.xpath(loc_Partsname)).sendKeys("TestPart192");
+		driver.findElement(By.xpath(loc_Partsname)).sendKeys(Partnu);
 		
-		driver.findElement(By.xpath(loc_PartsDescription)).sendKeys("TestNotes");
+		driver.findElement(By.xpath(loc_PartsDescription)).sendKeys(PartDesc);
 		Thread.sleep(6000);
 	WebElement Family = 	driver.findElement(By.xpath(loc_Partfamily));
-	Family.sendKeys("1300");
+	Family.sendKeys(FamilyTyp);
 		Thread.sleep(6000);
 		Family.sendKeys(Keys.DOWN);
 		Family.sendKeys(Keys.ENTER);
 	WebElement Type = 	driver.findElement(By.xpath(loc_PartType));
-	Type.sendKeys("A");
+	Type.sendKeys(PartTyp);
 	Thread.sleep(6000);
 	Type.sendKeys(Keys.DOWN);
 	Type.sendKeys(Keys.ENTER);
@@ -53,7 +63,7 @@ WebDriver driver;
 	Actions action =new Actions(driver);
 	action.moveToElement(Origin);
 action.build().perform();
-	Origin.sendKeys("1090");
+	Origin.sendKeys(OriginTyp);
 	Thread.sleep(6000);
 	Origin.sendKeys(Keys.DOWN);
 	Origin.sendKeys(Keys.ENTER);
@@ -78,9 +88,10 @@ action.build().perform();
 	}
 	
 	else{
-	driver.findElement(By.xpath(loc_Partfilter)).sendKeys("TestPart123");
+	driver.findElement(By.xpath(loc_Partfilter)).sendKeys(Partnu);
 	
 	driver.findElement(By.xpath(loc_filterApply)).click();
+	
 	}
 	}
 }

@@ -842,3 +842,126 @@
 2018-12-10 21:55:54  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (33a4c6284fcf451c247a692b221cfa67)] -> id: userNameInput]data is entered
 2018-12-10 21:56:02  [Login] (main:) Login Successfully
 2018-12-10 21:56:03  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 13:18:08  [TestCase1] (main:) Login on OLP URL
+2018-12-11 13:18:21  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (a1eca5fa93428e66adf836c4b713e48c)] -> id: userNameInput]data is entered
+2018-12-11 13:18:35  [Login] (main:) Login Successfully
+2018-12-11 13:18:36  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 13:22:31  [TestCase1] (main:) Login on OLP URL
+2018-12-11 13:22:36  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (bcf7423debffc877a8dee1de82e55fa7)] -> id: userNameInput]data is entered
+2018-12-11 13:22:46  [Login] (main:) Login Successfully
+2018-12-11 13:22:46  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 13:30:45  [TestCase1] (main:) Login on OLP URL
+2018-12-11 13:30:50  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (1bec3aa79d2b025d94aaf1008787fb9d)] -> id: userNameInput]data is entered
+2018-12-11 13:30:59  [Login] (main:) Login Successfully
+2018-12-11 13:31:00  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 13:43:18  [TestCase1] (main:) Login on OLP URL
+2018-12-11 13:43:24  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (56dfd97a89d2f79467394b7b6f83a550)] -> id: userNameInput]data is entered
+2018-12-11 13:43:33  [Login] (main:) Login Successfully
+2018-12-11 13:43:33  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 13:48:59  [TestCase1] (main:) Login on OLP URL
+2018-12-11 13:49:04  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (2d2ebfbb85f8a50a3aef7f46926fc73c)] -> id: userNameInput]data is entered
+2018-12-11 13:49:13  [Login] (main:) Login Successfully
+2018-12-11 13:49:13  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 13:53:33  [TestCase1] (main:) Login on OLP URL
+2018-12-11 13:53:39  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (e1cdb487257ae1265c29aa937db786d9)] -> id: userNameInput]data is entered
+2018-12-11 13:53:52  [Login] (main:) Login Successfully
+2018-12-11 13:53:52  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 13:59:11  [TestCase1] (main:) Login on OLP URL
+2018-12-11 13:59:18  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (e94f6c03021b138899de2a3505c7bd7f)] -> id: userNameInput]data is entered
+2018-12-11 13:59:30  [Login] (main:) Login Successfully
+2018-12-11 13:59:30  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 14:06:47  [TestCase1] (main:) Login on OLP URL
+2018-12-11 14:06:52  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (e5ce3267956d22e447d4b548a89cb5b1)] -> id: userNameInput]data is entered
+2018-12-11 14:07:02  [Login] (main:) Login Successfully
+2018-12-11 14:07:02  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 14:11:41  [TestCase1] (main:) Login on OLP URL
+2018-12-11 14:11:46  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (651487352c937cb0e95305ae2e49507a)] -> id: userNameInput]data is entered
+2018-12-11 14:11:52  [Login] (main:) Login Successfully
+2018-12-11 14:11:52  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 14:16:55  [TestCase1] (main:) Login on OLP URL
+2018-12-11 14:16:59  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d89e19896974650ead53390a9edd7adc)] -> id: userNameInput]data is entered
+2018-12-11 14:17:06  [Login] (main:) Login Successfully
+2018-12-11 14:17:06  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 16:20:49  [TestCase1] (main:) Login on OLP URL
+2018-12-11 16:21:00  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (4236eafe916001d95d0a7fe368e852d7)] -> id: userNameInput]data is entered
+2018-12-11 16:21:15  [Login] (main:) Login Successfully
+2018-12-11 16:21:15  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 16:28:27  [TestCase1] (main:) Login on OLP URL
+2018-12-11 16:28:32  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (01c50c7d3837e8a122d49ef10be770e6)] -> id: userNameInput]data is entered
+2018-12-11 16:28:41  [Login] (main:) Login Successfully
+2018-12-11 16:28:42  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 16:37:19  [TestCase1] (main:) Login on OLP URL
+2018-12-11 16:37:24  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (5891a1fd798be6076b31de3ff46da019)] -> id: userNameInput]data is entered
+2018-12-11 16:37:34  [Login] (main:) Login Successfully
+2018-12-11 16:37:35  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 16:40:16  [TestCase1] (main:) Login on OLP URL
+2018-12-11 16:40:21  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (c2783818a5f0267ca6f6433889dce5b5)] -> id: userNameInput]data is entered
+2018-12-11 16:40:39  [Login] (main:) Login Successfully
+2018-12-11 16:40:39  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 16:49:40  [TestCase1] (main:) Login on OLP URL
+2018-12-11 16:49:44  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (b4d276c0ff9fd89100eb7fef3105cc39)] -> id: userNameInput]data is entered
+2018-12-11 16:49:55  [Login] (main:) Login Successfully
+2018-12-11 16:49:55  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 16:55:03  [TestCase1] (main:) Login on OLP URL
+2018-12-11 16:55:09  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (4b915acbd81585b8974da028c5fcde4f)] -> id: userNameInput]data is entered
+2018-12-11 16:55:23  [Login] (main:) Login Successfully
+2018-12-11 16:55:23  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 17:04:47  [TestCase1] (main:) Login on OLP URL
+2018-12-11 17:04:52  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (2ee9b3c3a2d9d54cd21f1b08a5282c14)] -> id: userNameInput]data is entered
+2018-12-11 17:05:07  [Login] (main:) Login Successfully
+2018-12-11 17:05:07  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 17:17:04  [TestCase1] (main:) Login on OLP URL
+2018-12-11 17:17:18  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d90ad89707d235c2a1d77f6f3784f5e5)] -> id: userNameInput]data is entered
+2018-12-11 17:17:27  [Login] (main:) Login Successfully
+2018-12-11 17:17:28  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 17:27:15  [TestCase1] (main:) Login on OLP URL
+2018-12-11 17:27:20  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d2a128ab9f9dc56f646647dbe8d8aa2e)] -> id: userNameInput]data is entered
+2018-12-11 17:27:30  [Login] (main:) Login Successfully
+2018-12-11 17:27:30  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 17:27:48  [Create Order] (main:) Start Order Creation
+2018-12-11 17:28:06  [Create Order] (main:) Complete Order Creation
+2018-12-11 17:50:32  [TestCase1] (main:) Login on OLP URL
+2018-12-11 17:50:37  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (f681d12b6e95818e27d54398ee68d371)] -> id: userNameInput]data is entered
+2018-12-11 17:50:46  [Login] (main:) Login Successfully
+2018-12-11 17:50:46  [TestCase1] (main:) Logged In OLP URL
+2018-12-11 17:51:23  [Repair] (main:) Invalid Repair Status
+2018-12-12 16:40:00  [TestCase1] (main:) Login on OLP URL
+2018-12-12 16:40:06  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (c97bb07a0328273ea83e71c670c50f84)] -> id: userNameInput]data is entered
+2018-12-12 16:40:14  [Login] (main:) Login Successfully
+2018-12-12 16:40:15  [TestCase1] (main:) Logged In OLP URL
+2018-12-12 16:40:29  [Create Order] (main:) Start Order Creation
+2018-12-12 16:40:44  [Create Order] (main:) Complete Order Creation
+2018-12-12 16:48:48  [TestCase1] (main:) Login on OLP URL
+2018-12-12 16:48:53  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (c2db0cad809f8029855b48dd42e9867c)] -> id: userNameInput]data is entered
+2018-12-12 16:49:03  [Login] (main:) Login Successfully
+2018-12-12 16:49:03  [TestCase1] (main:) Logged In OLP URL
+2018-12-12 16:49:19  [Create Order] (main:) Start Order Creation
+2018-12-12 16:49:35  [Create Order] (main:) Complete Order Creation
+2018-12-12 16:54:54  [TestCase1] (main:) Login on OLP URL
+2018-12-12 16:54:58  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (ca32dfcb17c398f1a56b5cd734b317d7)] -> id: userNameInput]data is entered
+2018-12-12 16:55:04  [Login] (main:) Login Successfully
+2018-12-12 16:55:05  [TestCase1] (main:) Logged In OLP URL
+2018-12-12 16:58:15  [TestCase1] (main:) Login on OLP URL
+2018-12-12 16:58:20  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (12c9efae8c1c73683ad538bff2250f1f)] -> id: userNameInput]data is entered
+2018-12-12 16:58:25  [Login] (main:) Login Successfully
+2018-12-12 16:58:26  [TestCase1] (main:) Logged In OLP URL
+2018-12-12 17:03:01  [TestCase1] (main:) Login on OLP URL
+2018-12-12 17:03:08  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (06940a8bf8796641ca8f80dc252352a7)] -> id: userNameInput]data is entered
+2018-12-12 17:03:17  [Login] (main:) Login Successfully
+2018-12-12 17:03:17  [TestCase1] (main:) Logged In OLP URL
+2018-12-12 17:03:57  [Repair] (main:) Invalid Repair Status
+2018-12-12 17:45:06  [TestCase1] (main:) Login on OLP URL
+2018-12-12 17:45:13  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (710a05fbf03b1c4b4bab96ea6f029ab1)] -> id: userNameInput]data is entered
+2018-12-12 17:45:21  [Login] (main:) Login Successfully
+2018-12-12 17:45:22  [TestCase1] (main:) Logged In OLP URL
+2018-12-12 18:15:20  [TestCase1] (main:) Login on OLP URL
+2018-12-12 18:15:31  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (bffba8e96cde390832519c4dff0d9955)] -> id: userNameInput]data is entered
+2018-12-12 18:15:39  [Login] (main:) Login Successfully
+2018-12-12 18:15:39  [TestCase1] (main:) Logged In OLP URL
+2018-12-12 18:15:57  [Create Order] (main:) Start Order Creation
+2018-12-12 18:16:12  [Create Order] (main:) Complete Order Creation
+2018-12-12 19:08:12  [TestCase1] (main:) Login on OLP URL
+2018-12-12 19:08:16  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (0efe0e09fbde4e498fc12ca8a416d0db)] -> id: userNameInput]data is entered
+2018-12-12 19:08:25  [Login] (main:) Login Successfully
+2018-12-12 19:08:25  [TestCase1] (main:) Logged In OLP URL
+2018-12-12 19:10:24  [Repair] (main:) Invalid Repair Status

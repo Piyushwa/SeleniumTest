@@ -5,6 +5,7 @@ import java.util.List;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.collections4.map.StaticBucketMap;
 import org.apache.http.util.Asserts;
 import org.apache.poi.hssf.record.PageBreakRecord.Break;
 import org.openqa.selenium.By;
@@ -25,7 +26,7 @@ public class CreateOrder implements CommonLoctors {
 	
 WebDriver driver;
 
-	
+static int s = 1;
 	public CreateOrder(WebDriver driver) throws InterruptedException{
 		
 		 this.driver = driver;
@@ -35,6 +36,8 @@ WebDriver driver;
 	public void Createorderform() throws InterruptedException,Exception
 	
 	{
+		
+		
 		
 	String Todaydate =	DriverHelper.getDateStamp();
 	System.out.println("Date is:  " +Todaydate);
@@ -77,7 +80,7 @@ Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.findElement(By.xpath(loc_Order)).click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-/*	driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
+driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 		//DriverHelper.switchToNewWindow();
 		//for(String winHandle : driver.getWindowHandles()){
 			// driver.switchTo().window(winHandle);
@@ -172,23 +175,25 @@ Thread.sleep(2000);
 		
 		System.out.println(Message);
 		
-		if(Message.contains("unexpected")){
+		if(Message.contains("Order Number must be unique")){
 			
 			System.out.println("Order is not created: Duplicate Order is created");
 			
 		}
 		
-		else {*/
+		else {
 		
 	
 		WebElement Orderfilter =  driver.findElement(By.xpath(loc_Ordernumfilter));
 		
 		DriverHelper.waitTillElementFound(Orderfilter, 10);
 		Thread.sleep(3000);
-		Orderfilter.sendKeys("Ord");
+		Orderfilter.sendKeys("22170255");
 		Thread.sleep(1000);
 
-		driver.findElement(By.xpath(loc_OrderApply)).click();
+	WebElement ApplyFilter =	driver.findElement(By.xpath(loc_OrderApply));
+		
+	ApplyFilter.click();
 		Thread.sleep(3000);
 		List<WebElement> Ordernamecol = driver.findElements(By.xpath("//div/div/table/tbody/tr/td[1]"));
 
@@ -203,30 +208,56 @@ Thread.sleep(2000);
 			System.out.println("Nu  is  " +Ordernumber);
 			System.out.println("Order is Created");
 			
-			Thread.sleep(6000);
+			Thread.sleep(4000);
 	
-	Assert.assertEquals(Ordernumber, Orderno);
+	Assert.assertEquals(Ordernumber, "22170255");
 		
-		 }
+		}
 		 
-	Thread.sleep(1000);
+	/*Thread.sleep(1000);
 		 Orderfilter.clear();
+		 driver.navigate().back();
+		 driver.navigate().to("https://b2bolpdev.ctdi.com/#/orders");
+			Thread.sleep(4000);
+			
+		
+		 //ApplyFilter.click();
 		 
-			driver.findElement(By.xpath(loc_OrderApply)).click();
+	
 		
 		 driver.findElement(By.xpath(loc_OrderStatusfilter)).click();
 		 
-		 driver.findElement(By.xpath(loc_OrderStatusValue)).sendKeys(StatusCheck);
-			Thread.sleep(1000);
-			driver.findElement(By.xpath(loc_Orderstatuscheck)).click();
+			String loc_Statusvalue = "//label[contains(text(),'"+StatusCheck+"')]";
+			Thread.sleep(2000);
+		// driver.findElement(By.xpath(loc_OrderStatusValue)).sendKeys(StatusCheck);
+			//Thread.sleep(2000);
+			driver.findElement(By.xpath(loc_Statusvalue)).click();
+			Thread.sleep(2000);
+			
+			Orderfilter.click();
+			
+		String loc_ApplyNew  = "//button[contains(text(),'Apply')]" ;
+		WebElement ApplyNew = driver.findElement(By.xpath(loc_ApplyNew));
+		
+		Actions act = new Actions(driver);
+		act.moveToElement(ApplyNew);
+		act.build().perform();
+			
+		DriverHelper.clickWebelement(ApplyNew);
+			
+			Thread.sleep(3000);
 			
 	List<WebElement> Statuscol = driver.findElements(By.xpath("//div/div/table/tbody/tr/td[2]"));
 		 
-			 for(int i=0;i<Statuscol.size();i++){
+			 for(int c=0;c<Statuscol.size();c++){
 				 
-	if( Statuscol.get(i).getText().equalsIgnoreCase(StatusCheck)){
+	if( Statuscol.get(c).getText().equalsIgnoreCase(StatusCheck)){
 		
+
+s++;
 	}
+	
+
 		
 	else {
 		
@@ -236,7 +267,7 @@ Thread.sleep(2000);
 	}
 		
 				 
-			 }
+			 }*/
 			 
 				 
 				 
@@ -244,4 +275,4 @@ Thread.sleep(2000);
 		
 		
 	}
-//}
+}

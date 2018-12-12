@@ -43,9 +43,8 @@ Thread.sleep(3000);
 		 Thread.sleep(3000);
 		 
 		 driver.findElement(By.xpath(loc_Completepack)).click();
-		// String Message  = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
-		 
-		 //System.out.println(Message);
+		String Message  = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
+		 System.out.println(Message);
 		 
 		 
 		
