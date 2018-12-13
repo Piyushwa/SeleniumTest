@@ -210,12 +210,18 @@ String loc_Createloc = "//button[contains(text(),'Create Location')]";
 String loc_Pickpartsoptions = "//a/span[contains(text(),'Pick Parts')]";
 
 String loc_pickorders = "/html/body/app-root/div/div/component-picking-component/section[2]/div/div/div/div[1]/div/div/div/div/p-dropdown/div/label";
-
+String loc_scanPart = "//input[@placeholder ='Scan Part #']";
+String loc_scanloc = "//input[@placeholder ='Scan Location #']";
+String loc_Comp   =  "//table/tbody/tr/td[1]/div";
+String loc_PartpickSubmit =  "//button[contains(text(),'Submit')]";
+String loc_PartsPickingPrinter ="//input[@placeholder ='Enter/Select Printer ...']";
 
 //Deliver parts
 
-String DeliverPartsOptions = "//a/span[contains(text(),'Deliver Parts')]";
-
+String loc_DeliverPartsOptions = "//a/span[contains(text(),'Deliver Parts')]";
+String loc_DeliverOrderno = "//input[@name ='orderNumber']";
+String loc_DeliverSerialno = "//input[@name ='serialNumberOrAssetTag']";
+String loc_PartDelvrySubmit =  "//button[contains(text(),'Submit')]";
 
 //Component Receiving
 

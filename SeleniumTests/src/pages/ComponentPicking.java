@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import baseClass.DriverHelper;
 import locators.CommonLoctors;
@@ -29,7 +30,7 @@ ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\I
 
 		String Modelnumber = ReadExcelFile.getCellData(19,2);
 		String Serialnumber = ReadExcelFile.getCellData(19,3);
-		
+	
 		
 		driver.navigate().to("https://b2bolpdev.ctdi.com/#/repair-component-receiving");
 		
@@ -47,28 +48,41 @@ ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\I
 			WebElement Modulnu = 	driver.findElement(By.xpath(loc_CmRecModel));
 			Modulnu.sendKeys(Modelnumber);
 				Thread.sleep(3000);
-				Modulnu.sendKeys(Keys.DOWN);
-				Modulnu.sendKeys(Keys.ENTER);
 				
+				String loc_ModulValue = "//span[contains(text(),'"+Modelnumber+"')]";
+				driver.findElement(By.xpath(loc_ModulValue)).click();
+					
+			
 				Thread.sleep(6000);
 				
 				
 				WebElement Serialnu = 	driver.findElement(By.xpath(loc_CmRecSerial));
-				Serialnu.sendKeys(Serialnumber);
+				Serialnu.sendKeys(Serialnumber +"\n");
 					Thread.sleep(3000);
-					Serialnu.sendKeys(Keys.DOWN);
-					Serialnu.sendKeys(Keys.ENTER);
+					
+					
+					
+				/*	WebElement Addlist =  driver.findElement(By.xpath(loc_compAddlistbutton));
+					Actions act = new Actions(driver);
+							act.moveToElement(Addlist);
+							act.build().perform();
+							Addlist.click();*/
+					
+
+					
+					WebElement Submit = driver.findElement(By.xpath(loc_CompRecvSubmit));
+					Actions act2 = new Actions(driver);
+					act2.moveToElement(Submit);
+					act2.build().perform();
+					Submit.click();
 					
 					Thread.sleep(2000);
 					
-					
-					driver.findElement(By.xpath(loc_compAddlistbutton)).click();
-					
+					String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 
-					Thread.sleep(3000);
-					
-					driver.findElement(By.xpath(loc_CompRecvSubmit)).click();
+					System.out.println(Message);
 				
+					
 	}
 
 }

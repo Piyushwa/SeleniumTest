@@ -92,6 +92,10 @@ action.build().perform();
 	
 	driver.findElement(By.xpath(loc_filterApply)).click();
 	
+	String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
+
+	System.out.println(Message);
+	
 	}
 	}
 }

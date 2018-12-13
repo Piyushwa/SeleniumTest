@@ -41,17 +41,33 @@ cp.CreatePartMaster();;
 		
 	}
 	
-	
-		@Test(priority=2)
-	public static void CreateOrder() throws InterruptedException, IOException,Exception{
-       
- CreateOrder co = new CreateOrder(driver);
-co.Createorderform();
-   		
-   	}*/
+	@Test(priority=2)
+	public static void CreatePart() throws InterruptedException, IOException,Exception{
+   
+CreatePart cp = new CreatePart(driver);
+cp.CreatePartMaster();
+	}*/
 
-	
 	@Test(priority=3)
+	public static void ComponentPick() throws InterruptedException, IOException,Exception{
+       
+ ComponentPicking comp = new ComponentPicking(driver);
+ comp.ComponentPick();;
+   		
+   	}
+
+		
+	/*		@Test(priority=4)
+		public static void ComponentPutway() throws InterruptedException, IOException,Exception{
+	       
+	 ComponentPutway comput = new ComponentPutway(driver);
+	 comput.CompPutway();;
+	   		
+	   	}
+
+		
+	
+/*	@Test(priority=3)
 	public static void ReceiveOrder() throws InterruptedException, IOException,Exception{
 	ReceiveOrder ro = new ReceiveOrder(driver);
 	ro.Receiveorderform();	
@@ -86,6 +102,6 @@ ts.testorder();
 	   				public static void ShipOrder() throws InterruptedException, IOException,Exception{
 	     Shipping sp = new Shipping(driver);
 	      sp.Shippingorder();  
-}
+}*/
 	
 }

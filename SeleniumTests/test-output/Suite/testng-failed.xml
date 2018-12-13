@@ -8,12 +8,10 @@
     <classes>
       <class name="testscripts.TestClass">
         <methods>
-          <include name="PackOrder"/>
-          <include name="QCOrder"/>
-          <include name="ShipOrder"/>
           <include name="getBrowser"/>
           <include name="BeforeMethod"/>
           <include name="aftermethod"/>
+          <include name="ComponentPick"/>
         </methods>
       </class> <!-- testscripts.TestClass -->
     </classes>
