@@ -72,10 +72,15 @@ public class QualityCheck implements CommonLoctors {
 			driver.findElement(By.xpath(loc_QualityPass)).click();
 			driver.findElement(By.xpath(loc_QualityCompleteQC)).click();
 			Thread.sleep(3000);
-
-		String Validation =  driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 		
-		System.out.println(Validation);
+			driver.findElement(By.xpath(loc_QualitylocPass)).sendKeys(Qualityloc);
+			Thread.sleep(3000);
+			WebElement QualitylocSubPass =	driver.findElement(By.xpath(loc_QualitylocSubPass));
+	  		Actions actions3 = new Actions(driver);
+	  		actions3.moveToElement(QualitylocSubPass);
+	  		actions3.click();
+	  		actions3.build().perform();
+		
 		}
 			
 	}

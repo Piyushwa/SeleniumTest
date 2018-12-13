@@ -130,5 +130,37 @@ WebDriver driver;
 	    	 Reporter.log( "Invalid Repair Status" +RepairStatus);
 	    	 Logs.take_logs("Repair", "Invalid Repair Status");
 	     }
+	      
+
 }
+	
+	public void ConsumePartinRepair()throws InterruptedException,Exception{
+		
+		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		String RepairSerialNu = ReadExcelFile.getCellData(9,1);
+		String Repairloc = ReadExcelFile.getCellData(9,2);
+		String RepairAction = ReadExcelFile.getCellData(9,10);
+		driver.get("https://b2bolpdev.ctdi.com/#/repair");
+		
+	       Thread.sleep(3000);
+	       driver.findElement(By.xpath(loc_RepairSerialNo)).sendKeys(RepairSerialNu+"\n");
+	       Thread.sleep(2000);
+		driver.findElement(By.xpath(loc_Repairloc)).sendKeys(Repairloc);
+	       Thread.sleep(3000);
+
+		WebElement RepairlocSub = driver.findElement(By.xpath(loc_RepairlocSubmit));
+		
+		Actions actions = new Actions(driver);
+		actions.moveToElement(RepairlocSub);
+		actions.click();
+		actions.build().perform();
+		
+		WebElement  ActionToconsume =  driver.findElement(By.xpath(loc_RepairAction));
+		ActionToconsume.sendKeys(RepairAction);
+    	 Thread.sleep(3000);
+    	 ActionToconsume.sendKeys(Keys.DOWN);
+    	 ActionToconsume.sendKeys(Keys.ENTER);
+		
+		
+	}
 }

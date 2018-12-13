@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testscripts.TestClass" hash-for-method="ComponentPick">ComponentPick</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testscripts.TestClass" hash-for-method="PickPart">PickPart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,9 +130,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ComponentPick">
-                  </a> <!-- ComponentPick -->
-                  <span class="method-name">ComponentPick</span>
+                  <a name="PickPart">
+                  </a> <!-- PickPart -->
+                  <span class="method-name">PickPart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -201,18 +201,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ComponentPick')
+data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'testscripts.TestClass')
-data.setCell(0, 3, 26032);
+data.setCell(0, 3, 25473);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'PickPart')
 data.setCell(1, 2, 'testscripts.TestClass')
-data.setCell(1, 3, 14332);
+data.setCell(1, 3, 24610);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -224,16 +224,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ComponentPick</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">About to begin executing following method : TestClass.ComponentPick</span>
-                <span class="reporter-method-output">Completed executing following method : TestClass.ComponentPick</span>
-                <span class="reporter-method-output">Test Method resides in testscripts.TestClass</span>
-                <span class="reporter-method-output">Test Status: Pass</span>
-                <span class="reporter-method-output">About to begin executing following method : DriverHelper.aftermethod</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">login</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">About to begin executing following method : TestClass.login</span>
@@ -243,13 +233,50 @@ return data;
                 <span class="reporter-method-output">About to begin executing following method : DriverHelper.aftermethod</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PickPart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">About to begin executing following method : TestClass.PickPart</span>
+                <span class="reporter-method-output">Completed executing following method : TestClass.PickPart</span>
+                <span class="reporter-method-output">Test Method resides in testscripts.TestClass</span>
+                <span class="reporter-method-output">Test Status: Pass</span>
+                <span class="reporter-method-output">About to begin executing following method : DriverHelper.aftermethod</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testscripts.TestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">CreatePart</span>
+                <br/>
+                <span class="ignored-method-name">PackOrder</span>
+                <br/>
+                <span class="ignored-method-name">QCOrder</span>
+                <br/>
+                <span class="ignored-method-name">ReceiveOrder</span>
+                <br/>
+                <span class="ignored-method-name">TestOrder</span>
+                <br/>
+                <span class="ignored-method-name">ShipOrder</span>
+                <br/>
+                <span class="ignored-method-name">CreateOrder</span>
+                <br/>
+                <span class="ignored-method-name">ComponentPutway</span>
+                <br/>
+                <span class="ignored-method-name">DeliveryPart</span>
+                <br/>
+                <span class="ignored-method-name">RepairOrder</span>
+                <br/>
+                <span class="ignored-method-name">ComponentPick</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -265,27 +292,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">26756 ms</span>
+                <span class="method-start">79173 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">29757 ms</span>
+                <span class="method-start">82174 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">44095 ms</span>
+                <span class="method-start">107655 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">48474 ms</span>
+                <span class="method-start">114066 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">ComponentPick</span>
-                <span class="method-start">51475 ms</span>
+                <span class="method-name">PickPart</span>
+                <span class="method-start">117067 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">77510 ms</span>
+                <span class="method-start">141681 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

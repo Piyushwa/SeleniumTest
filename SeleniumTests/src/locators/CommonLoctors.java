@@ -115,6 +115,7 @@ String loc_Repairloc2 = "/html/body/app-root/div/div/app-repair/section[2]/p-sid
 String loc_Submitloc2 = "/html/body/app-root/div/div/app-repair/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[3]/div/button[1]";
 String loc_Repairloc3 ="/html/body/app-root/div/div/app-repair/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[2]/div/p-autocomplete/span/input";
 String  loc_Submitloc3 ="/html/body/app-root/div/div/app-repair/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[3]/div/button[1]";
+String loc_RepairAction = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/div/div[2]/div[1]/ul/li/div/div[5]/p-autocomplete/span/input";
 //Quality Control
 
 String loc_QualityOption ="//a/span[contains(text(),'Quality Control')]";
@@ -129,6 +130,8 @@ String loc_QualityCompleteQC = "/html/body/app-root/div/div/app-quality-control/
 String loc_QualityReset = "//button[contains(text(),'Reset')]";
 String loc_Qualityloc2 = "/html/body/app-root/div/div/app-quality-control/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[2]/div/p-autocomplete/span/input";
 String loc_Qualitylocsub2 = "/html/body/app-root/div/div/app-quality-control/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[3]/div/button[1]";
+String loc_QualitylocPass = "/html/body/app-root/div/div/app-quality-control/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[2]/div/p-autocomplete/span/input";
+String loc_QualitylocSubPass = "/html/body/app-root/div/div/app-quality-control/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[3]/div/button[1]";
 
 
 //Packaging

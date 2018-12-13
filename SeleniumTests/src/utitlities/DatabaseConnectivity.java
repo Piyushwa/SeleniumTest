@@ -27,7 +27,6 @@ public class DatabaseConnectivity {
 		//step4 execute query  
 		ResultSet rs=stmt.executeQuery(Query); 
 		
-		
 	
 		while(rs.next())  {
 			

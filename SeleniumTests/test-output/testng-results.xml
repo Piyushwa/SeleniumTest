@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="11" total="13" passed="2">
   <reporter-output>
     <line>
       <![CDATA[About to begin executing Suite Suite]]>
@@ -44,10 +44,10 @@
       <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
     </line>
     <line>
-      <![CDATA[About to begin executing following method : TestClass.ComponentPick]]>
+      <![CDATA[About to begin executing following method : TestClass.PickPart]]>
     </line>
     <line>
-      <![CDATA[Completed executing following method : TestClass.ComponentPick]]>
+      <![CDATA[Completed executing following method : TestClass.PickPart]]>
     </line>
     <line>
       <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -62,26 +62,26 @@
       <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="52912" started-at="2018-12-12T14:48:35Z" finished-at="2018-12-12T14:49:28Z">
+  <suite name="Suite" duration-ms="64634" started-at="2018-12-13T14:04:12Z" finished-at="2018-12-13T14:05:17Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="52912" started-at="2018-12-12T14:48:35Z" finished-at="2018-12-12T14:49:28Z">
+    <test name="Test" duration-ms="64634" started-at="2018-12-13T14:04:12Z" finished-at="2018-12-13T14:05:17Z">
       <class name="testscripts.TestClass">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@1ce92674]" name="getBrowser" is-config="true" duration-ms="26716" started-at="2018-12-12T14:48:09Z" finished-at="2018-12-12T14:48:35Z">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="getBrowser" is-config="true" duration-ms="79133" started-at="2018-12-13T14:02:53Z" finished-at="2018-12-13T14:04:12Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.getBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@1ce92674]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-12T14:48:35Z" finished-at="2018-12-12T14:48:38Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-13T14:04:12Z" finished-at="2018-12-13T14:04:15Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@1ce92674]" name="login" duration-ms="14332" started-at="2018-12-12T14:48:38Z" finished-at="2018-12-12T14:48:53Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@5700d6b1]" name="login" duration-ms="25473" started-at="2018-12-13T14:04:15Z" finished-at="2018-12-13T14:04:41Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.login]]>
@@ -100,27 +100,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@1ce92674]" name="aftermethod" is-config="true" duration-ms="4375" started-at="2018-12-12T14:48:53Z" finished-at="2018-12-12T14:48:57Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="aftermethod" is-config="true" duration-ms="6410" started-at="2018-12-13T14:04:41Z" finished-at="2018-12-13T14:04:47Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@1ce92674]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-12T14:48:57Z" finished-at="2018-12-12T14:49:00Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-13T14:04:47Z" finished-at="2018-12-13T14:04:50Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="ComponentPick()[pri:3, instance:testscripts.TestClass@1ce92674]" name="ComponentPick" duration-ms="26032" started-at="2018-12-12T14:49:00Z" finished-at="2018-12-12T14:49:26Z">
+        <test-method status="PASS" signature="PickPart()[pri:5, instance:testscripts.TestClass@5700d6b1]" name="PickPart" duration-ms="24610" started-at="2018-12-13T14:04:50Z" finished-at="2018-12-13T14:05:15Z">
           <reporter-output>
             <line>
-              <![CDATA[About to begin executing following method : TestClass.ComponentPick]]>
+              <![CDATA[About to begin executing following method : TestClass.PickPart]]>
             </line>
             <line>
-              <![CDATA[Completed executing following method : TestClass.ComponentPick]]>
+              <![CDATA[Completed executing following method : TestClass.PickPart]]>
             </line>
             <line>
               <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -132,8 +132,8 @@
               <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
-        </test-method> <!-- ComponentPick -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@1ce92674]" name="aftermethod" is-config="true" duration-ms="2118" started-at="2018-12-12T14:49:26Z" finished-at="2018-12-12T14:49:28Z">
+        </test-method> <!-- PickPart -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="aftermethod" is-config="true" duration-ms="2087" started-at="2018-12-13T14:05:15Z" finished-at="2018-12-13T14:05:17Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>

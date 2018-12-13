@@ -54,7 +54,7 @@ cp.CreatePartMaster();;
 	   		
 	   	}
 	
-	@Test(priority=5,enabled=false)
+	@Test(priority=5,enabled=true)
 	public static void PickPart() throws InterruptedException, IOException,Exception{
        
  PickParts pp = new PickParts(driver);
@@ -70,7 +70,7 @@ dp.DeliverPart();
    		
    	}
 	
-	@Test(priority=7,enabled=true)
+	@Test(priority=7,enabled=false)
 	public static void CreateOrder() throws InterruptedException, IOException,Exception{
 	CreateOrder co = new CreateOrder(driver);
 	co.Createorderform();

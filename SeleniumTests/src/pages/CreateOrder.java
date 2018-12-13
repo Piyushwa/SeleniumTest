@@ -188,7 +188,7 @@ driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 		
 		DriverHelper.waitTillElementFound(Orderfilter, 10);
 		Thread.sleep(3000);
-		Orderfilter.sendKeys("22170255");
+		Orderfilter.sendKeys(Orderno);
 		Thread.sleep(1000);
 
 	WebElement ApplyFilter =	driver.findElement(By.xpath(loc_OrderApply));
@@ -210,7 +210,7 @@ driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 			
 			Thread.sleep(4000);
 	
-	Assert.assertEquals(Ordernumber, "22170255");
+	Assert.assertEquals(Ordernumber, Orderno);
 		
 		}
 		 

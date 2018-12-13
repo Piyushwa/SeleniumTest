@@ -38,7 +38,7 @@ ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\I
 		
 	
 		
-		WebElement CompLoc = 	driver.findElement(By.xpath(loc_CmRecLocation));
+		WebElement CompLoc = 	driver.findElement(By.xpath(loc_PartsPickingPrinter));
 		CompLoc.sendKeys(complocation);
 			Thread.sleep(3000);
 			CompLoc.sendKeys(Keys.DOWN);
