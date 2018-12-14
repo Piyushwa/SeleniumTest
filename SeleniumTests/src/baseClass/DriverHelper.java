@@ -29,6 +29,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -53,8 +54,11 @@ public class DriverHelper implements CommonLoctors {
 	
 	public static ExtentTest test;
 	
+	@BeforeTest
+	
 	public static void extentreport(){
 		report = new ExtentReports("C:\\Users\\IT\\workspace\\SeleniumTests\\ExtentReports\\ExtentReportResults.html", true);
+		//report.loadconfig(new File(pathname));
 		test = report.startTest("DriverClass");
 		
 		
@@ -321,13 +325,14 @@ public void browser_close()
 	
 	utitlities.SendMailSSLWithAttachment.sendmail();
 	//test.log(LogStatus.PASS, "Browser Closed Successfully");
-	//extent.endTest(test);
+	//	report.flush();
+	report.close();
 }*/
 
 @AfterMethod
 	
 	public void aftermethod() throws InterruptedException{
-		
+
 DriverHelper.navigate_back();
 
 Thread.sleep(2000);
