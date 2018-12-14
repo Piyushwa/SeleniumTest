@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import baseClass.DriverHelper;
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class PackageOrder implements CommonLoctors {
@@ -24,7 +25,7 @@ WebDriver driver;
 		String PackRMAnu = ReadExcelFile.getCellData(13,2);
 		String PackSerialnu = ReadExcelFile.getCellData(13,3);
 		
-		//utitlities.DatabaseConnectivity.Dbconn("BBADMIN", "BBADMIN");
+		Logs.take_logs("Pack order","Order Packaging Start");
 		WebElement Pack =  driver.findElement(By.xpath(loc_PackOption));
 		DriverHelper.clickusingjavaexceutor(Pack);
 			Thread.sleep(3000);
@@ -45,6 +46,8 @@ Thread.sleep(3000);
 		 driver.findElement(By.xpath(loc_Completepack)).click();
 		String Message  = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 		 System.out.println(Message);
+		 
+		 Logs.take_logs("Pack order","Order Packaging Completed");
 		 
 		 
 		

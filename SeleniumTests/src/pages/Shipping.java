@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import baseClass.DriverHelper;
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class Shipping implements CommonLoctors {
@@ -35,7 +36,7 @@ public class Shipping implements CommonLoctors {
 			
 			WebElement Ship = driver.findElement(By.xpath(loc_Shipoption));
 			DriverHelper.clickusingjavaexceutor(Ship);
-			
+			 Logs.take_logs("Pack order","Order Shipping Started");
 		WebElement Shippacknu = driver.findElement(By.xpath(loc_ShipPacklist));
 		Shippacknu.sendKeys(ShipPackListnu);
 		Thread.sleep(3000);
@@ -103,7 +104,7 @@ public class Shipping implements CommonLoctors {
 			System.out.println(Message);
 			
 			if(Message.contains("eError")){
-				
+				Logs.take_logs("Pack order","Order Shipping completed with Carrievalue UPS");
 				
 			}
 			
@@ -116,6 +117,8 @@ public class Shipping implements CommonLoctors {
 				Thread.sleep(3000);
 				
 				driver.findElement(By.xpath(loc_ShipAddconfirm)).click();
+				
+				Logs.take_logs("Pack order","Order Shipping completed with Carrievalue External ");
 			}
 
 			

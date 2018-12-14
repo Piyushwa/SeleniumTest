@@ -24,7 +24,7 @@ public class TestClass extends DriverHelper{
 		
 		lp.loggedin("pwadhwa@ctdi.com","1Nd1@123");
 		
-		Logs.take_logs("TestCase1","Logged In OLP URL");
+	
 	       Thread.sleep(2000);
 	}
 	
