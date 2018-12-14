@@ -12,6 +12,7 @@
           <include name="getBrowser"/>
           <include name="BeforeMethod"/>
           <include name="aftermethod"/>
+          <include name="extentreport"/>
         </methods>
       </class> <!-- testscripts.TestClass -->
     </classes>

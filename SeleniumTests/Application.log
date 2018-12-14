@@ -1093,3 +1093,8 @@
 2018-12-13 19:34:26  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (30679ebde9b6752e4015a431a076521e)] -> id: userNameInput]data is entered
 2018-12-13 19:34:38  [Login] (main:) Login Successfully
 2018-12-13 19:34:39  [TestCase1] (main:) Logged In OLP URL
+2018-12-14 18:13:00  [Login] (main:) Entered Username
+2018-12-14 18:13:00  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (e8ee31e7131e21289774e48c9cf0859e)] -> id: userNameInput]data is entered
+2018-12-14 18:13:00  [Login] (main:) Entered Username
+2018-12-14 18:13:00  [Login] (main:) Entered Password
+2018-12-14 18:13:10  [Login] (main:) Login Successfully

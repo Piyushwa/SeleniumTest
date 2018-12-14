@@ -16,7 +16,7 @@ public class TestClass extends DriverHelper{
 	public static void login() throws InterruptedException, IOException,Exception{
 		// Logs - helps the User to understand the test steps or any failure during the test case execution.
 		
-		Logs.take_logs("TestCase1","Login on OLP URL");
+		
 		
 		LoginPage lp = new LoginPage(driver);
 		
