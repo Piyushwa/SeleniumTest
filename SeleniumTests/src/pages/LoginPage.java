@@ -33,19 +33,21 @@ WebDriver driver;
 
 	public void loggedin(String usernamevalue, String passwordvalue) throws InterruptedException, Exception {
 		
+		Logs.take_logs("Login", "Entered Username");	   
 		
-		
-		utitlities.DatabaseConnectivity.Dbconn(	"select * from ASSETS where ASSETTAG ='HWRF0001'","BBADMIN", "BBADMIN");
-
 		WebElement username = driver.findElement(By.id(loc_Username));
 		
 		DriverHelper.sendKeys(username, usernamevalue);
+		
+		Logs.take_logs("Login", "Entered Username");	   
 		
 		//username.sendKeys(usernamevalue);
 		
 
 	WebElement Password = driver.findElement(By.id(loc_PassWord));
 	Password.sendKeys(passwordvalue);
+	
+	Logs.take_logs("Login", "Entered Password");	 
 	
 	WebElement Submit = driver.findElement(By.xpath(loc_LoginSubmit));
 
@@ -65,17 +67,20 @@ WebDriver driver;
 	   
 Logs.take_logs("Login", "Login Successfully");	   
 
-
    }
    
    else {
+	   
+	   
 	   Logs.take_logs("Login", "Login Fial");	   
+	   
+Screenshots.takeSnapShot(driver, "C:\\Users\\IT\\workspace\\SeleniumTests\\Screenshots\\testimage.png");
 
    }
    //assertEquals(Homepage, ExpectedHomepage);
    
     
-	Screenshots.takeSnapShot(driver, "C:\\Users\\IT\\workspace\\SeleniumTests\\Screenshots\\testimage.png");
+	
 
 }
 

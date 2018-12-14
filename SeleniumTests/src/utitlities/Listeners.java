@@ -66,6 +66,7 @@ public class Listeners implements ITestListener, ISuiteListener, IInvokedMethodL
 	 
 	 printTestResults(arg0);
 	 
+	  
 	 }
 	 
 	 // This belongs to ITestListener and will execute before the main test start (@Test)

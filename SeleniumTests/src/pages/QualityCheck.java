@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 import baseClass.DriverHelper;
 
@@ -28,6 +29,9 @@ public class QualityCheck implements CommonLoctors {
 		String QCStatus = ReadExcelFile.getCellData(11,3);
 		String Inspectcode = ReadExcelFile.getCellData(11,4);
 		driver.findElement(By.xpath(loc_QualityOption)).click();
+		
+		 Logs.take_logs("Quality Check", "Quality Check Started");	  
+		 
 		DriverHelper.waitMyTime(4);
 		driver.findElement(By.xpath(loc_QualitySerNu)).sendKeys(QualitySerialNu +"\n");
 		DriverHelper.waitMyTime(4);
@@ -43,6 +47,8 @@ public class QualityCheck implements CommonLoctors {
 		
 		if(!QCStatus.equalsIgnoreCase("PASS")){
 			
+			
+			 Logs.take_logs("Quality Check", "Quality Check Status: Failed");	
 			driver.findElement(By.xpath(loc_QualityFail)).click();
 			WebElement InspectCode = driver.findElement(By.xpath(loc_QualityInspcode));
 					InspectCode.sendKeys(Inspectcode);
@@ -65,6 +71,8 @@ public class QualityCheck implements CommonLoctors {
 			  		actions2.moveToElement(QualitylocSub2);
 			  		actions2.click();
 			  		actions2.build().perform();
+			  		
+			  		 Logs.take_logs("Quality Check", "Quality Check Status: Failed");	
 		}
 		
 		else{
@@ -80,6 +88,8 @@ public class QualityCheck implements CommonLoctors {
 	  		actions3.moveToElement(QualitylocSubPass);
 	  		actions3.click();
 	  		actions3.build().perform();
+	  		
+	  		Logs.take_logs("Quality Check", "Quality Check Status: Passed");
 		
 		}
 			

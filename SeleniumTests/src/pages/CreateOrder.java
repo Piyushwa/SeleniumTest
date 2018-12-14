@@ -21,6 +21,7 @@ import baseClass.DriverHelper;
 import locators.CommonLoctors;
 import utitlities.Logs;
 import utitlities.ReadExcelFile;
+import utitlities.Screenshots;
 
 public class CreateOrder implements CommonLoctors {
 	
@@ -37,7 +38,7 @@ static int s = 1;
 	
 	{
 		
-		
+		  Logs.take_logs("Create Order", "Create Order");	   	
 		
 	String Todaydate =	DriverHelper.getDateStamp();
 	System.out.println("Date is:  " +Todaydate);
@@ -171,6 +172,8 @@ driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 		Thread.sleep(1000);
 		Scrollelem3.click();
 		
+		  Logs.take_logs("Create Order", "Order Creation Complete");	   
+		
 		String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 		
 		System.out.println(Message);
@@ -178,7 +181,7 @@ driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 		if(Message.contains("Order Number must be unique")){
 			
 			System.out.println("Order is not created: Duplicate Order is created");
-			
+			  Logs.take_logs("Create Order", "Order is not created: Duplicate Order is created");
 		}
 		
 		else {
@@ -210,8 +213,13 @@ driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 			
 			Thread.sleep(4000);
 	
+			try{
 	Assert.assertEquals(Ordernumber, Orderno);
+			}
 		
+			catch(Exception e){
+				Screenshots.takeSnapShot(driver, "C:\\Users\\IT\\workspace\\SeleniumTests\\Screenshots\\Orderfail.png");
+			}
 		}
 		 
 	/*Thread.sleep(1000);

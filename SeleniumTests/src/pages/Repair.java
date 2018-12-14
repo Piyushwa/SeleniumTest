@@ -39,6 +39,8 @@ WebDriver driver;
 		
 		driver.findElement(By.xpath(loc_RepairOption)).click();
 		
+		 Logs.take_logs("Repair Order", "Repairing Order Started");	  
+		
 		DriverHelper.waitMyTime(7);
 		driver.findElement(By.xpath(loc_RepairSerialNo)).sendKeys(RepairSerialNu+"\n");
 	       Thread.sleep(2000);
@@ -60,6 +62,8 @@ WebDriver driver;
 	       
 	     if(RepairStatus.equalsIgnoreCase("Repairable")){
 	    	 driver.findElement(By.xpath(loc_Repairablechckbox)).click();
+	    	 
+	    	 Logs.take_logs("Repair Order", "Repairing Order: Status is Repairable");	
 	    	 driver.findElement(By.xpath(loc_RepairPartsbutton)).click();
 	    	WebElement Component =  driver.findElement(By.xpath(loc_RepairComponent));
    		Component .sendKeys(Componentnu);
@@ -91,9 +95,13 @@ WebDriver driver;
 	    	 
 	    	 CompleteRep.click();
 	    	 
+	    	 Logs.take_logs("Repair Order", "Complete Repair: Repair On Hold");	
+	    	 
 	     }
 	     if(RepairStatus.equalsIgnoreCase("NTF")){
 	    	 
+	    	 
+	    	 Logs.take_logs("Repair Order", "Repairing Order: Status is NTF");	
 	    	 driver.findElement(By.xpath(loc_NTFchckbox)).click();
 	    	 
 	    	 driver.findElement(By.xpath(loc_Repairnotes)).sendKeys("Test NTF");
@@ -107,8 +115,13 @@ WebDriver driver;
   		actions2.moveToElement(RepairlocSub2);
   		actions2.click();
   		actions2.build().perform();
+  		
+  		 Logs.take_logs("Repair Order", "Complete Repair:NTF ");
+  		 
 	     }
 	      if(RepairStatus.equalsIgnoreCase("Scrap")){
+	    	  
+	    	  	 Logs.take_logs("Repair Order", "Repairing Order: Status is UnRepairable");	
  driver.findElement(By.xpath(loc_UnRepairablechckbox)).click();
    Thread.sleep(3000);
 
@@ -123,6 +136,7 @@ WebDriver driver;
 	  		actions2.click();
 	  		actions2.build().perform(); 	 
 	    	 
+	  		 Logs.take_logs("Repair Order", "Complete Repair:Scrap ");
 	}
 	     
 	     else {
@@ -135,6 +149,8 @@ WebDriver driver;
 }
 	
 	public void ConsumePartinRepair()throws InterruptedException,Exception{
+		
+		
 		
 		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
 		String RepairSerialNu = ReadExcelFile.getCellData(9,1);
@@ -155,12 +171,14 @@ WebDriver driver;
 		actions.click();
 		actions.build().perform();
 		
-		WebElement  ActionToconsume =  driver.findElement(By.xpath(loc_RepairAction));
+		WebElement ActionToconsume =  driver.findElement(By.xpath(loc_RepairAction));
 		ActionToconsume.sendKeys(RepairAction);
     	 Thread.sleep(3000);
     	 ActionToconsume.sendKeys(Keys.DOWN);
     	 ActionToconsume.sendKeys(Keys.ENTER);
-		
-		
+    	 
+    	 WebElement CompleteRep =   driver.findElement(By.xpath(loc_CompleteRepair));
+    	 CompleteRep.click();
+    	 Logs.take_logs("Repair", "Consume Part and Repairing completed");
 	}
 }

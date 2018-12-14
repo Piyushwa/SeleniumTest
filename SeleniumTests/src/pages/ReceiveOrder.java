@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import baseClass.DriverHelper;
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class ReceiveOrder implements CommonLoctors{
@@ -36,7 +37,8 @@ public class ReceiveOrder implements CommonLoctors{
 		
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(loc_Receiveserialnoinput)).sendKeys(ReceiveSrl +"\n");
-		
+		 Logs.take_logs("Receive order", "Receiving Order Started ");	   
+			
 		driver.findElement(By.xpath(loc_ReceiveROnumber)).sendKeys(Rono);
 		
 		/*WebElement RMAnu = driver.findElement(By.xpath(loc_RcvRMAno));
@@ -112,6 +114,8 @@ RecvLocations.sendKeys(Keys.ENTER);
 
 driver.findElement(By.xpath(loc_RecvFinalSubmit)).click();
 Thread.sleep(6000);
+
+Logs.take_logs("Receive order", "Receiving Order Completed ");	   
 }
 
 	}

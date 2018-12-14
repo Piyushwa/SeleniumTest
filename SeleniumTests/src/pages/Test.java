@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 import baseClass.*;
 
@@ -33,7 +34,7 @@ WebDriver driver;
 		String TestFail = ReadExcelFile.getCellData(7,4);
 		driver.findElement(By.xpath(loc_Testoption)).click();
 		Thread.sleep(2000);
-		
+		 Logs.take_logs("Test order", "Test Order Started");	  
 		driver.findElement(By.xpath(loc_TestSerialNo)).sendKeys(TestSerialNu+"\n");
 		
 		WebElement testloc = driver.findElement(By.xpath(loc_TestLocation));
@@ -90,6 +91,8 @@ System.out.println(testfinalsubmit.getText());
 			actions.moveToElement(testfinalsubmit);
 			actions.click();
 			actions.build().perform();
+			
+			 Logs.take_logs("Test order", "Test Order for "+TestSerialNu+" Failed");
 		}
 
 		else {
@@ -108,6 +111,8 @@ System.out.println(testfinalsubmit.getText());
 			actions.moveToElement(testfinalPasssubmit);
 			actions.click();
 			actions.build().perform();
+			 Logs.take_logs("Test order", "Test Order for "+TestSerialNu+" Passed");
+			
 		}
 		
 		
