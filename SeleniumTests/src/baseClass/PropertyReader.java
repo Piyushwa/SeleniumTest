@@ -9,13 +9,16 @@ import java.util.Properties;
 public class PropertyReader {
 	
 			
-		public static String PropertiesfilePath = "C:\\Users\\IT\\workspace\\SeleniumTests\\Environmentconfig.properties";
-
-
+		//public static String PropertiesfilePath = "C:\\Users\\IT\\workspace\\SeleniumTests\\Environmentconfig.properties";
+	
+	
+		public static String PropertiesfilePath =System.getProperty("user.dir") +"\\Environmentconfig.properties";
+		
 		public static String readpropertyfile(String key){
 
 			String value = "";
 			File f = new File(PropertiesfilePath);
+
 			
 			FileInputStream fileInput = null;
 			try {

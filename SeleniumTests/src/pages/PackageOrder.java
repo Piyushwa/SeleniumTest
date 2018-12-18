@@ -12,6 +12,8 @@ import utitlities.ReadExcelFile;
 public class PackageOrder implements CommonLoctors {
 	
 WebDriver driver;
+
+static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
 	
 	public PackageOrder(WebDriver driver) throws InterruptedException{
 		
@@ -20,7 +22,7 @@ WebDriver driver;
 		 }
 	public void Packorder() throws InterruptedException,Exception{
 		
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		String PackListNu = ReadExcelFile.getCellData(13,1);
 		String PackRMAnu = ReadExcelFile.getCellData(13,2);
 		String PackSerialnu = ReadExcelFile.getCellData(13,3);

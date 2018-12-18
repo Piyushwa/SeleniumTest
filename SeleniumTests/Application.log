@@ -1395,3 +1395,100 @@
 2018-12-18 15:05:19  [Login] (main:) Entered Password
 2018-12-18 15:05:34  [Login] (main:) Login Successfully
 2018-12-18 15:05:51  [Receive order] (main:) Receiving Order Started 
+2018-12-18 15:54:27  [Login] (main:) Entered Username
+2018-12-18 15:54:28  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d07ab92474b3de3a4cd6d8a9b5a4f15a)] -> id: userNameInput]data is entered
+2018-12-18 15:54:28  [Login] (main:) Entered Username
+2018-12-18 15:54:28  [Login] (main:) Entered Password
+2018-12-18 15:54:36  [Login] (main:) Login Successfully
+2018-12-18 15:54:45  [Create Order] (main:) Create Order
+2018-12-18 15:54:53  [Create Order] (main:) Start Order Creation
+2018-12-18 15:55:08  [Create Order] (main:) Complete Order Creation
+2018-12-18 15:55:11  [Create Order] (main:) Order Creation Complete
+2018-12-18 15:55:50  [Receive order] (main:) Receiving Order Started 
+2018-12-18 17:31:35  [Login] (main:) Entered Username
+2018-12-18 17:31:35  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (f11f70b1c74ad2a1bec40bf23d09aa4e)] -> id: userNameInput]data is entered
+2018-12-18 17:31:35  [Login] (main:) Entered Username
+2018-12-18 17:31:35  [Login] (main:) Entered Password
+2018-12-18 17:31:45  [Login] (main:) Login Successfully
+2018-12-18 17:31:54  [Create Order] (main:) Create Order
+2018-12-18 17:32:03  [Create Order] (main:) Start Order Creation
+2018-12-18 17:32:19  [Create Order] (main:) Complete Order Creation
+2018-12-18 17:32:22  [Create Order] (main:) Order Creation Complete
+2018-12-18 17:32:36  [Receive order] (main:) Receiving Order Started 
+2018-12-18 17:51:30  [Login] (main:) Entered Username
+2018-12-18 17:51:30  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (015c0ddb38066fcad1bbf055f7330e90)] -> id: userNameInput]data is entered
+2018-12-18 17:51:30  [Login] (main:) Entered Username
+2018-12-18 17:51:30  [Login] (main:) Entered Password
+2018-12-18 17:51:45  [Login] (main:) Login Successfully
+2018-12-18 17:51:57  [Create Order] (main:) Create Order
+2018-12-18 17:52:10  [Create Order] (main:) Start Order Creation
+2018-12-18 17:52:26  [Create Order] (main:) Complete Order Creation
+2018-12-18 17:52:29  [Create Order] (main:) Order Creation Complete
+2018-12-18 17:52:57  [Receive order] (main:) Receiving Order Started 
+2018-12-18 17:53:25  [Test order] (main:) Test Order Started
+2018-12-18 17:53:51  [Repair Order] (main:) Repairing Order Started
+2018-12-18 17:55:28  [Quality Check] (main:) Quality Check Started
+2018-12-18 17:55:38  [Pack order] (main:) Order Packaging Start
+2018-12-18 17:56:00  [Pack order] (main:) Order Shipping Started
+2018-12-18 20:29:26  [Login] (main:) Entered Username
+2018-12-18 20:29:26  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (1c94eacf3eed957028a4110202f101ef)] -> id: userNameInput]data is entered
+2018-12-18 20:29:26  [Login] (main:) Entered Username
+2018-12-18 20:29:27  [Login] (main:) Entered Password
+2018-12-18 20:29:36  [Login] (main:) Login Successfully
+2018-12-18 20:29:51  [Receive order] (main:) Receiving Order Started 
+2018-12-18 20:46:06  [Login] (main:) Entered Username
+2018-12-18 20:46:06  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d197dbdac0ba2ff0e162ffcb0dfa7284)] -> id: userNameInput]data is entered
+2018-12-18 20:46:06  [Login] (main:) Entered Username
+2018-12-18 20:46:06  [Login] (main:) Entered Password
+2018-12-18 20:46:15  [Login] (main:) Login Successfully
+2018-12-18 20:46:28  [Receive order] (main:) Receiving Order Started 
+2018-12-18 20:49:26  [Login] (main:) Entered Username
+2018-12-18 20:49:27  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (e2a560557e76e21867d0fca254a54fd1)] -> id: userNameInput]data is entered
+2018-12-18 20:49:27  [Login] (main:) Entered Username
+2018-12-18 20:49:27  [Login] (main:) Entered Password
+2018-12-18 20:49:32  [Login] (main:) Login Successfully
+2018-12-18 20:49:45  [Receive order] (main:) Receiving Order Started 
+2018-12-18 21:11:03  [Login] (main:) Entered Username
+2018-12-18 21:11:03  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (b5d9be16c0f83137143bd227390dc55b)] -> id: userNameInput]data is entered
+2018-12-18 21:11:03  [Login] (main:) Entered Username
+2018-12-18 21:11:03  [Login] (main:) Entered Password
+2018-12-18 21:11:09  [Login] (main:) Login Successfully
+2018-12-18 21:11:22  [Receive order] (main:) Receiving Order Started 
+2018-12-18 21:16:50  [Login] (main:) Entered Username
+2018-12-18 21:16:50  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (e3e3f1c15ee2e1abec353e8c064e511e)] -> id: userNameInput]data is entered
+2018-12-18 21:16:50  [Login] (main:) Entered Username
+2018-12-18 21:16:50  [Login] (main:) Entered Password
+2018-12-18 21:16:59  [Login] (main:) Login Successfully
+2018-12-18 21:17:14  [Receive order] (main:) Receiving Order Started 
+2018-12-18 21:18:39  [Login] (main:) Entered Username
+2018-12-18 21:18:39  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (1eb2724245aaa3befde9931d9fd01b6a)] -> id: userNameInput]data is entered
+2018-12-18 21:18:39  [Login] (main:) Entered Username
+2018-12-18 21:18:39  [Login] (main:) Entered Password
+2018-12-18 21:18:49  [Login] (main:) Login Successfully
+2018-12-18 21:19:08  [Receive order] (main:) Receiving Order Started 
+2018-12-18 21:21:33  [Login] (main:) Entered Username
+2018-12-18 21:21:33  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (a197cf948bfac5d89dab28a61f392caa)] -> id: userNameInput]data is entered
+2018-12-18 21:21:33  [Login] (main:) Entered Username
+2018-12-18 21:21:33  [Login] (main:) Entered Password
+2018-12-18 21:21:39  [Login] (main:) Login Successfully
+2018-12-18 21:21:52  [Receive order] (main:) Receiving Order Started 
+2018-12-18 21:27:38  [Login] (main:) Entered Username
+2018-12-18 21:27:38  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (2b48080d4744101144497947c1b95fe1)] -> id: userNameInput]data is entered
+2018-12-18 21:27:38  [Login] (main:) Entered Username
+2018-12-18 21:27:38  [Login] (main:) Entered Password
+2018-12-18 21:27:45  [Login] (main:) Login Successfully
+2018-12-18 21:36:15  [Login] (main:) Entered Username
+2018-12-18 21:36:15  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (b4b2c60606bce3c7955a358ca95d68da)] -> id: userNameInput]data is entered
+2018-12-18 21:36:15  [Login] (main:) Entered Username
+2018-12-18 21:36:15  [Login] (main:) Entered Password
+2018-12-18 21:36:25  [Login] (main:) Login Successfully
+2018-12-18 21:47:43  [Login] (main:) Entered Username
+2018-12-18 21:47:43  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (94eb9e16ed8561520c67c5cf74b51e2a)] -> id: userNameInput]data is entered
+2018-12-18 21:47:43  [Login] (main:) Entered Username
+2018-12-18 21:47:43  [Login] (main:) Entered Password
+2018-12-18 21:47:52  [Login] (main:) Login Successfully
+2018-12-18 21:50:29  [Login] (main:) Entered Username
+2018-12-18 21:50:29  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (2a9c87d2e0402790260e31bc365f5801)] -> id: userNameInput]data is entered
+2018-12-18 21:50:29  [Login] (main:) Entered Username
+2018-12-18 21:50:29  [Login] (main:) Entered Password
+2018-12-18 21:50:38  [Login] (main:) Login Successfully

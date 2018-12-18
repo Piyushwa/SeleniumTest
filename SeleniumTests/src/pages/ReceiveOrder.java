@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 import baseClass.DriverHelper;
 import locators.CommonLoctors;
@@ -17,7 +18,8 @@ import utitlities.ReadExcelFile;
 
 public class ReceiveOrder implements CommonLoctors{
 	
-	
+	static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
+
 	WebDriver driver;
 	
 	public ReceiveOrder(WebDriver driver) throws InterruptedException{
@@ -46,7 +48,7 @@ public class ReceiveOrder implements CommonLoctors{
 	
 	public void Receiveorderform() throws InterruptedException,Exception{
 		
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		String ReceiveSrl = ReadExcelFile.getCellData(5,1);
 		String Rono = ReadExcelFile.getCellData(5,3);
         String ReceiveAsstext  = ReadExcelFile.getCellData(5,4);
@@ -150,7 +152,7 @@ Logs.take_logs("Receive order", "Receiving Order Completed ");
 	
 	
 	public  void DuedateCalc() throws InterruptedException,Exception{
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+	ReadExcelFile.setExcelFile(filepath,"input");
 		String Ordenu = ReadExcelFile.getCellData(27,1);
 		String ReceiveSrl = ReadExcelFile.getCellData(27,4);
 		String Rono = ReadExcelFile.getCellData(27,2);
@@ -158,7 +160,7 @@ Logs.take_logs("Receive order", "Receiving Order Completed ");
         String Receivenotes  = ReadExcelFile.getCellData(5,5);
         String Printername = ReadExcelFile.getCellData(5,6);
         String Location = ReadExcelFile.getCellData(5,7);
-	driver.findElement(By.xpath(loc_Receiveoption)).click();
+    	driver.findElement(By.xpath(loc_Receiveoption)).click();
 		
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(loc_Receiveserialnoinput)).sendKeys(ReceiveSrl +"\n");
@@ -223,11 +225,6 @@ Thread.sleep(6000);
 		
 		String qry1="select  a. * from orders a where"+'"'+"NUMBER"+'"'+"='"+Ordenu+"'" ;
 		String qry2="select to_char(DUEDATEUTC,'mm/dd/yyyy') Duedate from orders where"+'"'+"NUMBER"+'"'+"='"+Ordenu+"'" ;
-	
-		
-		System.out.println("qry1 is " +qry1);
-		
-	
 		
 		String TAT =  utitlities.DatabaseConnectivity.Dbconn(qry1,"TATTIMEINDAYS","BBADMIN","BBADMIN");
 		
@@ -241,20 +238,21 @@ Thread.sleep(6000);
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 		LocalDate DockDateValue = LocalDate.parse(Dockdate, formatter);
 		
+	
 		Integer TATValue = Integer.parseInt(TAT);
 		
 	LocalDate ResultDuedate = add(DockDateValue.plusDays(1), TATValue);
 	
-	System.out.println("Result Due Date is" +ResultDuedate);
+	//System.out.println("Result Due Date is" +ResultDuedate);
 	
 	DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 	String FinalDuedate = ResultDuedate.format(formatter1);
 	
-	System.out.println("FinalDate is" +FinalDuedate);
+	//System.out.println("FinalDate is" +FinalDuedate);
 	
 	String qry3 = "select count(*) HolidayCount  from HOLIDAYS where DATEUTC between to_date('"+Dockdate+"','MM/DD/YYYY') and to_date('"+FinalDuedate+"','MM/DD/YYYY')";
 
-	System.out.println("qry3 is " +qry3);
+	//System.out.println("qry3 is " +qry3);
 	
 
 String Holidays =  utitlities.DatabaseConnectivity.Dbconn(qry3,"HolidayCount","BBADMIN","BBADMIN");
@@ -265,30 +263,42 @@ System.out.println("HolidayCount is " +Holidays);
 Integer HolidaysCount = Integer.parseInt(Holidays);
 
 
-LocalDate Mastdate = ResultDuedate.plusDays(HolidaysCount);
+LocalDate ActDuedate = add(ResultDuedate, HolidaysCount);
+
+
 
 DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-String ActualDuedate = Mastdate.format(formatter2);
+String ActualDuedate = ActDuedate.format(formatter2);
+
+//LocalDate Mastdate = ResultDuedate.plusDays(HolidaysCount);
+
+//DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+//String ActualDuedate = Mastdate.format(formatter2);
 
 System.out.println("Actual Due Date is" +ActualDuedate);
 
-System.out.println("Masterdate is"  +Mastdate);
+
+//System.out.println("Masterdate is"  +Mastdate);
 
 
-if (ActualDuedate.equalsIgnoreCase(DueDate)){
+try {
+Assert.assertEquals(ActualDuedate, DueDate);
 	
 	System.out.println("Pass");
+} catch (Exception e) {
+	System.out.println("Wrong Due Date Calculation");
+
+}
+	
+	
 	
 }
 
-else {
-	
-	System.out.println("Wrong Due Date Calculation");
-}
+
 	
 	}
 		
 		
-	}
+	
 	
 }

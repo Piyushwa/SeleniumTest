@@ -27,6 +27,8 @@ public class CreateOrder implements CommonLoctors {
 	
 WebDriver driver;
 
+static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
+
 static int s = 1;
 	public CreateOrder(WebDriver driver) throws InterruptedException{
 		
@@ -42,7 +44,7 @@ static int s = 1;
 		
 	String Todaydate =	DriverHelper.getDateStamp();
 	System.out.println("Date is:  " +Todaydate);
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		String Orderno = ReadExcelFile.getCellData(2,1);
 		String Orderdate = ReadExcelFile.getCellData(2,2);
 		String Duedate = ReadExcelFile.getCellData(2,3);

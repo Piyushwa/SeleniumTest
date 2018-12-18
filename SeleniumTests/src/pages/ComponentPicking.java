@@ -15,7 +15,7 @@ public class ComponentPicking implements CommonLoctors {
 	
 WebDriver driver;
 
-	
+static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
 	public ComponentPicking(WebDriver driver) throws InterruptedException{
 		
 		 this.driver = driver;
@@ -24,7 +24,7 @@ WebDriver driver;
 	
 	public void ComponentPick() throws InterruptedException,Exception{
 		
-ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+ReadExcelFile.setExcelFile(filepath,"input");
 		
 		String complocation = ReadExcelFile.getCellData(19,1);
 

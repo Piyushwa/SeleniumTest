@@ -10,7 +10,7 @@ import utitlities.ReadExcelFile;
 
 public class ComponentPutway implements CommonLoctors {
 	
-	
+	static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
 WebDriver driver;
 
 	
@@ -23,7 +23,7 @@ WebDriver driver;
 	public void CompPutway() throws InterruptedException,Exception{
 		
 		
-ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+ReadExcelFile.setExcelFile(filepath,"input");
 		
 		String complocation = ReadExcelFile.getCellData(19,1);
 

@@ -14,7 +14,8 @@ import utitlities.ReadExcelFile;
 public class Shipping implements CommonLoctors {
 	
 	
-	
+	static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
+
 	WebDriver driver;
 
 		public Shipping(WebDriver driver) throws InterruptedException{
@@ -25,7 +26,7 @@ public class Shipping implements CommonLoctors {
 				
 		public void Shippingorder() throws InterruptedException,Exception{
 	
-			ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+			ReadExcelFile.setExcelFile(filepath,"input");
 			String ShipPackListnu = ReadExcelFile.getCellData(15,1);
 			String ShipSerialnu = ReadExcelFile.getCellData(15,2);
 			String Carrievalue = ReadExcelFile.getCellData(15,3);

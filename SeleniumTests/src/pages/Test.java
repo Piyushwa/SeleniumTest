@@ -15,7 +15,8 @@ import baseClass.*;
 
 public class Test implements CommonLoctors{
 
-	String TestResult = "PASS";
+	
+	static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
 	
 WebDriver driver;
 	
@@ -27,7 +28,7 @@ WebDriver driver;
 	
 	public void testorder() throws InterruptedException,Exception{
 		
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		String TestSerialNu = ReadExcelFile.getCellData(7,1);
 		String Testloc = ReadExcelFile.getCellData(7,2);
 		String TestResult = ReadExcelFile.getCellData(7,3);

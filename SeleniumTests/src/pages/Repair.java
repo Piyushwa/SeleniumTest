@@ -14,7 +14,8 @@ import utitlities.ReadExcelFile;
 
 public class Repair implements CommonLoctors {
 
-	
+	static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
+
 WebDriver driver;
 
 
@@ -27,7 +28,7 @@ WebDriver driver;
 	public void Repairorder() throws InterruptedException,Exception
 	
 	{
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		String RepairSerialNu = ReadExcelFile.getCellData(9,1);
 		String Repairloc = ReadExcelFile.getCellData(9,2);
 		String RepairStatus = ReadExcelFile.getCellData(9,3);
@@ -152,7 +153,7 @@ WebDriver driver;
 		
 		
 		
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		String RepairSerialNu = ReadExcelFile.getCellData(9,1);
 		String Repairloc = ReadExcelFile.getCellData(9,2);
 		String RepairAction = ReadExcelFile.getCellData(9,10);

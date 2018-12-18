@@ -28,14 +28,14 @@ public class TestClass extends DriverHelper{
 	       Thread.sleep(2000);
 	}
 	
-	@Test(priority=2,enabled=true)
+		@Test(priority=2,enabled=true)
 	public static void DueDateCal() throws InterruptedException, IOException,Exception{
 	   
 		ReceiveOrder ro = new ReceiveOrder(driver);
 		ro.DuedateCalc();	
 			
 		}
-	/*@Test(priority=2,enabled=false)
+		/*	@Test(priority=2,enabled=false)
 public static void CreatePart() throws InterruptedException, IOException,Exception{
    
 CreatePart cp = new CreatePart(driver);

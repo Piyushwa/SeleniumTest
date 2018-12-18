@@ -12,7 +12,8 @@ import utitlities.ReadExcelFile;
 
 public class PickParts implements CommonLoctors {
 	
-	
+	static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
+
 	WebDriver driver;
 	
 	
@@ -25,7 +26,7 @@ public class PickParts implements CommonLoctors {
 
 	public void pickparts() throws Exception,InterruptedException{
 		
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		
 		String ScanPartVal = ReadExcelFile.getCellData(23,1);
 		String ScanlocVal = ReadExcelFile.getCellData(23,2);

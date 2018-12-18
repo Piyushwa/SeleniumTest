@@ -12,7 +12,7 @@ import utitlities.ReadExcelFile;
 public class CreatePart implements CommonLoctors {
 	
 WebDriver driver;
-
+static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
 	
 	public CreatePart(WebDriver driver) throws InterruptedException{
 		
@@ -23,7 +23,7 @@ WebDriver driver;
 	public void CreatePartMaster() throws InterruptedException,Exception{
 		
 		
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		
 		String Partnu = ReadExcelFile.getCellData(17,1);
 		String PartDesc = ReadExcelFile.getCellData(17,2);

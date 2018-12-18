@@ -13,6 +13,8 @@ import baseClass.DriverHelper;
 
 public class QualityCheck implements CommonLoctors {
 	
+	static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.xlsx";
+	
 	WebDriver driver;
 	
 		
@@ -23,7 +25,7 @@ public class QualityCheck implements CommonLoctors {
 			 }
 	
 	public void QCOrd() throws InterruptedException,Exception{
-		ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
+		ReadExcelFile.setExcelFile(filepath,"input");
 		String QualitySerialNu = ReadExcelFile.getCellData(11,1);
 		String Qualityloc = ReadExcelFile.getCellData(11,2);
 		String QCStatus = ReadExcelFile.getCellData(11,3);
