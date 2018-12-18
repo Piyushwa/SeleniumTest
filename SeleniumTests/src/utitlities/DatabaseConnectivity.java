@@ -12,7 +12,7 @@ public class DatabaseConnectivity {
 	
 	
  
-	public static String Dbconn(String Query, String username, String password) throws ClassNotFoundException, SQLException
+	public static String Dbconn(String Query, String ColumnName, String username, String password) throws ClassNotFoundException, SQLException
 	{
 		 String ResultQ = null;
 		try{  
@@ -30,7 +30,7 @@ public class DatabaseConnectivity {
 	
 		while(rs.next())  {
 			
-			 ResultQ = rs.getString("NUMBER").toString();
+			 ResultQ = rs.getString(ColumnName).toString();
 		
 		System.out.println(ResultQ);
 		//System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  

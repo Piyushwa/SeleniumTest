@@ -8,7 +8,7 @@
     <classes>
       <class name="testscripts.TestClass">
         <methods>
-          <include name="PickPart"/>
+          <include name="DueDateCal"/>
           <include name="getBrowser"/>
           <include name="BeforeMethod"/>
           <include name="aftermethod"/>

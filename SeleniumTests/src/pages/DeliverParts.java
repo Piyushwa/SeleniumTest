@@ -21,9 +21,10 @@ WebDriver driver;
 		
 ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\Inputfile.xlsx","input");
 
-String DelvOrder = utitlities.DatabaseConnectivity.Dbconn("select * from COMPONENTORDERS Where ASSETID IN ( select ID from ASSETS  where ASSETTAG = 'HWNS2201')","BBADMIN","BBADMIN");
-		
-		String DelSerialnu = ReadExcelFile.getCellData(25,2);
+String Rono = ReadExcelFile.getCellData(5,3);
+
+String DelvOrder = utitlities.DatabaseConnectivity.Dbconn("select * from COMPONENTORDERS Where ASSETID IN ( select ID from ASSETS  where ASSETTAG = '"+Rono+"')","NUMBER","BBADMIN","BBADMIN");
+String DelSerialnu = ReadExcelFile.getCellData(25,2);
 		
 		driver.findElement(By.xpath(loc_DeliverPartsOptions)).click();
 		

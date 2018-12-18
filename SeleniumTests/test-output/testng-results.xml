@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="11" total="13" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
     <line>
       <![CDATA[About to begin executing Suite Suite]]>
@@ -50,10 +50,10 @@
       <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
     </line>
     <line>
-      <![CDATA[About to begin executing following method : TestClass.PickPart]]>
+      <![CDATA[About to begin executing following method : TestClass.DueDateCal]]>
     </line>
     <line>
-      <![CDATA[Completed executing following method : TestClass.PickPart]]>
+      <![CDATA[Completed executing following method : TestClass.DueDateCal]]>
     </line>
     <line>
       <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -68,33 +68,33 @@
       <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="50762" started-at="2018-12-14T12:42:56Z" finished-at="2018-12-14T12:43:46Z">
+  <suite name="Suite" duration-ms="53143" started-at="2018-12-18T09:35:10Z" finished-at="2018-12-18T09:36:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="50762" started-at="2018-12-14T12:42:56Z" finished-at="2018-12-14T12:43:46Z">
+    <test name="Test" duration-ms="53143" started-at="2018-12-18T09:35:10Z" finished-at="2018-12-18T09:36:03Z">
       <class name="testscripts.TestClass">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="getBrowser" is-config="true" duration-ms="76647" started-at="2018-12-14T12:41:39Z" finished-at="2018-12-14T12:42:56Z">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="getBrowser" is-config="true" duration-ms="47912" started-at="2018-12-18T09:34:22Z" finished-at="2018-12-18T09:35:10Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.getBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="extentreport()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="extentreport" is-config="true" duration-ms="553" started-at="2018-12-14T12:42:56Z" finished-at="2018-12-14T12:42:56Z">
+        <test-method status="PASS" signature="extentreport()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="extentreport" is-config="true" duration-ms="60" started-at="2018-12-18T09:35:10Z" finished-at="2018-12-18T09:35:10Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.extentreport]]>
             </line>
           </reporter-output>
         </test-method> <!-- extentreport -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-14T12:42:56Z" finished-at="2018-12-14T12:42:59Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-18T09:35:10Z" finished-at="2018-12-18T09:35:13Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@6fd02e5]" name="login" duration-ms="12319" started-at="2018-12-14T12:42:59Z" finished-at="2018-12-14T12:43:12Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@5700d6b1]" name="login" duration-ms="22894" started-at="2018-12-18T09:35:13Z" finished-at="2018-12-18T09:35:36Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.login]]>
@@ -113,47 +113,47 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="4845" started-at="2018-12-14T12:43:12Z" finished-at="2018-12-14T12:43:17Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="aftermethod" is-config="true" duration-ms="5786" started-at="2018-12-18T09:35:36Z" finished-at="2018-12-18T09:35:42Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3002" started-at="2018-12-14T12:43:17Z" finished-at="2018-12-14T12:43:20Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-18T09:35:42Z" finished-at="2018-12-18T09:35:45Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="FAIL" signature="PickPart()[pri:5, instance:testscripts.TestClass@6fd02e5]" name="PickPart" duration-ms="24745" started-at="2018-12-14T12:43:20Z" finished-at="2018-12-14T12:43:44Z">
+        <test-method status="FAIL" signature="DueDateCal()[pri:2, instance:testscripts.TestClass@5700d6b1]" name="DueDateCal" duration-ms="16230" started-at="2018-12-18T09:35:45Z" finished-at="2018-12-18T09:36:01Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'C000000251')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name ='assetTag']"}
   (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
-System info: host: 'PIYUSH-PC', ip: '192.168.48.181', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+System info: host: 'PIYUSH-PC', ip: '192.168.48.161', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\IT\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49930}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: e8ee31e7131e21289774e48c9cf0859e
-*** Element info: {Using=xpath, value=//span[contains(text(),'C000000251')]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\IT\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53799}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: e74bc2b3792730b29ae24ff3167e228b
+*** Element info: {Using=xpath, value=//input[@name ='assetTag']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'C000000251')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name ='assetTag']"}
   (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
-System info: host: 'PIYUSH-PC', ip: '192.168.48.181', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+System info: host: 'PIYUSH-PC', ip: '192.168.48.161', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\IT\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49930}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: e8ee31e7131e21289774e48c9cf0859e
-*** Element info: {Using=xpath, value=//span[contains(text(),'C000000251')]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\IT\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53799}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: e74bc2b3792730b29ae24ff3167e228b
+*** Element info: {Using=xpath, value=//input[@name ='assetTag']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -170,8 +170,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at pages.PickParts.pickparts(PickParts.java:46)
-at testscripts.TestClass.PickPart(TestClass.java:61)
+at pages.ReceiveOrder.DuedateCalc(ReceiveOrder.java:167)
+at testscripts.TestClass.DueDateCal(TestClass.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -202,10 +202,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[About to begin executing following method : TestClass.PickPart]]>
+              <![CDATA[About to begin executing following method : TestClass.DueDateCal]]>
             </line>
             <line>
-              <![CDATA[Completed executing following method : TestClass.PickPart]]>
+              <![CDATA[Completed executing following method : TestClass.DueDateCal]]>
             </line>
             <line>
               <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -217,8 +217,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
-        </test-method> <!-- PickPart -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2134" started-at="2018-12-14T12:43:44Z" finished-at="2018-12-14T12:43:46Z">
+        </test-method> <!-- DueDateCal -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="aftermethod" is-config="true" duration-ms="2134" started-at="2018-12-18T09:36:01Z" finished-at="2018-12-18T09:36:03Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>

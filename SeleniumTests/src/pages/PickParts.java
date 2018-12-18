@@ -32,7 +32,7 @@ public class PickParts implements CommonLoctors {
 		String Scanloc = ScanlocVal.replaceAll("\\s","");
 		String Printerval = ReadExcelFile.getCellData(23,3);
 		String Rono = ReadExcelFile.getCellData(5,3);
-		String CompOrder = utitlities.DatabaseConnectivity.Dbconn("select * from COMPONENTORDERS Where ASSETID IN ( select ID from ASSETS  where ASSETTAG = '"+Rono+"')","BBADMIN","BBADMIN");
+		String CompOrder = utitlities.DatabaseConnectivity.Dbconn("select * from COMPONENTORDERS Where ASSETID IN ( select ID from ASSETS  where ASSETTAG = '"+Rono+"')","NUMBER","BBADMIN","BBADMIN");
 		
 
 		driver.findElement(By.xpath(loc_Pickpartsoptions)).click();

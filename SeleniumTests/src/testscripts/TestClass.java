@@ -28,16 +28,22 @@ public class TestClass extends DriverHelper{
 	       Thread.sleep(2000);
 	}
 	
-	
-	@Test(priority=2,enabled=false)
+	@Test(priority=2,enabled=true)
+	public static void DueDateCal() throws InterruptedException, IOException,Exception{
+	   
+		ReceiveOrder ro = new ReceiveOrder(driver);
+		ro.DuedateCalc();	
+			
+		}
+	/*@Test(priority=2,enabled=false)
 public static void CreatePart() throws InterruptedException, IOException,Exception{
    
 CreatePart cp = new CreatePart(driver);
-cp.CreatePartMaster();;
+cp.CreatePartMaster();
 		
 	}
 
-	@Test(priority=3,enabled=false)
+	@Test(priority=6,enabled=true)
 	public static void ComponentPick() throws InterruptedException, IOException,Exception{
        
  ComponentPicking comp = new ComponentPicking(driver);
@@ -54,7 +60,7 @@ cp.CreatePartMaster();;
 	   		
 	   	}
 	
-	@Test(priority=5,enabled=true)
+	@Test(priority=7,enabled=true)
 	public static void PickPart() throws InterruptedException, IOException,Exception{
        
  PickParts pp = new PickParts(driver);
@@ -62,7 +68,7 @@ cp.CreatePartMaster();;
    		
    	}
 	
-	@Test(priority=6,enabled=false)
+	@Test(priority=8,enabled=true)
 	public static void DeliveryPart() throws InterruptedException, IOException,Exception{
        
 DeliverParts dp = new DeliverParts(driver);
@@ -70,48 +76,57 @@ dp.DeliverPart();
    		
    	}
 	
-	@Test(priority=7,enabled=false)
+
+	@Test(priority=9,enabled=true)
+	public static void ConsumedPart() throws InterruptedException, IOException,Exception{
+       
+		 Repair rp =new Repair(driver);
+		  rp.ConsumePartinRepair();
+				}
+   		
+   	
+	
+	@Test(priority=2,enabled=true)
 	public static void CreateOrder() throws InterruptedException, IOException,Exception{
 	CreateOrder co = new CreateOrder(driver);
 	co.Createorderform();
 		
 		}
 
-	@Test(priority=8,enabled=false)
+	@Test(priority=3,enabled=true)
 	public static void ReceiveOrder() throws InterruptedException, IOException,Exception{
 	ReceiveOrder ro = new ReceiveOrder(driver);
 	ro.Receiveorderform();	
 		
 		}
-	
-	@Test(priority=9,enabled=false)
+	@Test(priority=4,enabled=true)
 	public static void TestOrder() throws InterruptedException, IOException,Exception{
   pages.Test ts = new pages.Test(driver);
 ts.testorder();
 		}
 	
-@Test(priority=10,enabled=false)
+@Test(priority=5,enabled=true)
 	public static void RepairOrder() throws InterruptedException, IOException,Exception{
    Repair rp =new Repair(driver);
   rp.Repairorder();
 		}
 		
 	
-	   		@Test(priority=11,enabled=false)
+	   		@Test(priority=10,enabled=true)
 			public static void QCOrder() throws InterruptedException, IOException,Exception{
 	     QualityCheck qc = new QualityCheck(driver);
 	      qc.QCOrd();
 	   		}
-	   			@Test(priority=12,enabled=false)
+	   			@Test(priority=11,enabled=true)
 				public static void PackOrder() throws InterruptedException, IOException,Exception{
 	       
 	       PackageOrder po = new PackageOrder(driver);
 	      po.Packorder();
 	   			}
-	   				@Test(priority=13,enabled=false)
+	   				@Test(priority=12,enabled=true)
 	   				public static void ShipOrder() throws InterruptedException, IOException,Exception{
 	     Shipping sp = new Shipping(driver);
-	      sp.Shippingorder();  
+	      sp.Shippingorder(); 
 }
-	
+	 */
 }

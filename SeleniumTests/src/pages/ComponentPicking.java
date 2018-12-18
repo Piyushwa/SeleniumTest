@@ -34,11 +34,13 @@ ReadExcelFile.setExcelFile("C:\\Users\\IT\\workspace\\SeleniumTests\\TestData\\I
 		
 		driver.navigate().to("https://b2bolpdev.ctdi.com/#/repair-component-receiving");
 		
-		Thread.sleep(4000);
+		WebElement CompLoc = 	driver.findElement(By.xpath(loc_CmRecLocation));
+		
+		DriverHelper.waitTillElementFound(CompLoc, 15);
 		
 	
 		
-		WebElement CompLoc = 	driver.findElement(By.xpath(loc_PartsPickingPrinter));
+		
 		CompLoc.sendKeys(complocation);
 			Thread.sleep(3000);
 			CompLoc.sendKeys(Keys.DOWN);

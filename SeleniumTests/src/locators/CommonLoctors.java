@@ -74,7 +74,9 @@ String loc_RecvPrinter = "/html/body/app-root/div/app-header/header/p-sidebar/di
 String loc_RecvLocations = "/html/body/app-root/div/div/app-receiving/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[2]/div/p-autocomplete/span/input";
 String loc_ReceiveSubmit =  "//button[contains(text(),'Submit')]";
 String loc_RecvFinalSubmit = "/html/body/app-root/div/div/app-receiving/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[3]/div/button[1]";
+String loc_DuedateText = "/html/body/app-root/div/div/app-receiving/section[2]/div[2]/div/div/div/div/h2[1]/span";
 
+String loc_TATText ="/html/body/app-root/div/div/app-receiving/section[2]/div[2]/div/div/div/div/h2[2]/span";
 
 //Test Order
 String loc_Testoption = "//a/span[contains(text(),'Test')]";
