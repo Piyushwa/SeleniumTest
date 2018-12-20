@@ -160,7 +160,7 @@ Logs.take_logs("Receive order", "Receiving Order Completed ");
         String Receivenotes  = ReadExcelFile.getCellData(5,5);
         String Printername = ReadExcelFile.getCellData(5,6);
         String Location = ReadExcelFile.getCellData(5,7);
-    	driver.findElement(By.xpath(loc_Receiveoption)).click();
+    	/*driver.findElement(By.xpath(loc_Receiveoption)).click();
 		
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(loc_Receiveserialnoinput)).sendKeys(ReceiveSrl +"\n");
@@ -216,7 +216,7 @@ RecvLocations.sendKeys(Keys.DOWN);
 RecvLocations.sendKeys(Keys.ENTER);
 
 driver.findElement(By.xpath(loc_RecvFinalSubmit)).click();
-Thread.sleep(6000);
+Thread.sleep(6000);*/
 		
 		
 		String Dockdate = utitlities.DatabaseConnectivity.Dbconn("select to_char(DOCKDATEUTC,'mm/dd/yyyy')Dockdate from assets where SERIALNUMBER = '"+ReceiveSrl+"'","DOCKDATE","BBADMIN","BBADMIN");
@@ -232,7 +232,7 @@ Thread.sleep(6000);
 		System.out.println("TAT is " +TAT);
 		
 		String DueDate = utitlities.DatabaseConnectivity.Dbconn(qry2,"DUEDATE","BBADMIN","BBADMIN");
-		System.out.println("Expected Due Date is" + DueDate);
+		System.out.println("Actual Due Date is" + DueDate);
 		
 		
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
@@ -263,26 +263,26 @@ System.out.println("HolidayCount is " +Holidays);
 Integer HolidaysCount = Integer.parseInt(Holidays);
 
 
-LocalDate ActDuedate = add(ResultDuedate, HolidaysCount);
+LocalDate ExpDuedate = add(ResultDuedate, HolidaysCount);
 
 
 
 DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-String ActualDuedate = ActDuedate.format(formatter2);
+String ExpectedDuedate = ExpDuedate.format(formatter2);
 
 //LocalDate Mastdate = ResultDuedate.plusDays(HolidaysCount);
 
 //DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 //String ActualDuedate = Mastdate.format(formatter2);
 
-System.out.println("Actual Due Date is" +ActualDuedate);
+System.out.println("Expected Due Date is" +ExpectedDuedate);
 
 
 //System.out.println("Masterdate is"  +Mastdate);
 
 
 try {
-Assert.assertEquals(ActualDuedate, DueDate);
+Assert.assertEquals(DueDate, ExpectedDuedate);
 	
 	System.out.println("Pass");
 } catch (Exception e) {
@@ -301,4 +301,4 @@ Assert.assertEquals(ActualDuedate, DueDate);
 		
 	
 	
-}
+//}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="2" total="14" passed="12">
   <reporter-output>
     <line>
       <![CDATA[About to begin executing Suite Suite]]>
@@ -50,10 +50,253 @@
       <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
     </line>
     <line>
-      <![CDATA[About to begin executing following method : TestClass.DueDateCal]]>
+      <![CDATA[About to begin executing following method : TestClass.CreateOrder]]>
     </line>
     <line>
-      <![CDATA[Completed executing following method : TestClass.DueDateCal]]>
+      <![CDATA[Completed executing following method : TestClass.CreateOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.ReceiveOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.ReceiveOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.TestOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.TestOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.RepairOrder]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Repair StatusRepairable]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.RepairOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.ComponentPick]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.ComponentPick]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.PickPart]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.PickPart]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.DeliveryPart]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.DeliveryPart]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.ConsumedPart]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.ConsumedPart]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.QCOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.QCOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.PackOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.PackOrder]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testscripts.TestClass]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestClass.ShipOrder]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestClass.ShipOrder]]>
     </line>
     <line>
       <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -68,33 +311,33 @@
       <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="43829" started-at="2018-12-18T16:20:25Z" finished-at="2018-12-18T16:21:09Z">
+  <suite name="Suite" duration-ms="365527" started-at="2018-12-19T16:12:38Z" finished-at="2018-12-19T16:18:44Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="43829" started-at="2018-12-18T16:20:25Z" finished-at="2018-12-18T16:21:09Z">
+    <test name="Test" duration-ms="365527" started-at="2018-12-19T16:12:38Z" finished-at="2018-12-19T16:18:44Z">
       <class name="testscripts.TestClass">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="getBrowser" is-config="true" duration-ms="27858" started-at="2018-12-18T16:19:58Z" finished-at="2018-12-18T16:20:25Z">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="getBrowser" is-config="true" duration-ms="36893" started-at="2018-12-19T16:12:02Z" finished-at="2018-12-19T16:12:38Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.getBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="extentreport()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="extentreport" is-config="true" duration-ms="38" started-at="2018-12-18T16:20:25Z" finished-at="2018-12-18T16:20:25Z">
+        <test-method status="PASS" signature="extentreport()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="extentreport" is-config="true" duration-ms="48" started-at="2018-12-19T16:12:38Z" finished-at="2018-12-19T16:12:39Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.extentreport]]>
             </line>
           </reporter-output>
         </test-method> <!-- extentreport -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-18T16:20:25Z" finished-at="2018-12-18T16:20:28Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-19T16:12:39Z" finished-at="2018-12-19T16:12:42Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@5700d6b1]" name="login" duration-ms="11926" started-at="2018-12-18T16:20:28Z" finished-at="2018-12-18T16:20:40Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@6fd02e5]" name="login" duration-ms="19412" started-at="2018-12-19T16:12:42Z" finished-at="2018-12-19T16:13:01Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.login]]>
@@ -113,27 +356,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="aftermethod" is-config="true" duration-ms="4513" started-at="2018-12-18T16:20:40Z" finished-at="2018-12-18T16:20:45Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="4414" started-at="2018-12-19T16:13:01Z" finished-at="2018-12-19T16:13:05Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="BeforeMethod" is-config="true" duration-ms="3002" started-at="2018-12-18T16:20:45Z" finished-at="2018-12-18T16:20:48Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-19T16:13:05Z" finished-at="2018-12-19T16:13:08Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="DueDateCal()[pri:2, instance:testscripts.TestClass@5700d6b1]" name="DueDateCal" duration-ms="16151" started-at="2018-12-18T16:20:48Z" finished-at="2018-12-18T16:21:04Z">
+        <test-method status="PASS" signature="CreateOrder()[pri:2, instance:testscripts.TestClass@6fd02e5]" name="CreateOrder" duration-ms="41089" started-at="2018-12-19T16:13:08Z" finished-at="2018-12-19T16:13:49Z">
           <reporter-output>
             <line>
-              <![CDATA[About to begin executing following method : TestClass.DueDateCal]]>
+              <![CDATA[About to begin executing following method : TestClass.CreateOrder]]>
             </line>
             <line>
-              <![CDATA[Completed executing following method : TestClass.DueDateCal]]>
+              <![CDATA[Completed executing following method : TestClass.CreateOrder]]>
             </line>
             <line>
               <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -145,8 +388,341 @@
               <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
-        </test-method> <!-- DueDateCal -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@5700d6b1]" name="aftermethod" is-config="true" duration-ms="5157" started-at="2018-12-18T16:21:04Z" finished-at="2018-12-18T16:21:09Z">
+        </test-method> <!-- CreateOrder -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2132" started-at="2018-12-19T16:13:49Z" finished-at="2018-12-19T16:13:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-19T16:13:52Z" finished-at="2018-12-19T16:13:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="ReceiveOrder()[pri:3, instance:testscripts.TestClass@6fd02e5]" name="ReceiveOrder" duration-ms="40478" started-at="2018-12-19T16:13:55Z" finished-at="2018-12-19T16:14:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.ReceiveOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.ReceiveOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ReceiveOrder -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2116" started-at="2018-12-19T16:14:35Z" finished-at="2018-12-19T16:14:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-19T16:14:37Z" finished-at="2018-12-19T16:14:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="TestOrder()[pri:4, instance:testscripts.TestClass@6fd02e5]" name="TestOrder" duration-ms="37172" started-at="2018-12-19T16:14:40Z" finished-at="2018-12-19T16:15:17Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.TestOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.TestOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestOrder -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2087" started-at="2018-12-19T16:15:17Z" finished-at="2018-12-19T16:15:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-19T16:15:19Z" finished-at="2018-12-19T16:15:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="RepairOrder()[pri:5, instance:testscripts.TestClass@6fd02e5]" name="RepairOrder" duration-ms="27230" started-at="2018-12-19T16:15:22Z" finished-at="2018-12-19T16:15:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.RepairOrder]]>
+            </line>
+            <line>
+              <![CDATA[Invalid Repair StatusRepairable]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.RepairOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RepairOrder -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2085" started-at="2018-12-19T16:15:50Z" finished-at="2018-12-19T16:15:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-19T16:15:52Z" finished-at="2018-12-19T16:15:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="ComponentPick()[pri:6, instance:testscripts.TestClass@6fd02e5]" name="ComponentPick" duration-ms="21088" started-at="2018-12-19T16:15:55Z" finished-at="2018-12-19T16:16:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.ComponentPick]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.ComponentPick]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ComponentPick -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2089" started-at="2018-12-19T16:16:16Z" finished-at="2018-12-19T16:16:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-19T16:16:18Z" finished-at="2018-12-19T16:16:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="PickPart()[pri:7, instance:testscripts.TestClass@6fd02e5]" name="PickPart" duration-ms="36881" started-at="2018-12-19T16:16:21Z" finished-at="2018-12-19T16:16:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.PickPart]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.PickPart]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PickPart -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2093" started-at="2018-12-19T16:16:58Z" finished-at="2018-12-19T16:17:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-19T16:17:00Z" finished-at="2018-12-19T16:17:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="DeliveryPart()[pri:8, instance:testscripts.TestClass@6fd02e5]" name="DeliveryPart" duration-ms="12958" started-at="2018-12-19T16:17:03Z" finished-at="2018-12-19T16:17:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.DeliveryPart]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.DeliveryPart]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DeliveryPart -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2072" started-at="2018-12-19T16:17:16Z" finished-at="2018-12-19T16:17:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-19T16:17:18Z" finished-at="2018-12-19T16:17:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="ConsumedPart()[pri:9, instance:testscripts.TestClass@6fd02e5]" name="ConsumedPart" duration-ms="15107" started-at="2018-12-19T16:17:21Z" finished-at="2018-12-19T16:17:36Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.ConsumedPart]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.ConsumedPart]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ConsumedPart -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2097" started-at="2018-12-19T16:17:36Z" finished-at="2018-12-19T16:17:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-19T16:17:38Z" finished-at="2018-12-19T16:17:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="QCOrder()[pri:10, instance:testscripts.TestClass@6fd02e5]" name="QCOrder" duration-ms="12102" started-at="2018-12-19T16:17:41Z" finished-at="2018-12-19T16:17:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.QCOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.QCOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- QCOrder -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2096" started-at="2018-12-19T16:17:53Z" finished-at="2018-12-19T16:17:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-19T16:17:55Z" finished-at="2018-12-19T16:17:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="PackOrder()[pri:11, instance:testscripts.TestClass@6fd02e5]" name="PackOrder" duration-ms="22268" started-at="2018-12-19T16:17:58Z" finished-at="2018-12-19T16:18:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.PackOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.PackOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PackOrder -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2065" started-at="2018-12-19T16:18:21Z" finished-at="2018-12-19T16:18:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-19T16:18:23Z" finished-at="2018-12-19T16:18:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="ShipOrder()[pri:12, instance:testscripts.TestClass@6fd02e5]" name="ShipOrder" duration-ms="16160" started-at="2018-12-19T16:18:26Z" finished-at="2018-12-19T16:18:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : TestClass.ShipOrder]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestClass.ShipOrder]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in testscripts.TestClass]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ShipOrder -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@6fd02e5]" name="aftermethod" is-config="true" duration-ms="2112" started-at="2018-12-19T16:18:42Z" finished-at="2018-12-19T16:18:44Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>

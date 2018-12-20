@@ -23,9 +23,10 @@ ReadExcelFile.setExcelFile(filepath,"input");
 
 String Rono = ReadExcelFile.getCellData(5,3);
 
-String DelvOrder = utitlities.DatabaseConnectivity.Dbconn("select * from COMPONENTORDERS Where ASSETID IN ( select ID from ASSETS  where ASSETTAG = '"+Rono+"')","NUMBER","BBADMIN","BBADMIN");
-String DelSerialnu = ReadExcelFile.getCellData(25,2);
-		
+String DelvOrder = utitlities.DatabaseConnectivity.Dbconn("select * from COMPONENTORDERS Where ASSETID IN ( select ID from ASSETS  where ASSETTAG = '"+Rono+"')","NUMBER","BBADMIN","BBADMIN").toString();
+String DelSerialnu = ReadExcelFile.getCellData(25,2).toString();
+
+Thread.sleep(2000);
 		driver.findElement(By.xpath(loc_DeliverPartsOptions)).click();
 		
 		Thread.sleep(2000);

@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -35,7 +36,15 @@ static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.
 			driver.findElement(By.xpath(loc_packlistno)).sendKeys(PackListNu);
 driver.findElement(By.xpath(loc_CreatePaclist)).click();
 Thread.sleep(3000);
+WebElement Packlisttextfield = driver.findElement(By.xpath(loc_packlistnu));
 
+Thread.sleep(3000);
+Packlisttextfield.clear();
+Packlisttextfield.sendKeys(PackListNu);
+Thread.sleep(3000);
+Thread.sleep(3000);
+Packlisttextfield.sendKeys(Keys.DOWN);
+Packlisttextfield.sendKeys(Keys.ENTER);
 
 		 
 		 driver.findElement(By.xpath(loc_PackRMAno)).sendKeys(PackRMAnu + "\n");

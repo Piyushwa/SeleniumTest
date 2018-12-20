@@ -32,14 +32,23 @@ public class PickParts implements CommonLoctors {
 		String ScanlocVal = ReadExcelFile.getCellData(23,2);
 		String Scanloc = ScanlocVal.replaceAll("\\s","");
 		String Printerval = ReadExcelFile.getCellData(23,3);
+		
+		String Printval = Printerval.replaceAll("\\s","");
 		String Rono = ReadExcelFile.getCellData(5,3);
-		String CompOrder = utitlities.DatabaseConnectivity.Dbconn("select * from COMPONENTORDERS Where ASSETID IN ( select ID from ASSETS  where ASSETTAG = '"+Rono+"')","NUMBER","BBADMIN","BBADMIN");
+		
+	
 		
 
 		driver.findElement(By.xpath(loc_Pickpartsoptions)).click();
 		
-		Thread.sleep(3000);
+	
 		
+		Thread.sleep(6000);
+		
+		String qry1 = "select * from COMPONENTORDERS Where ASSETID IN ( select ID from ASSETS  where ASSETTAG = '"+Rono+"')";
+		
+		System.out.println(qry1);
+		String CompOrder = utitlities.DatabaseConnectivity.Dbconn(qry1,"NUMBER","BBADMIN","BBADMIN");
 		driver.findElement(By.xpath(loc_pickorders)).click();
 		Thread.sleep(1000);
 		String loc_CompOrderval = "//span[contains(text(),'"+CompOrder+"')]";
@@ -62,7 +71,7 @@ public class PickParts implements CommonLoctors {
 		System.out.println(Message);
 		Thread.sleep(2000);
 		WebElement PrinterLoc = 	driver.findElement(By.xpath(loc_PartsPickingPrinter));
-		PrinterLoc.sendKeys(Printerval);
+		PrinterLoc.sendKeys(Printval);
 			Thread.sleep(3000);
 			PrinterLoc.sendKeys(Keys.DOWN);
 			PrinterLoc.sendKeys(Keys.ENTER);

@@ -140,6 +140,7 @@ String loc_QualitylocSubPass = "/html/body/app-root/div/div/app-quality-control/
 
 String loc_PackOption ="//a/span[contains(text(),'Pack')]";
 String loc_packlistno = "//input[@placeholder ='Enter new Packlist # ...']"; 
+String loc_packlistnu = "//*[@id='print-section']/div/div[1]/div/div/div[1]/div/div/div/p-autocomplete/span/input"; 
 String loc_CreatePaclist = "//*[@id='print-section']/div/div[3]/app-create-shipment/div/div[2]/div/div/div/span/button";
 String loc_PackRMAno = "//input[@name ='formRmaNumber']"; 
 String loc_packSerialNu = "//input[@placeholder ='Enter Serial / RO # to pack...']"; 

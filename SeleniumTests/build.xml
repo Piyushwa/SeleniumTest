@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Sample Ant build" basedir=".">
+<project name="SeleniumTests" basedir=".">
 	<!-- ========== Initialize Properties =================================== -->
 	<!-- set global properties for build -->
 	 <property name="ws.home" value="${basedir}" />
@@ -23,16 +23,34 @@
 	 <property name="testngXslt.report.dir" value="${ws.home}/testngXsltReports/${time.stamp}"/>
 	
 	<!-- ====== Set the classpath ====  -->
-	
 	<target name="setClassPath" unless="test.classpath">
-	 <path id="classpath_jars">
-	 <fileset dir="${ws.jars}" includes = "*.jar"/>
-	 </path>
-	 <pathconvert pathsep=":"
-	 property="test.classpath"
-	 refid="classpath_jars" />
-	 
-	 </target>
+			<path id="classpath_jars">
+				<fileset dir="${ws.home}/" includes="**/*.jar"/>
+
+				  </path>	
+         
+                  <pathelement path="${classpath}/"/>
+		<pathconvert pathsep=":" 
+		            property="test.classpath" 
+		            refid="classpath_jars"/>
+
+    		         
+	
+</target>	
+	
+	<target name="init" depends="setClassPath">
+			<tstamp>
+				<format property="start.time" pattern="MM/dd/yyyy hh:mm aa" />
+			</tstamp>
+			<condition property="ANT" 
+	            value="${env.ANT_HOME}/bin/ant.bat" 
+	            else="${env.ANT_HOME}/bin/ant">
+				<os family="windows" />
+			</condition>
+			<taskdef name="testng" classpath="${test.classpath}"
+	             classname="testscripts.TestClass" />
+		</target>
+
 	<!-- Delete directories  -->
 	<target name="delete-dir">
 		<delete dir="${bin}" />
@@ -52,7 +70,7 @@
 	</target>
 	
 	<!-- Runs the file and generates Reportng report for TestNG-->
-	<taskdef name="testng" classname="org.testng.TestNGAntTask" classpathref="classpath" />
+	<taskdef name="testng" classname="testscripts.TestClass" classpathref="classpath" />
 	
 	<target name="testng-execution" depends="compile">
 		<mkdir dir="${testng-report-dir}" />
