@@ -13,6 +13,7 @@ import org.testng.Assert;
 
 import baseClass.DriverHelper;
 import locators.CommonLoctors;
+import oracle.net.aso.i;
 import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
@@ -22,6 +23,8 @@ public class ReceiveOrder implements CommonLoctors{
 
 	WebDriver driver;
 	
+    
+   String Unittype =null;
 	public ReceiveOrder(WebDriver driver) throws InterruptedException{
 		
 		 this.driver = driver;
@@ -55,26 +58,45 @@ public class ReceiveOrder implements CommonLoctors{
         String Receivenotes  = ReadExcelFile.getCellData(5,5);
         String Printername = ReadExcelFile.getCellData(5,6);
         String Location = ReadExcelFile.getCellData(5,7);
+        String NonConfLocation = ReadExcelFile.getCellData(5,8);
+
+
 
 		
 		driver.findElement(By.xpath(loc_Receiveoption)).click();
 		
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(loc_Receiveserialnoinput)).sendKeys(ReceiveSrl +"\n");
+		
+		String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
+
+		System.out.println(Message);
+		
+	
+		
+		
+		
 		 Logs.take_logs("Receive order", "Receiving Order Started ");	   
 			
 		driver.findElement(By.xpath(loc_ReceiveROnumber)).sendKeys(Rono);
 		
-		/*WebElement RMAnu = driver.findElement(By.xpath(loc_RcvRMAno));
+		
+		
+		WebElement RMAnu = driver.findElement(By.xpath(loc_RcvRMAno));
+		WebElement RecvPartNu = driver.findElement(By.xpath(loc_RecvPartno));
+		
+		if(RMAnu.isEnabled()){
+			//Non Confirming unit
+		 String Unittype = "NoNConfirming";
+		 
+		 this.Unittype = Unittype;
 		RMAnu.sendKeys("NO");
 		Thread.sleep(6000);
 		RMAnu.sendKeys(Keys.DOWN);
 		RMAnu.sendKeys(Keys.TAB);
-		
+	
 		Thread.sleep(2000);
 		
-		
-		WebElement RecvPartNu = driver.findElement(By.xpath(loc_RecvPartno));
 		
 		Actions actions = new Actions(driver);
 
@@ -87,65 +109,81 @@ public class ReceiveOrder implements CommonLoctors{
 		
 		Thread.sleep(7000);
 		RecvPartNu.sendKeys(Keys.DOWN);
-		RMAnu.sendKeys(Keys.TAB);*/
-
+		RMAnu.sendKeys(Keys.TAB);
+		
+		}
+		
+		
 		
 		driver.findElement(By.xpath(loc_ReceiveDockdate)).sendKeys("11/16/2018");
-	WebElement Damagechckbx = 	driver.findElement(By.xpath(loc_RecvPhydamageCheckbox));
-	
-	//DriverHelper.checkbox_Checking(Damagechckbx);
-	
-	driver.findElement(By.xpath(loc_ReceiveAccersories)).click();
-	driver.findElement(By.xpath(loc_ReceiveAccersoriestext)).sendKeys(ReceiveAsstext);
-WebElement Accesories1 =	driver.findElement(By.xpath(loc_ReceiveAccersoriesvalue1));
-DriverHelper.checkbox_Checking(Accesories1);
-Thread.sleep(2000);
+		WebElement Damagechckbx = 	driver.findElement(By.xpath(loc_RecvPhydamageCheckbox));
+		
+		//DriverHelper.checkbox_Checking(Damagechckbx);
+		
+		driver.findElement(By.xpath(loc_ReceiveAccersories)).click();
+		driver.findElement(By.xpath(loc_ReceiveAccersoriestext)).sendKeys(ReceiveAsstext);
+	WebElement Accesories1 =	driver.findElement(By.xpath(loc_ReceiveAccersoriesvalue1));
+	DriverHelper.checkbox_Checking(Accesories1);
+	Thread.sleep(2000);
 
-WebElement Submiit = driver.findElement(By.xpath(loc_ReceiveSubmit));
+	WebElement Submiit = driver.findElement(By.xpath(loc_ReceiveSubmit));
 
-	DriverHelper.scrolltoElement(Submiit);
+		DriverHelper.scrolltoElement(Submiit);
 
-//driver.findElement(By.xpath(loc_receivingnotes)).click();
-//driver.findElement(By.xpath(loc_receivingnotes)).sendKeys(Receivenotes);
-Thread.sleep(6000);
-Submiit.click();
-
-
-String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
-
-System.out.println(Message);
-
-if(Message.contains("already exists")){
-	
-	System.out.println("RO Number is already avaliable: " +Message);
-	
-}
-
-else {
-Thread.sleep(6000);
-
-WebElement RecvPrinter = driver.findElement(By.xpath(loc_RecvPrinter));
-RecvPrinter.sendKeys(Printername);
-Thread.sleep(6000);
-RecvPrinter.sendKeys(Keys.DOWN);
-RecvPrinter.sendKeys(Keys.ENTER);
-
-WebElement RecvLocations = driver.findElement(By.xpath(loc_RecvLocations));
-RecvLocations.sendKeys(Location);
-Thread.sleep(6000);
-RecvLocations.sendKeys(Keys.DOWN);
-RecvLocations.sendKeys(Keys.ENTER);
-
-driver.findElement(By.xpath(loc_RecvFinalSubmit)).click();
-Thread.sleep(6000);
-
-String Duedate = driver.findElement(By.xpath(loc_DuedateText)).getText();
+	//driver.findElement(By.xpath(loc_receivingnotes)).click();
+	//driver.findElement(By.xpath(loc_receivingnotes)).sendKeys(Receivenotes);
+	Thread.sleep(6000);
+	Submiit.click();
 
 
-Logs.take_logs("Receive order", "Receiving Order Completed ");	   
-}
+	String Message2 = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 
+	System.out.println(Message);
+
+	if(Message.contains("already exists")){
+		
+		System.out.println("RO Number is already avaliable: " +Message);
+		
 	}
+
+	else {
+	Thread.sleep(6000);
+
+	WebElement RecvPrinter = driver.findElement(By.xpath(loc_RecvPrinter));
+	RecvPrinter.sendKeys(Printername);
+	Thread.sleep(6000);
+	RecvPrinter.sendKeys(Keys.DOWN);
+	RecvPrinter.sendKeys(Keys.ENTER);
+
+	WebElement RecvLocations = driver.findElement(By.xpath(loc_RecvLocations));
+
+if(Unittype.equalsIgnoreCase("NoNConfirming")){
+	RecvLocations.sendKeys(NonConfLocation);
+}
+
+else{
+	
+	RecvLocations.sendKeys(Location);	
+	
+}
+	Thread.sleep(6000);
+	RecvLocations.sendKeys(Keys.DOWN);
+	RecvLocations.sendKeys(Keys.ENTER);
+
+	driver.findElement(By.xpath(loc_RecvFinalSubmit)).click();
+	Thread.sleep(6000);
+
+String Validation = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
+
+System.out.println(Validation);
+	Logs.take_logs("Receive order", "Receiving Order Completed ");	   
+	}
+
+		
+		
+		}
+	
+		
 	
 	
 	
@@ -289,16 +327,13 @@ Assert.assertEquals(DueDate, ExpectedDuedate);
 	System.out.println("Wrong Due Date Calculation");
 
 }
+
+	}
+
+
 	
+			
+		
 	
 	
 }
-
-
-	
-	}
-		
-		
-	
-	
-//}

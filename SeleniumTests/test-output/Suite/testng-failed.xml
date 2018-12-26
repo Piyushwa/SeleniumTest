@@ -8,8 +8,8 @@
     <classes>
       <class name="testscripts.TestClass">
         <methods>
-          <include name="ShipOrder"/>
           <include name="getBrowser"/>
+          <include name="ManageRegion"/>
           <include name="BeforeMethod"/>
           <include name="aftermethod"/>
           <include name="extentreport"/>

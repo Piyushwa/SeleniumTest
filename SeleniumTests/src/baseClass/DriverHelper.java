@@ -46,9 +46,11 @@ public class DriverHelper implements CommonLoctors {
 	
 	public static WebDriver driver;
 	
-	public static String chromedriverPath = "C:\\Users\\IT\\workspace\\Zebra\\chromedriver.exe";
-	public static String IEdriverPath = "C:\\Users\\IT\\workspace\\Zebra\\IEDriverServer.exe";
-	public static String firefoxdriverPath = "C:\\Users\\IT\\workspace\\Zebra\\geckodriver.exe";
+	//public static String chromedriverPath = "C:\\Users\\IT\\workspace\\Zebra\\chromedriver.exe";
+	
+	public static String chromedriverPath =System.getProperty("user.dir") +"\\chromedriver.exe";
+	public static String IEdriverPath = System.getProperty("user.dir") +"\\IEDriverServer.exe";
+	public static String firefoxdriverPath = System.getProperty("user.dir") +"\\geckodriver.exe";
 	public static String Browser  = PropertyReader.readpropertyfile("browser");
 	public static String ZebraURL  = PropertyReader.readpropertyfile("Zurl");
 	

@@ -28,13 +28,19 @@ public class TestClass extends DriverHelper{
 	       Thread.sleep(2000);
 	}
 	
+	@Test(priority=2)
+	public static void ManageRegion() throws InterruptedException, IOException,Exception{
+	ManageRegion mr = new ManageRegion(driver);
+	mr.CreateRegion();
+	}
+	
 	/*	@Test(priority=2,enabled=true)
 	public static void DueDateCal() throws InterruptedException, IOException,Exception{
 	   
 		ReceiveOrder ro = new ReceiveOrder(driver);
 		ro.DuedateCalc();	
 			
-		} */
+		} 
 			@Test(priority=2,enabled=false)
 public static void CreatePart() throws InterruptedException, IOException,Exception{
    
@@ -98,8 +104,8 @@ dp.DeliverPart();
 	ReceiveOrder ro = new ReceiveOrder(driver);
 	ro.Receiveorderform();	
 		
-		}
-	@Test(priority=4,enabled=true)
+		}*/
+/*	@Test(priority=4,enabled=true)
 	public static void TestOrder() throws InterruptedException, IOException,Exception{
   pages.Test ts = new pages.Test(driver);
 ts.testorder();
@@ -128,5 +134,5 @@ ts.testorder();
 	     Shipping sp = new Shipping(driver);
 	      sp.Shippingorder(); 
 }
-	 
+	 */
 }
