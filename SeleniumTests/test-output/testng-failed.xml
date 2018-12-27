@@ -9,9 +9,9 @@
       <class name="testscripts.TestClass">
         <methods>
           <include name="getBrowser"/>
-          <include name="ManageRegion"/>
           <include name="BeforeMethod"/>
           <include name="aftermethod"/>
+          <include name="EditRegion"/>
           <include name="extentreport"/>
         </methods>
       </class> <!-- testscripts.TestClass -->
