@@ -28,12 +28,18 @@ public class TestClass extends DriverHelper{
 	       Thread.sleep(2000);
 	}
 	
-	@Test(priority=2)
-	public static void ManageRegion() throws InterruptedException, IOException,Exception{
-	ManageRegion mr = new ManageRegion(driver);
-	mr.CreateRegion();
-	}
+//@Test(priority=2)
+//public static void ManageRegion() throws InterruptedException, IOException,Exception{
+//ManageRegion mr = new ManageRegion(driver);
+//mr.CreateRegion();
+	//}
 	
+	
+	@Test(priority=3)
+	public static void EditRegion() throws InterruptedException, IOException,Exception{
+	ManageRegion mr = new ManageRegion(driver);
+mr.EditDeleteRegion();
+	}
 	/*	@Test(priority=2,enabled=true)
 	public static void DueDateCal() throws InterruptedException, IOException,Exception{
 	   

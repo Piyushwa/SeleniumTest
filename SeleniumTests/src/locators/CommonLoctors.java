@@ -4,9 +4,6 @@ import utitlities.ReadExcelFile;
 
 public interface CommonLoctors {
 	
-
-	
-	
 	String loc_Username  = "userNameInput";
 	String loc_PassWord  = "passwordInput";
 	String loc_LoginSubmit = "//*[@id='submitButton']";
@@ -250,9 +247,10 @@ String loc_CmputSerial = "//input[@name ='serialNumber']";
 String loc_Cmputin = "//input[@name ='toBin']";
 String loc_cmputSubmit = "//button[contains(text(),'Submit')]";
 
-
-
 //logsviewer
+
+
+
 //ManageRegion
 String loc_ManageRegion = "//a[@href='#/regions']";
 
@@ -260,10 +258,9 @@ String loc_CreateRegion = "//button[contains(text(),'Create Region')]";
 
 String loc_RegionName = "//*[@id='manageregionName']";
 
-String loc_RegionTimeZone = "/html/body/app-root/div/div/app-manageregions/section[2]/p-sidebar[1]/div/app-manageregion-editor/div/form/div[1]/div/div/div[2]/p-autocomplete/span/input";
-
-String loc_RegionCreated = "/html/body/app-root/div/div/app-manageregions/section[2]/p-sidebar[1]/div/app-manageregion-editor/div/form/div[2]/div/button[2]";
-
+String loc_RegionTimeZone = "/html/body/app-root/div/div/app-manage-regions/section[2]/p-sidebar[1]/div/app-manage-regions-editor/div/form/div[1]/div/div/div[2]/p-autocomplete/span/input";
+String loc_RegionCreated = "/html/body/app-root/div/div/app-manage-regions/section[2]/p-sidebar[1]/div/app-manage-regions-editor/div/form/div[2]/div/button[2]";
+String loc_DeleteRegion =" //button[contains(text(),'Delete Region')]";
 
 
 }
