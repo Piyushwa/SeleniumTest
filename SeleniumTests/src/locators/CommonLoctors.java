@@ -268,14 +268,11 @@ String loc_DeleteRegion =" //button[contains(text(),'Delete Region')]";
 //UserMaster
 
 String loc_UserMaster = "//a[@href='#/users']";
-
 String loc_CreateNewuser = "//button[contains(text(),'Create New User')]";
-
 String loc_UserFname = "//*[@id='firstName']";
 String loc_UserLastname = "//*[@id='lastName']";
 String loc_UserUsername = "//*[@id='userName']";
 String loc_UserEmail = "//*[@id='email']";
-
 String loc_UserRole = "//input[@placeholder ='Select Role']";
 
 
