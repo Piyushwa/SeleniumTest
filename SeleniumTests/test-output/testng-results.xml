@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[About to begin executing Suite Suite]]>
@@ -50,16 +50,16 @@
       <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
     </line>
     <line>
-      <![CDATA[About to begin executing following method : TestClass.EditRegion]]>
+      <![CDATA[About to begin executing following method : TestClass.CreateBranch]]>
     </line>
     <line>
-      <![CDATA[Completed executing following method : TestClass.EditRegion]]>
+      <![CDATA[Completed executing following method : TestClass.CreateBranch]]>
     </line>
     <line>
       <![CDATA[Test Method resides in testscripts.TestClass]]>
     </line>
     <line>
-      <![CDATA[Test Status: Failed]]>
+      <![CDATA[Test Status: Pass]]>
     </line>
     <line>
       <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
@@ -68,33 +68,33 @@
       <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="57041" started-at="2018-12-27T11:17:08Z" finished-at="2018-12-27T11:18:05Z">
+  <suite name="Suite" duration-ms="51098" started-at="2018-12-31T12:03:16Z" finished-at="2018-12-31T12:04:07Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="57041" started-at="2018-12-27T11:17:08Z" finished-at="2018-12-27T11:18:05Z">
+    <test name="Test" duration-ms="51098" started-at="2018-12-31T12:03:16Z" finished-at="2018-12-31T12:04:07Z">
       <class name="testscripts.TestClass">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@42dafa95]" name="getBrowser" is-config="true" duration-ms="38637" started-at="2018-12-27T11:16:30Z" finished-at="2018-12-27T11:17:08Z">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@42dafa95]" name="getBrowser" is-config="true" duration-ms="42299" started-at="2018-12-31T12:02:34Z" finished-at="2018-12-31T12:03:16Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.getBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="extentreport()[pri:0, instance:testscripts.TestClass@42dafa95]" name="extentreport" is-config="true" duration-ms="39" started-at="2018-12-27T11:17:08Z" finished-at="2018-12-27T11:17:08Z">
+        <test-method status="PASS" signature="extentreport()[pri:0, instance:testscripts.TestClass@42dafa95]" name="extentreport" is-config="true" duration-ms="47" started-at="2018-12-31T12:03:16Z" finished-at="2018-12-31T12:03:16Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.extentreport]]>
             </line>
           </reporter-output>
         </test-method> <!-- extentreport -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-27T11:17:09Z" finished-at="2018-12-27T11:17:12Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-31T12:03:16Z" finished-at="2018-12-31T12:03:19Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@42dafa95]" name="login" duration-ms="12297" started-at="2018-12-27T11:17:12Z" finished-at="2018-12-27T11:17:24Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@42dafa95]" name="login" duration-ms="11476" started-at="2018-12-31T12:03:19Z" finished-at="2018-12-31T12:03:31Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.login]]>
@@ -113,108 +113,40 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="aftermethod" is-config="true" duration-ms="4438" started-at="2018-12-27T11:17:24Z" finished-at="2018-12-27T11:17:28Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="aftermethod" is-config="true" duration-ms="4234" started-at="2018-12-31T12:03:31Z" finished-at="2018-12-31T12:03:35Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2018-12-27T11:17:28Z" finished-at="2018-12-27T11:17:31Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2018-12-31T12:03:35Z" finished-at="2018-12-31T12:03:38Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="FAIL" signature="EditRegion()[pri:3, instance:testscripts.TestClass@42dafa95]" name="EditRegion" duration-ms="32172" started-at="2018-12-27T11:17:31Z" finished-at="2018-12-27T11:18:03Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
-System info: host: 'PIYUSH-PC', ip: '192.168.48.149', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\IT\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61022}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: ec7039f5337bbca7c4c40e15762e09cc]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
-System info: host: 'PIYUSH-PC', ip: '192.168.48.149', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\IT\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61022}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: ec7039f5337bbca7c4c40e15762e09cc
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-at pages.ManageRegion.EditDeleteRegion(ManageRegion.java:149)
-at testscripts.TestClass.EditRegion(TestClass.java:41)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method status="PASS" signature="CreateBranch()[pri:2, instance:testscripts.TestClass@42dafa95]" name="CreateBranch" duration-ms="27232" started-at="2018-12-31T12:03:38Z" finished-at="2018-12-31T12:04:05Z">
           <reporter-output>
             <line>
-              <![CDATA[About to begin executing following method : TestClass.EditRegion]]>
+              <![CDATA[About to begin executing following method : TestClass.CreateBranch]]>
             </line>
             <line>
-              <![CDATA[Completed executing following method : TestClass.EditRegion]]>
+              <![CDATA[Completed executing following method : TestClass.CreateBranch]]>
             </line>
             <line>
               <![CDATA[Test Method resides in testscripts.TestClass]]>
             </line>
             <line>
-              <![CDATA[Test Status: Failed]]>
+              <![CDATA[Test Status: Pass]]>
             </line>
             <line>
               <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
-        </test-method> <!-- EditRegion -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="aftermethod" is-config="true" duration-ms="2061" started-at="2018-12-27T11:18:03Z" finished-at="2018-12-27T11:18:05Z">
+        </test-method> <!-- CreateBranch -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="aftermethod" is-config="true" duration-ms="2077" started-at="2018-12-31T12:04:05Z" finished-at="2018-12-31T12:04:07Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>

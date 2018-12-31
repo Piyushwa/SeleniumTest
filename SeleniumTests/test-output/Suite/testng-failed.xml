@@ -8,10 +8,10 @@
     <classes>
       <class name="testscripts.TestClass">
         <methods>
+          <include name="CreateBranch"/>
           <include name="getBrowser"/>
           <include name="BeforeMethod"/>
           <include name="aftermethod"/>
-          <include name="EditRegion"/>
           <include name="extentreport"/>
         </methods>
       </class> <!-- testscripts.TestClass -->

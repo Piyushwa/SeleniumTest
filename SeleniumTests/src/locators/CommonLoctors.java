@@ -200,13 +200,15 @@ String loc_BranchRegion = "//*[@id='locationRegion']/div/label";
 String loc_BranchName = "//*[@id='locationName']";
 String loc_BranchAddress = "//*[@id='addr1']";
 String loc_BranchCity = "//*[@id='city']";
-
 String loc_BranchState = "//*[@id='state']";
+String loc_BranchCountry = "//*[@id='country']";
+String loc_BarnchZip = "//*[@id='zip']";
 String loc_BranchTimeZone = "/html/body/app-root/div/div/app-locations/section[2]/p-sidebar[1]/div/app-location-editor/div/form/div[1]/div/div[2]/div[2]/p-autocomplete/span/input";
 String loc_BranchContact  ="//*[@id='contactName'] ";
-String loc_BranchCEmail = "//*[@id= 'contactEmail']";
+String loc_BranchContactPhone = "//*[@id= 'contactPhone']";
+String loc_BranchEmail = "//*[@id= 'contactEmail']";
 String loc_BranchCTDIlocChkbox = "/html/body/app-root/div/div/app-locations/section[2]/p-sidebar[1]/div/app-location-editor/div/form/div[1]/div/div[2]/div[6]/p-checkbox/div/div[2]";
-String loc_Createloc = "//button[contains(text(),'Create Location')]";
+String loc_Createlocbutton = "//button[contains(text(),'Create Location')]";
 
 //PickParts
 
@@ -261,6 +263,28 @@ String loc_RegionName = "//*[@id='manageregionName']";
 String loc_RegionTimeZone = "/html/body/app-root/div/div/app-manage-regions/section[2]/p-sidebar[1]/div/app-manage-regions-editor/div/form/div[1]/div/div/div[2]/p-autocomplete/span/input";
 String loc_RegionCreated = "/html/body/app-root/div/div/app-manage-regions/section[2]/p-sidebar[1]/div/app-manage-regions-editor/div/form/div[2]/div/button[2]";
 String loc_DeleteRegion =" //button[contains(text(),'Delete Region')]";
+
+
+//UserMaster
+
+String loc_UserMaster = "//a[@href='#/users']";
+
+String loc_CreateNewuser = "//button[contains(text(),'Create New User')]";
+
+String loc_UserFname = "//*[@id='firstName']";
+String loc_UserLastname = "//*[@id='lastName']";
+String loc_UserUsername = "//*[@id='userName']";
+String loc_UserEmail = "//*[@id='email']";
+
+String loc_UserRole = "//input[@placeholder ='Select Role']";
+
+
+
+
+
+
+
+
 
 
 }

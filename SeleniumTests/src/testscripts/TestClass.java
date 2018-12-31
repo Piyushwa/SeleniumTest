@@ -35,12 +35,23 @@ public class TestClass extends DriverHelper{
 	//}
 	
 	
-	@Test(priority=3)
+	@Test(priority=2)
+	public static void CreateBranch() throws InterruptedException, IOException,Exception{
+		
+		
+		BranchMaster bm = new BranchMaster(driver);
+		
+		bm.CreateBranch();
+		
+	}
+	
+	
+	/*	@Test(priority=3)
 	public static void EditRegion() throws InterruptedException, IOException,Exception{
 	ManageRegion mr = new ManageRegion(driver);
 mr.EditDeleteRegion();
 	}
-	/*	@Test(priority=2,enabled=true)
+		@Test(priority=2,enabled=true)
 	public static void DueDateCal() throws InterruptedException, IOException,Exception{
 	   
 		ReceiveOrder ro = new ReceiveOrder(driver);
