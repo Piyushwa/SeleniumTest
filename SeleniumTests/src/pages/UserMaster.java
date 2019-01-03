@@ -130,4 +130,19 @@ driver.findElement(By.xpath(loc_CreateRoleButton)).click();
 
 }
 
+
+public void EditRoleUser() throws InterruptedException,Exception{
+	
+	driver.findElement(By.xpath(loc_Settings)).click();
+	
+	Thread.sleep(3000);
+			
+	driver.findElement(By.xpath(loc_UserMaster)).click();
+		
+	Thread.sleep(3000);
+	
+	driver.findElement(By.xpath(loc_UserRolebutton)).click();
+	
+	Thread.sleep(6000);
+}
 }
