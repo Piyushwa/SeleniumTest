@@ -274,6 +274,20 @@ String loc_UserLastname = "//*[@id='lastName']";
 String loc_UserUsername = "//*[@id='userName']";
 String loc_UserEmail = "//*[@id='email']";
 String loc_UserRole = "//input[@placeholder ='Select Role']";
+String loc_CreateUserButton = "//button[contains(text(),'Create User')]";
+String loc_SearchUserfilter = "//input[@name ='searchName']";
+String loc_SearchUserApplyFilter = "//button[contains(text(),'Apply Filter')]";
+
+String loc_UserRolebutton = "//a[@href='#/roles']";
+
+String loc_CreateRolebutton = "//button[contains(text(),'Create New Role')]";
+
+String loc_Rolename  = "//*[@id='name']";
+
+String loc_UserRolePermission = "//input[@placeholder ='Select Permissions']";
+
+String loc_CreateRoleButton = "//button[contains(text(),'Create Role')]";
+
 
 
 

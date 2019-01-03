@@ -58,7 +58,7 @@ public void CreateBranch() throws InterruptedException,Exception{
 	Thread.sleep(3000);
 
 	driver.findElement(By.xpath(loc_BranchName)).sendKeys("TestBranch");
-	driver.findElement(By.xpath(loc_BranchAddress)).sendKeys("TestBranch");
+	driver.findElement(By.xpath(loc_BranchAddress)).sendKeys("TestAdd");
 	driver.findElement(By.xpath(loc_BranchCity)).sendKeys("TestCity");	
 	driver.findElement(By.xpath(loc_BranchState)).sendKeys("TestState");	
 	driver.findElement(By.xpath(loc_BarnchZip)).sendKeys("TestZip");	
