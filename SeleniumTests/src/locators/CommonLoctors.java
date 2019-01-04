@@ -289,10 +289,19 @@ String loc_UserRolePermission = "//input[@placeholder ='Select Permissions']";
 String loc_CreateRoleButton = "//button[contains(text(),'Create Role')]";
 
 
+//Bins
+
+String loc_BinsMaster = "//a[@href='#/bins']";
+String loc_CreateBinsButton = "//button[contains(text(),'Create New Bin')]";
+String loc_CreateBinsName = "//*[@id='binName']";
+String loc_CreateBinsDescription = "//*[@id='binDescription']";
+String loc_CreateBinsType = "//div/label[contains(text(),'Select Bin Type')]";
+String loc_CreateBinlocation = "//*[@id='binLocation']/div/label";
+
+String loc_CreateBinAisle = "//*[@id='binAisle']/div/label";
 
 
-
-
+String loc_CreateCapicity = "//*[@id='binCapacity']";
 
 
 

@@ -34,8 +34,27 @@ public class TestClass extends DriverHelper{
 //mr.CreateRegion();
 	//}
 	
+	@Test(priority=2)
+public static void CreateUser() throws InterruptedException, IOException,Exception{
+		
+		
+		UserMaster um = new UserMaster(driver);
+		
+		um.CreateNewUser();
+	}
+	
 	
 	@Test(priority=2)
+public static void CreateUserRole() throws InterruptedException, IOException,Exception{
+		
+		
+		UserMaster um = new UserMaster(driver);
+		
+		um.CreateRoleUser();
+	}
+	
+	
+	/*	@Test(priority=2)
 	public static void CreateBranch() throws InterruptedException, IOException,Exception{
 		
 		

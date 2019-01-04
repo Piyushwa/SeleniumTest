@@ -30,6 +30,16 @@ public void CreateBranch() throws InterruptedException,Exception{
 	ReadExcelFile.setExcelFile(filepath,"input");
 	
 	String Region = ReadExcelFile.getCellData(31,1);
+	String BranchName = ReadExcelFile.getCellData(31,2);
+	String BranchAdd = ReadExcelFile.getCellData(31,3);
+	String Branchcity = ReadExcelFile.getCellData(31,5);
+	String BranchState = ReadExcelFile.getCellData(31,6);
+	String BranchZip = ReadExcelFile.getCellData(31,7);
+	String BranchCountry = ReadExcelFile.getCellData(31,8);
+	String BranchContact = ReadExcelFile.getCellData(31,10);
+	String BranchContactno = ReadExcelFile.getCellData(31,11);
+	String BranchContactemail = ReadExcelFile.getCellData(31,12);
+
 	String TimeZone = ReadExcelFile.getCellData(31,9);
 
 	
@@ -57,12 +67,12 @@ public void CreateBranch() throws InterruptedException,Exception{
 	
 	Thread.sleep(3000);
 
-	driver.findElement(By.xpath(loc_BranchName)).sendKeys("TestBranch");
-	driver.findElement(By.xpath(loc_BranchAddress)).sendKeys("TestAdd");
-	driver.findElement(By.xpath(loc_BranchCity)).sendKeys("TestCity");	
-	driver.findElement(By.xpath(loc_BranchState)).sendKeys("TestState");	
-	driver.findElement(By.xpath(loc_BarnchZip)).sendKeys("TestZip");	
-	driver.findElement(By.xpath(loc_BranchCountry)).sendKeys("TestCountry");
+	driver.findElement(By.xpath(loc_BranchName)).sendKeys(BranchName);
+	driver.findElement(By.xpath(loc_BranchAddress)).sendKeys(BranchAdd);
+	driver.findElement(By.xpath(loc_BranchCity)).sendKeys(Branchcity);	
+	driver.findElement(By.xpath(loc_BranchState)).sendKeys(BranchState);	
+	driver.findElement(By.xpath(loc_BarnchZip)).sendKeys(BranchZip);	
+	driver.findElement(By.xpath(loc_BranchCountry)).sendKeys(BranchCountry);
 	
 	
 	Thread.sleep(3000);
@@ -77,9 +87,9 @@ public void CreateBranch() throws InterruptedException,Exception{
 	Timezone.sendKeys(Keys.ENTER);
 	
 
-	driver.findElement(By.xpath(loc_BranchContact)).sendKeys("TestUser");
-	driver.findElement(By.xpath(loc_BranchContactPhone)).sendKeys("9999999999");
-	driver.findElement(By.xpath(loc_BranchEmail)).sendKeys("Test@ctdi.com");
+	driver.findElement(By.xpath(loc_BranchContact)).sendKeys(BranchContact);
+	driver.findElement(By.xpath(loc_BranchContactPhone)).sendKeys(BranchContactno);
+	driver.findElement(By.xpath(loc_BranchEmail)).sendKeys(BranchContactemail);
 
 	Thread.sleep(3000);
 

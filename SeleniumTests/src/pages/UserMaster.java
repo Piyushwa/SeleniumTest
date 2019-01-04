@@ -30,6 +30,13 @@ public void CreateNewUser() throws InterruptedException,Exception{
 	
 	ReadExcelFile.setExcelFile(filepath,"input");
 	
+	String UserFistname = ReadExcelFile.getCellData(33,1);
+	String UserLastname = ReadExcelFile.getCellData(33,2);
+	String UserUsername = ReadExcelFile.getCellData(33,3);
+	String UserUsermail = ReadExcelFile.getCellData(33,4);
+	String UserRole = ReadExcelFile.getCellData(33,5);
+
+
 driver.findElement(By.xpath(loc_Settings)).click();
 	
 Thread.sleep(3000);
@@ -43,17 +50,16 @@ driver.findElement(By.xpath(loc_CreateNewuser)).click();
 Thread.sleep(3000);
 	
 
-driver.findElement(By.xpath(loc_UserFname)).sendKeys("Test");
+driver.findElement(By.xpath(loc_UserFname)).sendKeys(UserFistname);
 
-driver.findElement(By.xpath(loc_UserLastname)).sendKeys("User");
+driver.findElement(By.xpath(loc_UserLastname)).sendKeys(UserLastname);
 
-driver.findElement(By.xpath(loc_UserUsername)).sendKeys("Tuser");
+driver.findElement(By.xpath(loc_UserUsername)).sendKeys(UserUsername);
 
-driver.findElement(By.xpath(loc_UserEmail)).sendKeys("Tuser@gmail.com");
-
+driver.findElement(By.xpath(loc_UserEmail)).sendKeys(UserUsermail);
 
 WebElement Userrole =   driver.findElement(By.xpath(loc_UserRole));
-Userrole.sendKeys("Developer");
+Userrole.sendKeys(UserRole);
 Thread.sleep(6000);
 Userrole.sendKeys(Keys.DOWN);
 Userrole.sendKeys(Keys.ENTER);
@@ -99,6 +105,12 @@ Assert.assertEquals(UserName, "Tuser");
 
 public void CreateRoleUser() throws InterruptedException,Exception{
 	
+ReadExcelFile.setExcelFile(filepath,"input");
+	
+	String RoleName = ReadExcelFile.getCellData(33,6);
+	String RoleType = ReadExcelFile.getCellData(33,7);
+
+	
 	driver.findElement(By.xpath(loc_Settings)).click();
 	
 	Thread.sleep(3000);
@@ -115,11 +127,11 @@ public void CreateRoleUser() throws InterruptedException,Exception{
 	Thread.sleep(3000);
 	
 
-driver.findElement(By.xpath(loc_Rolename)).sendKeys("Test");
+driver.findElement(By.xpath(loc_Rolename)).sendKeys(RoleName);
 
 WebElement  RolePermission = driver.findElement(By.xpath(loc_UserRolePermission));
 
-RolePermission.sendKeys("ViewOrders");
+RolePermission.sendKeys(RoleType);
 Thread.sleep(6000);
 
 RolePermission.sendKeys(Keys.DOWN);
