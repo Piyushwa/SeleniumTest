@@ -8,9 +8,9 @@
     <classes>
       <class name="testscripts.TestClass">
         <methods>
+          <include name="CreateBin"/>
           <include name="getBrowser"/>
           <include name="BeforeMethod"/>
-          <include name="CreateUser"/>
           <include name="aftermethod"/>
           <include name="extentreport"/>
         </methods>

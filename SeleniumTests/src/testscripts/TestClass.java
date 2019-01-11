@@ -28,13 +28,24 @@ public class TestClass extends DriverHelper{
 	       Thread.sleep(2000);
 	}
 	
+	
+	@Test(priority=2)
+	public static void CreateBin() throws InterruptedException, IOException,Exception{
+			
+			
+			BinsMaster bim = new BinsMaster(driver);
+			
+bim.EditDeleteBin();
+
+	}
+	
 //@Test(priority=2)
 //public static void ManageRegion() throws InterruptedException, IOException,Exception{
 //ManageRegion mr = new ManageRegion(driver);
 //mr.CreateRegion();
 	//}
 	
-	@Test(priority=2)
+	/*@Test(priority=2)
 public static void CreateUser() throws InterruptedException, IOException,Exception{
 		
 		

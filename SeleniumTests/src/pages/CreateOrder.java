@@ -212,7 +212,6 @@ driver.findElement(By.xpath(loc_CreateOrderbutton)).click();
 			String Ordernumber = Ordernamecol.get(i).getText();
 			System.out.println("Nu  is  " +Ordernumber);
 			System.out.println("Order is Created");
-			
 			Thread.sleep(4000);
 	
 			try{

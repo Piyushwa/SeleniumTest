@@ -193,6 +193,19 @@ String loc_CreatePartSubmit = "//button[contains(text(),'Submit')] ";
 String loc_Partfilter =  "//input[@name ='orderNumber']";
 String loc_filterApply = "//button[contains(text(),'Apply')]";
 
+// CreateComponent
+
+String loc_RepairPartMaster = "//a[@href='#/repair-components']";
+String loc_CreateComponentButton = "//*[@id='btnCreateComponent']";
+String loc_componentname = "//input[@name ='orderNumber']";
+
+String  loc_ComponentDescr = "//div/textarea[@name ='description']";
+
+String loc_Freestockchkbox = "/html/body/app-root/div/div/app-repair-components/section[2]/div/p-sidebar[1]/div/repair-component-editor-component/div/form/div[1]/div[3]/p-checkbox/div/div[2]";
+
+String loc_Serializedchkbox = "/html/body/app-root/div/div/app-repair-components/section[2]/div/p-sidebar[1]/div/repair-component-editor-component/div/form/div[1]/div[4]/p-checkbox/div/div[2]";
+
+
 //Setting - CreateBranches
 String loc_CreateBranch = "//a[@href='#/branches']";
 String loc_CreateBranchButton = "//button[contains(text(),'Create Branch')]";
@@ -250,7 +263,11 @@ String loc_Cmputin = "//input[@name ='toBin']";
 String loc_cmputSubmit = "//button[contains(text(),'Submit')]";
 
 //logsviewer
-
+String loc_logviewer = "//a[@href='#/settings/log']";
+String loc_Messagefilter = "//input[@name ='searchKey']";
+String loc_Processdatefrom = "//input[@name ='min-date']";
+String loc_Processdateto = "//input[@name ='max-date']";
+String loc_ApplyFilter = "//button[contains(text(),'Apply')]";
 
 
 //ManageRegion
@@ -277,32 +294,27 @@ String loc_UserRole = "//input[@placeholder ='Select Role']";
 String loc_CreateUserButton = "//button[contains(text(),'Create User')]";
 String loc_SearchUserfilter = "//input[@name ='searchName']";
 String loc_SearchUserApplyFilter = "//button[contains(text(),'Apply Filter')]";
-
 String loc_UserRolebutton = "//a[@href='#/roles']";
-
 String loc_CreateRolebutton = "//button[contains(text(),'Create New Role')]";
-
 String loc_Rolename  = "//*[@id='name']";
-
 String loc_UserRolePermission = "//input[@placeholder ='Select Permissions']";
-
 String loc_CreateRoleButton = "//button[contains(text(),'Create Role')]";
 
 
 //Bins
-
 String loc_BinsMaster = "//a[@href='#/bins']";
 String loc_CreateBinsButton = "//button[contains(text(),'Create New Bin')]";
 String loc_CreateBinsName = "//*[@id='binName']";
 String loc_CreateBinsDescription = "//*[@id='binDescription']";
 String loc_CreateBinsType = "//div/label[contains(text(),'Select Bin Type')]";
 String loc_CreateBinlocation = "//*[@id='binLocation']/div/label";
-
 String loc_CreateBinAisle = "//*[@id='binAisle']/div/label";
-
-
 String loc_CreateCapicity = "//*[@id='binCapacity']";
-
+String loc_CreateBin = "//button[contains(text(),'Create Bin')]";
+String loc_Binnamefilter =  "//input[@name ='binName']";
+String loc_Applyfilter = "//button[contains(text(),'Apply')]";
+String loc_UpdateBin = "//button[contains(text(),'Update Bin')]";
+String loc_DeletBin = "//button[contains(text(),'Delete Bin')]";
 
 
 
