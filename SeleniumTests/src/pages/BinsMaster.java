@@ -11,6 +11,7 @@ import org.testng.Assert;
 
 import baseClass.DriverHelper;
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 import utitlities.Screenshots;
 
@@ -42,6 +43,9 @@ public void CreateNewBin() throws InterruptedException,Exception{
 	
 	String BinAislevalue =  ReadExcelFile.getCellData(35,5);
 	String BinCapicity =  ReadExcelFile.getCellData(35,6);
+	
+	  Logs.take_logs("Bin Master", "Create New Bin");	   	
+
 
 
 	driver.findElement(By.xpath(loc_Settings)).click();
@@ -118,8 +122,13 @@ public void CreateNewBin() throws InterruptedException,Exception{
 	
 	driver.findElement(By.xpath(loc_CreateBin)).click();
 	
+	
+	
 	Thread.sleep(6000);
 	
+	
+	  Logs.take_logs("Bin Master", "New Bin Created");	   	
+
 	driver.findElement(By.xpath(loc_Binnamefilter)).sendKeys(BinName);
 	driver.findElement(By.xpath(loc_Applyfilter)).click();
 	
@@ -172,6 +181,9 @@ Assert.assertEquals(BinName, BinNameActual);
 			driver.findElement(By.xpath(loc_Applyfilter)).click();
 			
 			Thread.sleep(6000);
+			
+			  Logs.take_logs("Bin Master", "New Bin Edit");	   	
+
 
 			List<WebElement> Binnamecol = driver.findElements(By.xpath("//div/div/table/tbody/tr/td[1]"));
 
@@ -199,7 +211,11 @@ Thread.sleep(3000);
    DeleteClickElement.click();    
   	Thread.sleep(3000);
   	
+
 	driver.findElement(By.xpath(loc_DeletBin)).click();
+	
+	  Logs.take_logs("Bin Master", "New Bin Deleted");	   	
+
 		           
 		    }
 	 }
