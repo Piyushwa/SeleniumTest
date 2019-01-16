@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class ComponentPutway implements CommonLoctors {
@@ -33,7 +34,8 @@ ReadExcelFile.setExcelFile(filepath,"input");
 	driver.navigate().to("https://b2bolpdev.ctdi.com/#/repair-component-putaway");
 		
 		Thread.sleep(4000);
-		
+		  Logs.take_logs("Component Putaway", "Started");	   	
+
 	
 			WebElement PutModul = 	driver.findElement(By.xpath(loc_CmputModal));
 			PutModul.sendKeys(Modelnumber);
@@ -66,6 +68,9 @@ ReadExcelFile.setExcelFile(filepath,"input");
 					Thread.sleep(3000);
 					
 					driver.findElement(By.xpath(loc_cmputSubmit)).click();
+					
+					  Logs.take_logs("Component Putaway", "Completed");	   	
+
 				
 		
 	}

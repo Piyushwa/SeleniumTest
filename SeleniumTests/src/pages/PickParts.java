@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import com.sun.webkit.Utilities;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class PickParts implements CommonLoctors {
@@ -41,7 +42,8 @@ public class PickParts implements CommonLoctors {
 
 		driver.findElement(By.xpath(loc_Pickpartsoptions)).click();
 		
-	
+		 Logs.take_logs("Part Pick","Start");
+
 		
 		Thread.sleep(6000);
 		
@@ -76,7 +78,8 @@ public class PickParts implements CommonLoctors {
 			PrinterLoc.sendKeys(Keys.DOWN);
 			PrinterLoc.sendKeys(Keys.ENTER);
 			Thread.sleep(3000);
-			
+			 Logs.take_logs("Part Pick","Completed");
+	
 	
 
 	}

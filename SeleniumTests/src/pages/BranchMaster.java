@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class BranchMaster implements CommonLoctors {
@@ -51,7 +52,8 @@ public void CreateBranch() throws InterruptedException,Exception{
 	
 	Thread.sleep(3000);
 
-	
+	  Logs.take_logs("Branch Master", "New Branch Create");	   	
+
 	driver.findElement(By.xpath(loc_CreateBranchButton)).click();
 	
 	Thread.sleep(3000);
@@ -96,6 +98,7 @@ public void CreateBranch() throws InterruptedException,Exception{
 	driver.findElement(By.xpath(loc_Createlocbutton)).click();
 
 	Thread.sleep(3000);
+	  Logs.take_logs("Branch Master", "New Branch Created");	   	
 
 
 }

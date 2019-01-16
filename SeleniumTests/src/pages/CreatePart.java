@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class CreatePart implements CommonLoctors {
@@ -35,6 +36,9 @@ static String filepath = System.getProperty("user.dir") +"\\TestData\\Inputfile.
 		driver.findElement(By.xpath(loc_Settings)).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath(loc_CreateParts)).click();
+		
+		  Logs.take_logs("Create Part", "Part Creation Started");	   	
+
 		
 		Thread.sleep(6000);
 		driver.findElement(By.xpath(loc_CreatePartsButton)).click();
@@ -79,6 +83,8 @@ action.build().perform();
 	driver.findElement(By.xpath(loc_CreatePartSubmit)).click();
 	
 	Thread.sleep(3000);
+	  Logs.take_logs("Create Part", "Part Creation Completed");	   	
+
 	
 	String Validation = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 	
@@ -98,4 +104,6 @@ action.build().perform();
 	
 	}
 	}
+	
+	
 }

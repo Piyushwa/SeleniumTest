@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class ManageRegion implements CommonLoctors {
@@ -44,6 +45,7 @@ public void CreateRegion() throws InterruptedException,Exception{
 	driver.findElement(By.xpath(loc_ManageRegion)).click();
 	
 	Thread.sleep(3000);
+	Logs.take_logs("Manage Region", "New Region Creation started");	   	
 
 	
 	driver.findElement(By.xpath(loc_CreateRegion)).click();
@@ -73,6 +75,7 @@ public void CreateRegion() throws InterruptedException,Exception{
 			
 			
 			Thread.sleep(6000);
+			Logs.take_logs("Manage Region", "New Region Creation Completeds");	   	
 
 			
 			 List<WebElement> columVal =  driver.findElements(By.xpath("/html/body/app-root/div/div/app-manage-regions/section[2]/div/div[2]/p-table/div/div/table/tbody/tr/td[1]"));
@@ -127,7 +130,8 @@ driver.findElement(By.xpath(loc_Settings)).click();
 	
 	Thread.sleep(3000);
 
-	
+	Logs.take_logs("Manage Region", "Edit Region");	   	
+
 	 List<WebElement> RegioncolumVal =  driver.findElements(By.xpath("/html/body/app-root/div/div/app-manage-regions/section[2]/div/div[2]/p-table/div/div/table/tbody/tr/td[1]"));
 	    // count the size of the list to match with the size of the column state
 	    System.out.println("Size of the contents in the column state is : " +RegioncolumVal.size());
@@ -175,6 +179,7 @@ driver.findElement(By.xpath(loc_Settings)).click();
 	    			//Delete Region
 	    			Thread.sleep(6000);
 	   	         WebElement DeleteClickElement =  driver.findElement(By.xpath("/html/body/app-root/div/div/app-manage-regions/section[2]/div/div[2]/p-table/div/div/table/tbody/tr["+(i+1)+"]/td[5]/a"));
+	   	  	Logs.take_logs("Manage Region", "Delete Region");	   	
 
 	   	      Thread.sleep(3000);
 	   	   DeleteClickElement.click();    

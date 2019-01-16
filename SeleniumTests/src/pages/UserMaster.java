@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 import utitlities.Screenshots;
 
@@ -44,6 +45,7 @@ Thread.sleep(3000);
 driver.findElement(By.xpath(loc_UserMaster)).click();
 	
 Thread.sleep(3000);
+Logs.take_logs("User Master", "New User Create");	   	
 
 driver.findElement(By.xpath(loc_CreateNewuser)).click();
 	
@@ -105,6 +107,10 @@ Assert.assertEquals(UserName, "Tuser");
 
 public void CreateRoleUser() throws InterruptedException,Exception{
 	
+	
+	Logs.take_logs("User Master", "New Role Create");	   	
+
+	
 ReadExcelFile.setExcelFile(filepath,"input");
 	
 	String RoleName = ReadExcelFile.getCellData(33,6);
@@ -144,6 +150,9 @@ driver.findElement(By.xpath(loc_CreateRoleButton)).click();
 
 
 public void EditRoleUser() throws InterruptedException,Exception{
+	
+	Logs.take_logs("User Master", "Role Edit");	   	
+
 	
 	driver.findElement(By.xpath(loc_Settings)).click();
 	

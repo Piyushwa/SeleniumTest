@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class DeliverParts implements CommonLoctors {
@@ -27,6 +28,9 @@ String DelvOrder = utitlities.DatabaseConnectivity.Dbconn("select * from COMPONE
 String DelSerialnu = ReadExcelFile.getCellData(25,2).toString();
 
 Thread.sleep(2000);
+
+Logs.take_logs("Deliver Parts", "Start");	   	
+
 		driver.findElement(By.xpath(loc_DeliverPartsOptions)).click();
 		
 		Thread.sleep(2000);
@@ -46,7 +50,8 @@ Thread.sleep(2000);
 		System.out.println(Message);
 		
 		
-		
+		Logs.take_logs("Deliver Parts", "Completed");	   	
+
 		
 	}
 

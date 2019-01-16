@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import baseClass.DriverHelper;
 import locators.CommonLoctors;
+import utitlities.Logs;
 import utitlities.ReadExcelFile;
 
 public class ComponentPicking implements CommonLoctors {
@@ -38,7 +39,8 @@ ReadExcelFile.setExcelFile(filepath,"input");
 		
 		DriverHelper.waitTillElementFound(CompLoc, 15);
 		
-	
+		Logs.take_logs("Component Picking", "Started");	   	
+
 		
 		
 		CompLoc.sendKeys(complocation);
@@ -80,9 +82,15 @@ ReadExcelFile.setExcelFile(filepath,"input");
 					
 					Thread.sleep(2000);
 					
+					Logs.take_logs("Component Picking", "Completed");	   	
+
+					
 					String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 
 					System.out.println(Message);
+					
+					
+					
 				
 					
 	}
