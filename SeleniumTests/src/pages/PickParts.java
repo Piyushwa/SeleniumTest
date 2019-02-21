@@ -23,7 +23,7 @@ public class PickParts implements CommonLoctors {
 		 this.driver = driver;
 		 
 		 }
-
+//test
 
 	public void pickparts() throws Exception,InterruptedException{
 		
@@ -70,7 +70,7 @@ public class PickParts implements CommonLoctors {
 		
 		String Message = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 
-		System.out.println(Message);
+		System.out.println(Message);// test
 		Thread.sleep(2000);
 		WebElement PrinterLoc = 	driver.findElement(By.xpath(loc_PartsPickingPrinter));
 		PrinterLoc.sendKeys(Printval);
