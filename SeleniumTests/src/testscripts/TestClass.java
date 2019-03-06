@@ -29,7 +29,7 @@ public class TestClass extends DriverHelper{
 	}
 	
 	
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public static void CreateBin() throws InterruptedException, IOException,Exception{
 			
 			
@@ -37,7 +37,7 @@ public class TestClass extends DriverHelper{
 			
 bim.EditDeleteBin();
 
-	}
+	}*/
 	
 //@Test(priority=2)
 //public static void ManageRegion() throws InterruptedException, IOException,Exception{
@@ -144,15 +144,16 @@ dp.DeliverPart();
 	CreateOrder co = new CreateOrder(driver);
 	co.Createorderform();
 		
-		}
+		}*/
 
-	@Test(priority=3,enabled=true)
+	/*@Test(priority=2,enabled=true)
 	public static void ReceiveOrder() throws InterruptedException, IOException,Exception{
 	ReceiveOrder ro = new ReceiveOrder(driver);
 	ro.Receiveorderform();	
-		
-		}*/
-/*	@Test(priority=4,enabled=true)
+		}
+	
+	
+	@Test(priority=3,enabled=true)
 	public static void TestOrder() throws InterruptedException, IOException,Exception{
   pages.Test ts = new pages.Test(driver);
 ts.testorder();
@@ -163,23 +164,34 @@ ts.testorder();
    Repair rp =new Repair(driver);
   rp.Repairorder();
 		}
+
+@Test(priority=9,enabled=true)
+public static void ConsumedPart() throws InterruptedException, IOException,Exception{
+   
+	 Repair rp =new Repair(driver);
+	  rp.ConsumePartinRepair();
+			}
 		
-	
+
 	   		@Test(priority=10,enabled=true)
 			public static void QCOrder() throws InterruptedException, IOException,Exception{
 	     QualityCheck qc = new QualityCheck(driver);
 	      qc.QCOrd();
 	   		}
+	   		
+	   	
 	   			@Test(priority=11,enabled=true)
 				public static void PackOrder() throws InterruptedException, IOException,Exception{
 	       
 	       PackageOrder po = new PackageOrder(driver);
 	      po.Packorder();
-	   			}
+	   			}*/
+	   			
+	   			
 	   				@Test(priority=12,enabled=true)
 	   				public static void ShipOrder() throws InterruptedException, IOException,Exception{
 	     Shipping sp = new Shipping(driver);
 	      sp.Shippingorder(); 
 }
-	 */
+	 
 }

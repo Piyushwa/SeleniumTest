@@ -80,7 +80,7 @@ public class ReceiveOrder implements CommonLoctors{
 			
 		driver.findElement(By.xpath(loc_ReceiveROnumber)).sendKeys(Rono);
 		
-		
+		/*
 		
 		WebElement RMAnu = driver.findElement(By.xpath(loc_RcvRMAno));
 		WebElement RecvPartNu = driver.findElement(By.xpath(loc_RecvPartno));
@@ -111,20 +111,20 @@ public class ReceiveOrder implements CommonLoctors{
 		RecvPartNu.sendKeys(Keys.DOWN);
 		RMAnu.sendKeys(Keys.TAB);
 		
-		}
+		}*/
 		
 		
 		
 		driver.findElement(By.xpath(loc_ReceiveDockdate)).sendKeys("11/16/2018");
-		WebElement Damagechckbx = 	driver.findElement(By.xpath(loc_RecvPhydamageCheckbox));
+		//WebElement Damagechckbx = 	driver.findElement(By.xpath(loc_RecvPhydamageCheckbox));
 		
 		//DriverHelper.checkbox_Checking(Damagechckbx);
 		
-		driver.findElement(By.xpath(loc_ReceiveAccersories)).click();
-		driver.findElement(By.xpath(loc_ReceiveAccersoriestext)).sendKeys(ReceiveAsstext);
-	WebElement Accesories1 =	driver.findElement(By.xpath(loc_ReceiveAccersoriesvalue1));
-	DriverHelper.checkbox_Checking(Accesories1);
-	Thread.sleep(2000);
+		//driver.findElement(By.xpath(loc_ReceiveAccersories)).click();
+		//driver.findElement(By.xpath(loc_ReceiveAccersoriestext)).sendKeys(ReceiveAsstext);
+	//WebElement Accesories1 =	driver.findElement(By.xpath(loc_ReceiveAccersoriesvalue1));
+	//DriverHelper.checkbox_Checking(Accesories1);
+	//Thread.sleep(2000);
 
 	WebElement Submiit = driver.findElement(By.xpath(loc_ReceiveSubmit));
 
@@ -184,10 +184,7 @@ System.out.println(Validation);
 		}
 	
 		
-	
-	
-	
-	
+
 	
 	public  void DuedateCalc() throws InterruptedException,Exception{
 	ReadExcelFile.setExcelFile(filepath,"input");

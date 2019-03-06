@@ -50,10 +50,10 @@
       <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
     </line>
     <line>
-      <![CDATA[About to begin executing following method : TestClass.CreateBin]]>
+      <![CDATA[About to begin executing following method : TestClass.ShipOrder]]>
     </line>
     <line>
-      <![CDATA[Completed executing following method : TestClass.CreateBin]]>
+      <![CDATA[Completed executing following method : TestClass.ShipOrder]]>
     </line>
     <line>
       <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -68,33 +68,33 @@
       <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="49647" started-at="2019-01-11T11:26:50Z" finished-at="2019-01-11T11:27:40Z">
+  <suite name="Suite" duration-ms="69284" started-at="2019-03-06T15:56:11Z" finished-at="2019-03-06T15:57:20Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="49647" started-at="2019-01-11T11:26:50Z" finished-at="2019-01-11T11:27:40Z">
+    <test name="Test" duration-ms="69284" started-at="2019-03-06T15:56:11Z" finished-at="2019-03-06T15:57:20Z">
       <class name="testscripts.TestClass">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@42dafa95]" name="getBrowser" is-config="true" duration-ms="35641" started-at="2019-01-11T11:26:14Z" finished-at="2019-01-11T11:26:50Z">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:testscripts.TestClass@42dafa95]" name="getBrowser" is-config="true" duration-ms="37575" started-at="2019-03-06T15:55:33Z" finished-at="2019-03-06T15:56:11Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.getBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="extentreport()[pri:0, instance:testscripts.TestClass@42dafa95]" name="extentreport" is-config="true" duration-ms="43" started-at="2019-01-11T11:26:50Z" finished-at="2019-01-11T11:26:50Z">
+        <test-method status="PASS" signature="extentreport()[pri:0, instance:testscripts.TestClass@42dafa95]" name="extentreport" is-config="true" duration-ms="47" started-at="2019-03-06T15:56:11Z" finished-at="2019-03-06T15:56:11Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.extentreport]]>
             </line>
           </reporter-output>
         </test-method> <!-- extentreport -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2019-01-11T11:26:50Z" finished-at="2019-01-11T11:26:53Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2019-03-06T15:56:11Z" finished-at="2019-03-06T15:56:14Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@42dafa95]" name="login" duration-ms="13911" started-at="2019-01-11T11:26:53Z" finished-at="2019-01-11T11:27:07Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:testscripts.TestClass@42dafa95]" name="login" duration-ms="8247" started-at="2019-03-06T15:56:14Z" finished-at="2019-03-06T15:56:22Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin executing following method : TestClass.login]]>
@@ -113,27 +113,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="aftermethod" is-config="true" duration-ms="4395" started-at="2019-01-11T11:27:07Z" finished-at="2019-01-11T11:27:11Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="aftermethod" is-config="true" duration-ms="3897" started-at="2019-03-06T15:56:22Z" finished-at="2019-03-06T15:56:26Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="BeforeMethod" is-config="true" duration-ms="3000" started-at="2019-01-11T11:27:11Z" finished-at="2019-01-11T11:27:14Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="BeforeMethod" is-config="true" duration-ms="3001" started-at="2019-03-06T15:56:26Z" finished-at="2019-03-06T15:56:29Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.BeforeMethod]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="CreateBin()[pri:2, instance:testscripts.TestClass@42dafa95]" name="CreateBin" duration-ms="23186" started-at="2019-01-11T11:27:14Z" finished-at="2019-01-11T11:27:38Z">
+        <test-method status="PASS" signature="ShipOrder()[pri:12, instance:testscripts.TestClass@42dafa95]" name="ShipOrder" duration-ms="48947" started-at="2019-03-06T15:56:29Z" finished-at="2019-03-06T15:57:18Z">
           <reporter-output>
             <line>
-              <![CDATA[About to begin executing following method : TestClass.CreateBin]]>
+              <![CDATA[About to begin executing following method : TestClass.ShipOrder]]>
             </line>
             <line>
-              <![CDATA[Completed executing following method : TestClass.CreateBin]]>
+              <![CDATA[Completed executing following method : TestClass.ShipOrder]]>
             </line>
             <line>
               <![CDATA[Test Method resides in testscripts.TestClass]]>
@@ -145,8 +145,8 @@
               <![CDATA[About to begin executing following method : DriverHelper.aftermethod]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CreateBin -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="aftermethod" is-config="true" duration-ms="2076" started-at="2019-01-11T11:27:38Z" finished-at="2019-01-11T11:27:40Z">
+        </test-method> <!-- ShipOrder -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testscripts.TestClass@42dafa95]" name="aftermethod" is-config="true" duration-ms="2105" started-at="2019-03-06T15:57:18Z" finished-at="2019-03-06T15:57:20Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : DriverHelper.aftermethod]]>

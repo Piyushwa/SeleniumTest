@@ -35,6 +35,8 @@ WebDriver driver;
 		String Componentnu = ReadExcelFile.getCellData(9,4);
 		String SymptomOpt = ReadExcelFile.getCellData(9,5);
 		String Defectopt = ReadExcelFile.getCellData(9,6);
+		String PrimeSym = ReadExcelFile.getCellData(9,11);
+
 		
 		
 		
@@ -65,6 +67,16 @@ WebDriver driver;
 	    	 driver.findElement(By.xpath(loc_Repairablechckbox)).click();
 	    	 
 	    	 Logs.take_logs("Repair Order", "Repairing Order: Status is Repairable");	
+	    	 
+	    	 WebElement Primesymptoms = driver.findElement(By.xpath(PrimarySYMpTOM));
+	    	 Primesymptoms .sendKeys(PrimeSym);
+	    		Thread.sleep(6000);
+	    		Primesymptoms.sendKeys(Keys.DOWN);
+	    		Primesymptoms.sendKeys(Keys.ENTER);
+	 	    	 Thread.sleep(2000);
+	 			driver.findElement(By.xpath(loc_Repairnotes)).sendKeys("Testing");
+	 	    	 Thread.sleep(2000);
+
 	    	 driver.findElement(By.xpath(loc_RepairPartsbutton)).click();
 	    	WebElement Component =  driver.findElement(By.xpath(loc_RepairComponent));
    		Component .sendKeys(Componentnu);
@@ -87,7 +99,8 @@ WebDriver driver;
 	    	 Thread.sleep(2000);
 	    	 driver.findElement(By.xpath(loc_RepairAddinfo)).click();
 	    	 driver.findElement(By.xpath(loc_RepairSubmitPart)).click();
-	    	 
+	    	 Thread.sleep(3000);
+
 		       DriverHelper.scrolltoElement(CompleteRep);
 
 	    	 driver.findElement(By.xpath(loc_RepairPartInfosave)).click();
@@ -177,6 +190,9 @@ WebDriver driver;
     	 Thread.sleep(3000);
     	 ActionToconsume.sendKeys(Keys.DOWN);
     	 ActionToconsume.sendKeys(Keys.ENTER);
+    	 
+    	 driver.findElement(By.xpath(loc_RepairPartInfosave)).click();
+
     	 
     	 WebElement CompleteRep =   driver.findElement(By.xpath(loc_CompleteRepair));
     	 CompleteRep.click();

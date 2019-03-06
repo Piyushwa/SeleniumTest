@@ -100,13 +100,13 @@ String loc_RepairlocSubmit = "/html/body/app-root/div/div/app-repair/section[2]/
 String loc_Repairablechckbox = "//div/label[@class ='color-coded-radio has-success']";
 String loc_NTFchckbox = "//div/label[@class ='color-coded-radio has-info']";
 String loc_UnRepairablechckbox = "//div/label[@class ='color-coded-radio has-error']";
-String loc_Repairnotes = "/html/body/app-root/div/div/app-repair/section[2]/div[4]/div/div/div/form/div[1]/div/div/textarea";
+String loc_Repairnotes = "/html/body/app-root/div/div/app-repair/section[2]/div[2]/div/div/div[2]/div/div/div[2]/textarea";
 String loc_CompleteRepair = "//button[contains(text(),'Complete Repair')]";
 String loc_Repaircancel = "//button[contains(text(),'Cancel')]";
 String loc_RepairPartsbutton = "//button[contains(text(),'Request Parts')]";
-String loc_RepairComponent = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/p-sidebar/div/section/div/div[2]/form/div/div[1]/div/div/p-autocomplete/span/input";
-String loc_RepairSymptom = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/p-sidebar/div/section/div/div[2]/form/div/div[3]/div/div/p-autocomplete/span/input";
-String loc_RepairDefect = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/p-sidebar/div/section/div/div[2]/form/div/div[4]/div/div/p-autocomplete/span/input";
+String loc_RepairComponent = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/p-sidebar/div/section/div/div[2]/form/div/div[3]/div/div/p-autocomplete/span/input";
+String loc_RepairSymptom = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/p-sidebar/div/section/div/div[2]/form/div/div[1]/div/div/p-autocomplete/span/input";
+String loc_RepairDefect = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/p-sidebar/div/section/div/div[2]/form/div/div[2]/div/div/p-autocomplete/span/input";
 String loc_RepairAddinfo = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/p-sidebar/div/section/div/div[2]/form/div/div[5]/div/button";
 String loc_RepairSubmitPart = "//button[contains(text(),'Submit Request')]";
 String loc_RepairPartInfosave = "//button[contains(text(),'Save')]";
@@ -115,6 +115,9 @@ String loc_Submitloc2 = "/html/body/app-root/div/div/app-repair/section[2]/p-sid
 String loc_Repairloc3 ="/html/body/app-root/div/div/app-repair/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[2]/div/p-autocomplete/span/input";
 String  loc_Submitloc3 ="/html/body/app-root/div/div/app-repair/section[2]/p-sidebar[2]/div/app-bin-selector/div/div[3]/div/button[1]";
 String loc_RepairAction = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/div/div[2]/div[1]/ul/li/div/div[5]/p-autocomplete/span/input";
+String loc_RepairPartSave = "/html/body/app-root/div/div/app-repair/section[2]/app-repair-detail/div/div[2]/div[2]/button[1]";
+
+String PrimarySYMpTOM = "/html/body/app-root/div/div/app-repair/section[2]/div[2]/div/div/div[2]/div/div/div[1]/p-autocomplete/span/input";
 //Quality Control
 
 String loc_QualityOption ="//a/span[contains(text(),'Quality Control')]";
@@ -149,9 +152,9 @@ String loc_ValidationMessage = "/html/body/app-root/div/div/app-messages/div/p-g
 //Shipment
 
 String loc_Shipoption = "//a/span[contains(text(),'Ship')]";
-String loc_ShipPacklist = "//*[@id='print-section']/div/div[1]/div/div/div[1]/div/div/div/p-autocomplete/span/input";
+String loc_ShipPacklist = "//*[@id='print-section']/div/div[1]/div/div/div[2]/div/div/div/p-autocomplete/span/input";
 String loc_Shipserialnu = "//input[@placeholder ='Enter Serial / RO # to pack...']"; 
-String loc_ShipAddinfo = "//*[@id='print-section']/div/div[1]/div/div/div[2]/div[2]/div/div/button";
+String loc_ShipAddinfo = "//*[@id='print-section']/div/div[1]/div/div/div[3]/div[2]/div/div/button";
 String loc_ShipCarrier = "//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[1]/div[1]/div/p-dropdown/div/label";
 String loc_ShipTrackingnu ="//input[@name ='outboundTrackingNumber']"; 
 String loc_Shipbutton ="//button[contains(text(),'Ship')]";
@@ -172,6 +175,15 @@ String loc_ShipinfoMeasureunit  = "//*[@id='print-section']/p-sidebar[1]/div/com
 String loc_Shiptype = "//*[@id='print-section']/p-sidebar[1]/div/component-carrier-ship/section[2]/form/div[3]/div/div/div[2]/div/div/div/p-dropdown/div/label";
 String CarrierUPS ="//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[1]/div[1]/div/p-dropdown/div/div[4]/div/ul/li[2]";
 String loc_SubmittoUPS = "//button[contains(text(),'Submit to UPS')]";
+String loc_CarrierName = "//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[2]/div[1]/div/div/p-autocomplete/span/input";
+String loc_ShippingMethod = "//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[2]/div[2]/div/div/p-autocomplete/span/input";
+String loc_CarrierCharge = "//input[@name ='carrierCharge']";
+String loc_CarrierCurrency = "//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[4]/div[2]/div/p-dropdown/div/label";
+String loc_CarrierCurrencytext = "//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[4]/div[2]/div/p-dropdown/div/div[4]/div[1]/input";
+String loc_CarrierCurrencyValue = "//*[@id='print-section']/div/div[1]/div[2]/form/div[2]/div[4]/div[2]/div/p-dropdown/div/div[4]/div[2]/ul/li";
+
+
+
 
 
 // Settings-CreateParts

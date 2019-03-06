@@ -31,6 +31,11 @@ public class Shipping implements CommonLoctors {
 			String ShipSerialnu = ReadExcelFile.getCellData(15,2);
 			String Carrievalue = ReadExcelFile.getCellData(15,3);
 			String ShippingTrackingNu = ReadExcelFile.getCellData(15,4);
+			String CarName = ReadExcelFile.getCellData(15,5);
+			String Shippingmthd = ReadExcelFile.getCellData(15,6);
+			String Carrierchrg = ReadExcelFile.getCellData(15,7);
+			String Carriercurr = ReadExcelFile.getCellData(15,8);
+
 
 		   String Shiptype  =ReadExcelFile.getCellData(15,5);
 		   String loc_Shiptypevalue ="//span[contains(text(),'"+Shiptype+"')]";
@@ -41,8 +46,8 @@ public class Shipping implements CommonLoctors {
 		WebElement Shippacknu = driver.findElement(By.xpath(loc_ShipPacklist));
 		Shippacknu.sendKeys(ShipPackListnu);
 		Thread.sleep(3000);
-		DriverHelper.pressKeyDown(Shippacknu);
-		DriverHelper.pressKeyEnter(Shippacknu);
+		Shippacknu.sendKeys(Keys.DOWN);
+		Shippacknu.sendKeys(Keys.ENTER);
 		Thread.sleep(3000);
 
 		DriverHelper.pressKeyDown(Shippacknu);
@@ -111,9 +116,43 @@ public class Shipping implements CommonLoctors {
 			
 		}
 			else {
-				
+				WebElement  Carriernm = driver.findElement(By.xpath(loc_CarrierName));
+						Carriernm.sendKeys(CarName);
+		    	 Thread.sleep(3000);
+		    	 Carriernm.sendKeys(Keys.DOWN);
+		    	 Carriernm.sendKeys(Keys.ENTER);
+		    	 Thread.sleep(3000);
+		    	 WebElement  Shipmthd = driver.findElement(By.xpath(loc_ShippingMethod));
+		    	 Shipmthd.sendKeys(Shippingmthd);
+	    	 Thread.sleep(3000);
+	    	 Shipmthd.sendKeys(Keys.DOWN);
+	    	 Shipmthd.sendKeys(Keys.ENTER);
+	    	 Thread.sleep(3000);
+
 				driver.findElement(By.xpath(loc_ShipTrackingnu)).sendKeys(ShippingTrackingNu);
-				driver.findElement(By.xpath(loc_Shipbutton)).click();
+		    	 Thread.sleep(3000);
+
+					WebElement Shipbutn = driver.findElement(By.xpath(loc_Shipbutton));
+
+		    	 DriverHelper.scrolltoElement(Shipbutn);
+		    	 
+		    	 Thread.sleep(4000);
+
+				driver.findElement(By.xpath(loc_CarrierCharge)).sendKeys(Carrierchrg);
+		    	 Thread.sleep(3000);
+
+				driver.findElement(By.xpath(loc_CarrierCurrency)).click();
+		    	 Thread.sleep(3000);
+
+				driver.findElement(By.xpath(loc_CarrierCurrencytext)).sendKeys(Carriercurr);
+		    	 Thread.sleep(3000);
+
+				driver.findElement(By.xpath(loc_CarrierCurrencyValue)).click();
+
+		    	 Thread.sleep(3000);
+
+
+				Shipbutn.click();
 				
 				Thread.sleep(3000);
 				

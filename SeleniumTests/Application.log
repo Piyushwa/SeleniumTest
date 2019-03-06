@@ -1940,3 +1940,222 @@
 2019-01-11 16:56:53  [Login] (main:) Entered Username
 2019-01-11 16:56:53  [Login] (main:) Entered Password
 2019-01-11 16:57:05  [Login] (main:) Login Successfully
+2019-03-05 19:44:10  [Login] (main:) Entered Username
+2019-03-05 19:44:10  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (7b216ba16769d04b1be8a28bbbb15434)] -> id: userNameInput]data is entered
+2019-03-05 19:44:10  [Login] (main:) Entered Username
+2019-03-05 19:44:10  [Login] (main:) Entered Password
+2019-03-05 19:44:16  [Login] (main:) Login Successfully
+2019-03-05 19:44:39  [Bin Master] (main:) New Bin Edit
+2019-03-06 13:56:58  [Login] (main:) Entered Username
+2019-03-06 13:56:59  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (f18776a8aa089dc686f18e45f6e438a4)] -> id: userNameInput]data is entered
+2019-03-06 13:56:59  [Login] (main:) Entered Username
+2019-03-06 13:56:59  [Login] (main:) Entered Password
+2019-03-06 13:57:05  [Login] (main:) Login Successfully
+2019-03-06 13:57:21  [Receive order] (main:) Receiving Order Started 
+2019-03-06 14:07:30  [Login] (main:) Entered Username
+2019-03-06 14:07:30  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (668a5b37d4d4b7292d4f8c571602fed4)] -> id: userNameInput]data is entered
+2019-03-06 14:07:30  [Login] (main:) Entered Username
+2019-03-06 14:07:30  [Login] (main:) Entered Password
+2019-03-06 14:07:39  [Login] (main:) Login Successfully
+2019-03-06 14:07:52  [Receive order] (main:) Receiving Order Started 
+2019-03-06 14:17:17  [Login] (main:) Entered Username
+2019-03-06 14:17:17  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (764a7b71afb40153c433a467022846fc)] -> id: userNameInput]data is entered
+2019-03-06 14:17:17  [Login] (main:) Entered Username
+2019-03-06 14:17:18  [Login] (main:) Entered Password
+2019-03-06 14:17:36  [Login] (main:) Login Successfully
+2019-03-06 14:17:52  [Receive order] (main:) Receiving Order Started 
+2019-03-06 14:20:48  [Login] (main:) Entered Username
+2019-03-06 14:20:48  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (93ec0068b70b92bb870b0444a4c88a00)] -> id: userNameInput]data is entered
+2019-03-06 14:20:48  [Login] (main:) Entered Username
+2019-03-06 14:20:49  [Login] (main:) Entered Password
+2019-03-06 14:20:56  [Login] (main:) Login Successfully
+2019-03-06 14:21:10  [Receive order] (main:) Receiving Order Started 
+2019-03-06 14:32:04  [Login] (main:) Entered Username
+2019-03-06 14:32:04  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (f72f7db41f3977b1b71b63b79a6722c3)] -> id: userNameInput]data is entered
+2019-03-06 14:32:04  [Login] (main:) Entered Username
+2019-03-06 14:32:04  [Login] (main:) Entered Password
+2019-03-06 14:32:10  [Login] (main:) Login Successfully
+2019-03-06 14:32:24  [Receive order] (main:) Receiving Order Started 
+2019-03-06 14:34:50  [Login] (main:) Entered Username
+2019-03-06 14:34:50  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d0efc486bbb9ea4f6f7318f368213131)] -> id: userNameInput]data is entered
+2019-03-06 14:34:50  [Login] (main:) Entered Username
+2019-03-06 14:34:50  [Login] (main:) Entered Password
+2019-03-06 14:34:56  [Login] (main:) Login Successfully
+2019-03-06 14:35:10  [Receive order] (main:) Receiving Order Started 
+2019-03-06 14:37:49  [Login] (main:) Entered Username
+2019-03-06 14:37:49  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (ce62e29c16bac62c6462e0adab897761)] -> id: userNameInput]data is entered
+2019-03-06 14:37:49  [Login] (main:) Entered Username
+2019-03-06 14:37:49  [Login] (main:) Entered Password
+2019-03-06 14:37:55  [Login] (main:) Login Successfully
+2019-03-06 14:38:09  [Receive order] (main:) Receiving Order Started 
+2019-03-06 15:32:40  [Login] (main:) Entered Username
+2019-03-06 15:32:40  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (3ae55fec3a24ac3cc2c8eca0624e89d0)] -> id: userNameInput]data is entered
+2019-03-06 15:32:40  [Login] (main:) Entered Username
+2019-03-06 15:32:40  [Login] (main:) Entered Password
+2019-03-06 15:32:47  [Login] (main:) Login Successfully
+2019-03-06 15:33:01  [Receive order] (main:) Receiving Order Started 
+2019-03-06 15:35:11  [Login] (main:) Entered Username
+2019-03-06 15:35:11  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d6c05e69c1e5e02408b06310622c2b3b)] -> id: userNameInput]data is entered
+2019-03-06 15:35:11  [Login] (main:) Entered Username
+2019-03-06 15:35:11  [Login] (main:) Entered Password
+2019-03-06 15:35:17  [Login] (main:) Login Successfully
+2019-03-06 15:35:31  [Receive order] (main:) Receiving Order Started 
+2019-03-06 15:36:51  [Login] (main:) Entered Username
+2019-03-06 15:36:51  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (480f1d28f5a6363757ccc29286bcac17)] -> id: userNameInput]data is entered
+2019-03-06 15:36:51  [Login] (main:) Entered Username
+2019-03-06 15:36:52  [Login] (main:) Entered Password
+2019-03-06 15:37:01  [Login] (main:) Login Successfully
+2019-03-06 15:37:15  [Receive order] (main:) Receiving Order Started 
+2019-03-06 15:41:32  [Login] (main:) Entered Username
+2019-03-06 15:41:33  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (c64842dc213f13293a7257bef1b4494c)] -> id: userNameInput]data is entered
+2019-03-06 15:41:33  [Login] (main:) Entered Username
+2019-03-06 15:41:33  [Login] (main:) Entered Password
+2019-03-06 15:41:39  [Login] (main:) Login Successfully
+2019-03-06 15:41:53  [Receive order] (main:) Receiving Order Started 
+2019-03-06 18:24:12  [Login] (main:) Entered Username
+2019-03-06 18:24:12  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (35a42afba9ba0c2b0a0078dee226e11f)] -> id: userNameInput]data is entered
+2019-03-06 18:24:12  [Login] (main:) Entered Username
+2019-03-06 18:24:12  [Login] (main:) Entered Password
+2019-03-06 18:24:18  [Login] (main:) Login Successfully
+2019-03-06 18:24:31  [Receive order] (main:) Receiving Order Started 
+2019-03-06 18:26:02  [Login] (main:) Entered Username
+2019-03-06 18:26:02  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (ec8cdf303f23e045dea4760f3adc43e3)] -> id: userNameInput]data is entered
+2019-03-06 18:26:02  [Login] (main:) Entered Username
+2019-03-06 18:26:02  [Login] (main:) Entered Password
+2019-03-06 18:26:07  [Login] (main:) Login Successfully
+2019-03-06 18:26:21  [Receive order] (main:) Receiving Order Started 
+2019-03-06 19:32:32  [Login] (main:) Entered Username
+2019-03-06 19:32:32  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (9c7fe2d94aa2c0c0af3f13821a3282f7)] -> id: userNameInput]data is entered
+2019-03-06 19:32:32  [Login] (main:) Entered Username
+2019-03-06 19:32:32  [Login] (main:) Entered Password
+2019-03-06 19:32:37  [Login] (main:) Login Successfully
+2019-03-06 19:32:50  [Receive order] (main:) Receiving Order Started 
+2019-03-06 19:34:20  [Login] (main:) Entered Username
+2019-03-06 19:34:20  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (506b09fb23b79372d6da41f3b6021986)] -> id: userNameInput]data is entered
+2019-03-06 19:34:20  [Login] (main:) Entered Username
+2019-03-06 19:34:20  [Login] (main:) Entered Password
+2019-03-06 19:34:26  [Login] (main:) Login Successfully
+2019-03-06 19:34:39  [Receive order] (main:) Receiving Order Started 
+2019-03-06 19:35:52  [Login] (main:) Entered Username
+2019-03-06 19:35:52  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (41cd240f0dd559dcd06884556e5c4bdc)] -> id: userNameInput]data is entered
+2019-03-06 19:35:52  [Login] (main:) Entered Username
+2019-03-06 19:35:52  [Login] (main:) Entered Password
+2019-03-06 19:35:57  [Login] (main:) Login Successfully
+2019-03-06 19:36:10  [Receive order] (main:) Receiving Order Started 
+2019-03-06 19:39:28  [Login] (main:) Entered Username
+2019-03-06 19:39:28  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d9d3f7165faf3ef918334ec1dcfd2490)] -> id: userNameInput]data is entered
+2019-03-06 19:39:28  [Login] (main:) Entered Username
+2019-03-06 19:39:28  [Login] (main:) Entered Password
+2019-03-06 19:39:34  [Login] (main:) Login Successfully
+2019-03-06 19:39:46  [Test order] (main:) Test Order Started
+2019-03-06 19:40:19  [Test order] (main:) Test Order for SN00006 Failed
+2019-03-06 19:42:42  [Login] (main:) Entered Username
+2019-03-06 19:42:49  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (a252641e20c3e2d01500c36da24458f1)] -> id: userNameInput]data is entered
+2019-03-06 19:42:49  [Login] (main:) Entered Username
+2019-03-06 19:42:49  [Login] (main:) Entered Password
+2019-03-06 19:42:59  [Login] (main:) Login Successfully
+2019-03-06 19:43:09  [Repair Order] (main:) Repairing Order Started
+2019-03-06 19:43:20  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-06 19:56:00  [Login] (main:) Entered Username
+2019-03-06 19:56:01  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (4693ac192036112e7d1c7c4ed83fc050)] -> id: userNameInput]data is entered
+2019-03-06 19:56:01  [Login] (main:) Entered Username
+2019-03-06 19:56:01  [Login] (main:) Entered Password
+2019-03-06 19:56:10  [Login] (main:) Login Successfully
+2019-03-06 19:56:19  [Repair Order] (main:) Repairing Order Started
+2019-03-06 19:56:27  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-06 19:58:45  [Login] (main:) Entered Username
+2019-03-06 19:58:45  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (af02acb87d5ce3bc664d474f5613dd2c)] -> id: userNameInput]data is entered
+2019-03-06 19:58:45  [Login] (main:) Entered Username
+2019-03-06 19:58:46  [Login] (main:) Entered Password
+2019-03-06 19:58:52  [Login] (main:) Login Successfully
+2019-03-06 19:59:02  [Repair Order] (main:) Repairing Order Started
+2019-03-06 19:59:10  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-06 20:05:54  [Login] (main:) Entered Username
+2019-03-06 20:05:54  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (455067ab507601dc5f0fd2b8736efcb0)] -> id: userNameInput]data is entered
+2019-03-06 20:05:54  [Login] (main:) Entered Username
+2019-03-06 20:05:54  [Login] (main:) Entered Password
+2019-03-06 20:06:00  [Login] (main:) Login Successfully
+2019-03-06 20:06:10  [Repair Order] (main:) Repairing Order Started
+2019-03-06 20:06:17  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-06 20:07:04  [Repair] (main:) Consume Part and Repairing completed
+2019-03-06 20:10:11  [Login] (main:) Entered Username
+2019-03-06 20:10:11  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (965a866b9d27cc9055caa19313907e70)] -> id: userNameInput]data is entered
+2019-03-06 20:10:11  [Login] (main:) Entered Username
+2019-03-06 20:10:11  [Login] (main:) Entered Password
+2019-03-06 20:10:16  [Login] (main:) Login Successfully
+2019-03-06 20:10:26  [Repair Order] (main:) Repairing Order Started
+2019-03-06 20:10:34  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-06 20:11:21  [Repair] (main:) Consume Part and Repairing completed
+2019-03-06 20:26:35  [Login] (main:) Entered Username
+2019-03-06 20:26:35  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (2644a0f50470efe1c90e5b79e69819d4)] -> id: userNameInput]data is entered
+2019-03-06 20:26:35  [Login] (main:) Entered Username
+2019-03-06 20:26:35  [Login] (main:) Entered Password
+2019-03-06 20:26:40  [Login] (main:) Login Successfully
+2019-03-06 20:26:50  [Repair Order] (main:) Repairing Order Started
+2019-03-06 20:26:57  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-06 20:27:28  [Repair Order] (main:) Complete Repair: Repair On Hold
+2019-03-06 20:27:28  [Repair] (main:) Invalid Repair Status
+2019-03-06 20:27:47  [Repair] (main:) Consume Part and Repairing completed
+2019-03-06 20:34:55  [Login] (main:) Entered Username
+2019-03-06 20:34:56  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (2816f5ed745ee8844a6b05284877aa3a)] -> id: userNameInput]data is entered
+2019-03-06 20:34:56  [Login] (main:) Entered Username
+2019-03-06 20:34:56  [Login] (main:) Entered Password
+2019-03-06 20:35:01  [Login] (main:) Login Successfully
+2019-03-06 20:35:10  [Quality Check] (main:) Quality Check Started
+2019-03-06 20:35:22  [Quality Check] (main:) Quality Check Status: Passed
+2019-03-06 20:38:28  [Login] (main:) Entered Username
+2019-03-06 20:38:28  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (bb0423b48d1ebbcfc21f78d3b920b2ab)] -> id: userNameInput]data is entered
+2019-03-06 20:38:28  [Login] (main:) Entered Username
+2019-03-06 20:38:28  [Login] (main:) Entered Password
+2019-03-06 20:38:34  [Login] (main:) Login Successfully
+2019-03-06 20:38:43  [Pack order] (main:) Order Packaging Start
+2019-03-06 20:39:05  [Pack order] (main:) Order Packaging Completed
+2019-03-06 21:00:30  [Login] (main:) Entered Username
+2019-03-06 21:00:30  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (1c26d2118a114068108f11df5779537d)] -> id: userNameInput]data is entered
+2019-03-06 21:00:30  [Login] (main:) Entered Username
+2019-03-06 21:00:30  [Login] (main:) Entered Password
+2019-03-06 21:00:39  [Login] (main:) Login Successfully
+2019-03-06 21:00:48  [Pack order] (main:) Order Shipping Started
+2019-03-06 21:05:24  [Login] (main:) Entered Username
+2019-03-06 21:05:24  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (a36fcecdf4b8eff0ba042199bcaf9af7)] -> id: userNameInput]data is entered
+2019-03-06 21:05:24  [Login] (main:) Entered Username
+2019-03-06 21:05:25  [Login] (main:) Entered Password
+2019-03-06 21:05:30  [Login] (main:) Login Successfully
+2019-03-06 21:05:40  [Pack order] (main:) Order Shipping Started
+2019-03-06 21:08:41  [Login] (main:) Entered Username
+2019-03-06 21:08:43  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (fcf2a9e9d696a51af4918fd9259b147a)] -> id: userNameInput]data is entered
+2019-03-06 21:08:43  [Login] (main:) Entered Username
+2019-03-06 21:08:43  [Login] (main:) Entered Password
+2019-03-06 21:08:48  [Login] (main:) Login Successfully
+2019-03-06 21:08:58  [Pack order] (main:) Order Shipping Started
+2019-03-06 21:12:36  [Login] (main:) Entered Username
+2019-03-06 21:12:36  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (c4ab7f0321b71d6faad3a1ba2fcc5693)] -> id: userNameInput]data is entered
+2019-03-06 21:12:36  [Login] (main:) Entered Username
+2019-03-06 21:12:36  [Login] (main:) Entered Password
+2019-03-06 21:12:42  [Login] (main:) Login Successfully
+2019-03-06 21:12:52  [Pack order] (main:) Order Shipping Started
+2019-03-06 21:14:32  [Login] (main:) Entered Username
+2019-03-06 21:14:34  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (fb982e29ed7fe757233deeab6a40edd1)] -> id: userNameInput]data is entered
+2019-03-06 21:14:34  [Login] (main:) Entered Username
+2019-03-06 21:14:34  [Login] (main:) Entered Password
+2019-03-06 21:14:40  [Login] (main:) Login Successfully
+2019-03-06 21:14:49  [Pack order] (main:) Order Shipping Started
+2019-03-06 21:20:27  [Login] (main:) Entered Username
+2019-03-06 21:20:27  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (df3c2fe4909ab8d2c0723b30909b145a)] -> id: userNameInput]data is entered
+2019-03-06 21:20:27  [Login] (main:) Entered Username
+2019-03-06 21:20:27  [Login] (main:) Entered Password
+2019-03-06 21:20:34  [Login] (main:) Login Successfully
+2019-03-06 21:20:44  [Pack order] (main:) Order Shipping Started
+2019-03-06 21:22:17  [Login] (main:) Entered Username
+2019-03-06 21:22:17  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (1f062a050c580d41ec96f8bade65b058)] -> id: userNameInput]data is entered
+2019-03-06 21:22:17  [Login] (main:) Entered Username
+2019-03-06 21:22:17  [Login] (main:) Entered Password
+2019-03-06 21:22:23  [Login] (main:) Login Successfully
+2019-03-06 21:22:32  [Pack order] (main:) Order Shipping Started
+2019-03-06 21:26:14  [Login] (main:) Entered Username
+2019-03-06 21:26:14  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (e6498714d10b4815ae199d71a6d5843b)] -> id: userNameInput]data is entered
+2019-03-06 21:26:14  [Login] (main:) Entered Username
+2019-03-06 21:26:14  [Login] (main:) Entered Password
+2019-03-06 21:26:20  [Login] (main:) Login Successfully
+2019-03-06 21:26:30  [Pack order] (main:) Order Shipping Started
+2019-03-06 21:27:18  [Pack order] (main:) Order Shipping completed with Carrievalue External 
