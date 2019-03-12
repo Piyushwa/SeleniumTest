@@ -154,9 +154,12 @@ public class Shipping implements CommonLoctors {
 
 				Shipbutn.click();
 				
-				Thread.sleep(3000);
+				Thread.sleep(6000);
 				
 				driver.findElement(By.xpath(loc_ShipAddconfirm)).click();
+				
+				Thread.sleep(6000);
+
 				
 				Logs.take_logs("Pack order","Order Shipping completed with Carrievalue External ");
 			}

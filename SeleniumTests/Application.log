@@ -2159,3 +2159,144 @@
 2019-03-06 21:26:20  [Login] (main:) Login Successfully
 2019-03-06 21:26:30  [Pack order] (main:) Order Shipping Started
 2019-03-06 21:27:18  [Pack order] (main:) Order Shipping completed with Carrievalue External 
+2019-03-07 16:55:34  [Login] (main:) Entered Username
+2019-03-07 16:55:34  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (f711b7a6b7cfa1269efe3dc1d7951a25)] -> id: userNameInput]data is entered
+2019-03-07 16:55:34  [Login] (main:) Entered Username
+2019-03-07 16:55:34  [Login] (main:) Entered Password
+2019-03-07 16:55:39  [Login] (main:) Login Successfully
+2019-03-07 16:55:54  [Receive order] (main:) Receiving Order Started 
+2019-03-07 16:56:26  [Test order] (main:) Test Order Started
+2019-03-07 16:56:59  [Test order] (main:) Test Order for RS00001 Failed
+2019-03-07 16:57:04  [Repair Order] (main:) Repairing Order Started
+2019-03-07 16:57:11  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-07 16:57:42  [Repair Order] (main:) Complete Repair: Repair On Hold
+2019-03-07 16:57:42  [Repair] (main:) Invalid Repair Status
+2019-03-07 16:58:05  [Quality Check] (main:) Quality Check Started
+2019-03-07 16:58:16  [Quality Check] (main:) Quality Check Status: Passed
+2019-03-07 16:58:22  [Pack order] (main:) Order Packaging Start
+2019-03-07 16:58:44  [Pack order] (main:) Order Packaging Completed
+2019-03-07 16:58:49  [Pack order] (main:) Order Shipping Started
+2019-03-07 16:59:37  [Pack order] (main:) Order Shipping completed with Carrievalue External 
+2019-03-07 17:19:53  [Login] (main:) Entered Username
+2019-03-07 17:19:53  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (8767c88a2cb920e0e571fc6fdc1ef48c)] -> id: userNameInput]data is entered
+2019-03-07 17:19:53  [Login] (main:) Entered Username
+2019-03-07 17:19:54  [Login] (main:) Entered Password
+2019-03-07 17:20:02  [Login] (main:) Login Successfully
+2019-03-07 17:20:22  [Test order] (main:) Test Order Started
+2019-03-07 17:20:38  [Repair Order] (main:) Repairing Order Started
+2019-03-07 17:22:53  [Login] (main:) Entered Username
+2019-03-07 17:22:53  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (ada76234e394159dba5f647928f7b6e5)] -> id: userNameInput]data is entered
+2019-03-07 17:22:53  [Login] (main:) Entered Username
+2019-03-07 17:22:53  [Login] (main:) Entered Password
+2019-03-07 17:23:00  [Login] (main:) Login Successfully
+2019-03-07 17:23:22  [Test order] (main:) Test Order Started
+2019-03-07 17:23:37  [Repair Order] (main:) Repairing Order Started
+2019-03-07 17:25:46  [Login] (main:) Entered Username
+2019-03-07 17:25:46  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (cd6593a4190335e63686d2ad3c69a0a5)] -> id: userNameInput]data is entered
+2019-03-07 17:25:46  [Login] (main:) Entered Username
+2019-03-07 17:25:46  [Login] (main:) Entered Password
+2019-03-07 17:25:55  [Login] (main:) Login Successfully
+2019-03-07 17:28:55  [Login] (main:) Entered Username
+2019-03-07 17:28:55  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (2b4760719192eb098f164209667dd9dc)] -> id: userNameInput]data is entered
+2019-03-07 17:28:55  [Login] (main:) Entered Username
+2019-03-07 17:28:55  [Login] (main:) Entered Password
+2019-03-07 17:29:02  [Login] (main:) Login Successfully
+2019-03-07 17:29:16  [Receive order] (main:) Receiving Order Started 
+2019-03-07 17:33:22  [Login] (main:) Entered Username
+2019-03-07 17:33:22  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (39c6ab3e4be0c404dbba183ced1f40c6)] -> id: userNameInput]data is entered
+2019-03-07 17:33:22  [Login] (main:) Entered Username
+2019-03-07 17:33:22  [Login] (main:) Entered Password
+2019-03-07 17:33:30  [Login] (main:) Login Successfully
+2019-03-07 17:33:44  [Receive order] (main:) Receiving Order Started 
+2019-03-07 17:34:59  [Login] (main:) Entered Username
+2019-03-07 17:34:59  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d8f663d1205217f9709329a9951bdf88)] -> id: userNameInput]data is entered
+2019-03-07 17:34:59  [Login] (main:) Entered Username
+2019-03-07 17:34:59  [Login] (main:) Entered Password
+2019-03-07 17:35:07  [Login] (main:) Login Successfully
+2019-03-07 17:35:21  [Receive order] (main:) Receiving Order Started 
+2019-03-07 17:39:00  [Login] (main:) Entered Username
+2019-03-07 17:39:01  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (d89d6cbd04f13f2be1e19f85c4bdcdd2)] -> id: userNameInput]data is entered
+2019-03-07 17:39:01  [Login] (main:) Entered Username
+2019-03-07 17:39:01  [Login] (main:) Entered Password
+2019-03-07 17:39:09  [Login] (main:) Login Successfully
+2019-03-07 17:39:23  [Receive order] (main:) Receiving Order Started 
+2019-03-07 17:39:40  [Test order] (main:) Test Order Started
+2019-03-07 17:40:14  [Test order] (main:) Test Order for AH00002 Failed
+2019-03-07 17:40:19  [Repair Order] (main:) Repairing Order Started
+2019-03-07 17:40:28  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-07 17:40:59  [Repair Order] (main:) Complete Repair: Repair On Hold
+2019-03-07 17:40:59  [Repair] (main:) Invalid Repair Status
+2019-03-07 17:41:19  [Repair] (main:) Consume Part and Repairing completed
+2019-03-07 17:41:24  [Quality Check] (main:) Quality Check Started
+2019-03-07 17:41:36  [Quality Check] (main:) Quality Check Status: Passed
+2019-03-07 17:41:41  [Pack order] (main:) Order Packaging Start
+2019-03-07 17:42:03  [Pack order] (main:) Order Packaging Completed
+2019-03-07 17:42:08  [Pack order] (main:) Order Shipping Started
+2019-03-07 17:45:01  [Login] (main:) Entered Username
+2019-03-07 17:45:01  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (ec69e9ad24606cb30f02f3ff5f96a221)] -> id: userNameInput]data is entered
+2019-03-07 17:45:01  [Login] (main:) Entered Username
+2019-03-07 17:45:01  [Login] (main:) Entered Password
+2019-03-07 17:45:09  [Login] (main:) Login Successfully
+2019-03-07 17:45:23  [Receive order] (main:) Receiving Order Started 
+2019-03-07 17:46:14  [Test order] (main:) Test Order Started
+2019-03-07 17:46:47  [Test order] (main:) Test Order for NS00001 Failed
+2019-03-07 17:46:52  [Repair Order] (main:) Repairing Order Started
+2019-03-07 17:47:00  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-07 17:47:31  [Repair Order] (main:) Complete Repair: Repair On Hold
+2019-03-07 17:47:31  [Repair] (main:) Invalid Repair Status
+2019-03-07 17:47:52  [Repair] (main:) Consume Part and Repairing completed
+2019-03-07 17:47:57  [Quality Check] (main:) Quality Check Started
+2019-03-07 17:48:10  [Quality Check] (main:) Quality Check Status: Passed
+2019-03-07 17:48:15  [Pack order] (main:) Order Packaging Start
+2019-03-07 17:48:37  [Pack order] (main:) Order Packaging Completed
+2019-03-07 17:48:42  [Pack order] (main:) Order Shipping Started
+2019-03-07 18:06:30  [Login] (main:) Entered Username
+2019-03-07 18:06:30  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (43d6e02a46ddda239e563f63b56fc855)] -> id: userNameInput]data is entered
+2019-03-07 18:06:30  [Login] (main:) Entered Username
+2019-03-07 18:06:30  [Login] (main:) Entered Password
+2019-03-07 18:06:41  [Login] (main:) Login Successfully
+2019-03-07 18:06:58  [Receive order] (main:) Receiving Order Started 
+2019-03-07 18:07:27  [Receive order] (main:) Receiving Order Completed 
+2019-03-07 18:07:34  [Test order] (main:) Test Order Started
+2019-03-07 18:08:08  [Test order] (main:) Test Order for AH000010 Failed
+2019-03-07 18:08:13  [Repair Order] (main:) Repairing Order Started
+2019-03-07 18:08:22  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-07 18:08:53  [Repair Order] (main:) Complete Repair: Repair On Hold
+2019-03-07 18:08:53  [Repair] (main:) Invalid Repair Status
+2019-03-07 18:09:13  [Repair] (main:) Consume Part and Repairing completed
+2019-03-07 18:09:18  [Quality Check] (main:) Quality Check Started
+2019-03-07 18:09:36  [Pack order] (main:) Order Packaging Start
+2019-03-07 18:09:58  [Pack order] (main:) Order Packaging Completed
+2019-03-07 18:10:05  [Pack order] (main:) Order Shipping Started
+2019-03-07 18:11:04  [Pack order] (main:) Order Shipping completed with Carrievalue External 
+2019-03-07 21:25:02  [Login] (main:) Entered Username
+2019-03-07 21:25:13  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (1d795d1ef5f8d236b13b27435ca9d225)] -> id: userNameInput]data is entered
+2019-03-07 21:25:13  [Login] (main:) Entered Username
+2019-03-07 21:25:13  [Login] (main:) Entered Password
+2019-03-07 21:26:11  [Login] (main:) Entered Username
+2019-03-07 21:26:11  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (652d94b32045bc6ed47c74bc429b17f6)] -> id: userNameInput]data is entered
+2019-03-07 21:26:11  [Login] (main:) Entered Username
+2019-03-07 21:26:11  [Login] (main:) Entered Password
+2019-03-07 21:26:17  [Login] (main:) Login Successfully
+2019-03-07 21:26:31  [Receive order] (main:) Receiving Order Started 
+2019-03-07 21:26:48  [Test order] (main:) Test Order Started
+2019-03-07 21:28:40  [Login] (main:) Entered Username
+2019-03-07 21:28:41  [DriverHelper] (main:) [[ChromeDriver: chrome on XP (66c9d13d0c8902dbd98ffca800f9f5a6)] -> id: userNameInput]data is entered
+2019-03-07 21:28:41  [Login] (main:) Entered Username
+2019-03-07 21:28:41  [Login] (main:) Entered Password
+2019-03-07 21:28:46  [Login] (main:) Login Successfully
+2019-03-07 21:29:00  [Receive order] (main:) Receiving Order Started 
+2019-03-07 21:29:29  [Receive order] (main:) Receiving Order Completed 
+2019-03-07 21:29:36  [Test order] (main:) Test Order Started
+2019-03-07 21:30:09  [Test order] (main:) Test Order for SN00007 Failed
+2019-03-07 21:30:14  [Repair Order] (main:) Repairing Order Started
+2019-03-07 21:30:23  [Repair Order] (main:) Repairing Order: Status is Repairable
+2019-03-07 21:30:54  [Repair Order] (main:) Complete Repair: Repair On Hold
+2019-03-07 21:30:54  [Repair] (main:) Invalid Repair Status
+2019-03-07 21:31:13  [Repair] (main:) Consume Part and Repairing completed
+2019-03-07 21:31:18  [Quality Check] (main:) Quality Check Started
+2019-03-07 21:31:32  [Quality Check] (main:) Quality Check Status: Passed
+2019-03-07 21:31:38  [Pack order] (main:) Order Packaging Start
+2019-03-07 21:32:00  [Pack order] (main:) Order Packaging Completed
+2019-03-07 21:32:05  [Pack order] (main:) Order Shipping Started
+2019-03-07 21:33:02  [Pack order] (main:) Order Shipping completed with Carrievalue External 

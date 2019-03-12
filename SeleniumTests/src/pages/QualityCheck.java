@@ -88,6 +88,8 @@ public class QualityCheck implements CommonLoctors {
 			WebElement QualitylocSubPass =	driver.findElement(By.xpath(loc_QualitylocSubPass));
 	  		Actions actions3 = new Actions(driver);
 	  		actions3.moveToElement(QualitylocSubPass);
+			Thread.sleep(3000);
+
 	  		actions3.click();
 	  		actions3.build().perform();
 	  		

@@ -107,7 +107,7 @@ WebDriver driver;
 	    	 
 	    	 driver.findElement(By.xpath(loc_Repairnotes)).sendKeys("Test Repairable");
 	    	 
-	    	 CompleteRep.click();
+	    	 //CompleteRep.click();
 	    	 
 	    	 Logs.take_logs("Repair Order", "Complete Repair: Repair On Hold");	
 	    	 

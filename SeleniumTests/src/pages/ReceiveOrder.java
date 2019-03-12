@@ -151,13 +151,21 @@ public class ReceiveOrder implements CommonLoctors{
 
 	WebElement RecvPrinter = driver.findElement(By.xpath(loc_RecvPrinter));
 	RecvPrinter.sendKeys(Printername);
-	Thread.sleep(6000);
+	Thread.sleep(3000);
 	RecvPrinter.sendKeys(Keys.DOWN);
 	RecvPrinter.sendKeys(Keys.ENTER);
 
 	WebElement RecvLocations = driver.findElement(By.xpath(loc_RecvLocations));
+	RecvLocations.sendKeys(Location);	
+	Thread.sleep(3000);
+	RecvLocations.sendKeys(Keys.DOWN);
+	RecvLocations.sendKeys(Keys.ENTER);
 
-if(Unittype.equalsIgnoreCase("NoNConfirming")){
+	driver.findElement(By.xpath(loc_RecvFinalSubmit)).click();
+	Thread.sleep(6000);
+
+
+/*if(Unittype.equalsIgnoreCase("NoNConfirming")){
 	RecvLocations.sendKeys(NonConfLocation);
 }
 
@@ -166,16 +174,16 @@ else{
 	RecvLocations.sendKeys(Location);	
 	
 }
-	Thread.sleep(6000);
+	Thread.sleep(3000);
 	RecvLocations.sendKeys(Keys.DOWN);
 	RecvLocations.sendKeys(Keys.ENTER);
 
 	driver.findElement(By.xpath(loc_RecvFinalSubmit)).click();
-	Thread.sleep(6000);
+	Thread.sleep(6000);*/
 
-String Validation = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
+//String Validation = driver.findElement(By.xpath(loc_ValidationMessage)).getText();
 
-System.out.println(Validation);
+//System.out.println(Validation);
 	Logs.take_logs("Receive order", "Receiving Order Completed ");	   
 	}
 
