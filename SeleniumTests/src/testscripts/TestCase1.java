@@ -25,7 +25,7 @@ public class TestCase1 extends DriverHelper {
 	       Thread.sleep(2000);
 		CreateOrder co = new CreateOrder(driver);
 		co.Createorderform();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		ReceiveOrder ro = new ReceiveOrder(driver);
 		ro.Receiveorderform();
 		

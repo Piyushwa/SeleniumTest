@@ -33,7 +33,7 @@ ReadExcelFile.setExcelFile(filepath,"input");
 		
 	driver.navigate().to("https://b2bolpdev.ctdi.com/#/repair-component-putaway");
 		
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		  Logs.take_logs("Component Putaway", "Started");	   	
 
 	
